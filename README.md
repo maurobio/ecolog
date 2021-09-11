@@ -1,4 +1,4 @@
-ecolog
+<img src="images\ecolog.png" alt="ECOLOG" style="zoom:150%;"/> ECOLOG
 ======
 
 Database management system for ecological field surveys
