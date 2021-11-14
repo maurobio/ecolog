@@ -1,0 +1,87 @@
+object PCADlg: TPCADlg
+  Left = 256
+  Height = 164
+  Top = 145
+  Width = 283
+  BorderStyle = bsDialog
+  Caption = 'Opções'
+  ClientHeight = 164
+  ClientWidth = 283
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.0.8.0'
+  object CheckBoxCenter: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 12
+    Width = 105
+    Alignment = taLeftJustify
+    AutoSize = False
+    Caption = 'Centragem'
+    TabOrder = 0
+  end
+  object CheckBoxStand: TCheckBox
+    Left = 16
+    Height = 12
+    Top = 38
+    Width = 105
+    Alignment = taLeftJustify
+    AutoSize = False
+    Caption = 'Estandardização'
+    TabOrder = 1
+  end
+  object LabelTransform: TLabel
+    Left = 16
+    Height = 15
+    Top = 62
+    Width = 82
+    Caption = 'Transformação:'
+    ParentColor = False
+  end
+  object ComboBoxTransform: TComboBox
+    Left = 108
+    Height = 23
+    Top = 58
+    Width = 160
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object LabelCoef: TLabel
+    Left = 16
+    Height = 15
+    Top = 96
+    Width = 63
+    Caption = 'Coeficiente:'
+    ParentColor = False
+  end
+  object ComboBoxCoef: TComboBox
+    Left = 108
+    Height = 23
+    Top = 92
+    Width = 160
+    ItemHeight = 15
+    OnChange = ComboBoxCoefChange
+    Style = csDropDownList
+    TabOrder = 3
+  end
+  object OKButton: TButton
+    Left = 101
+    Height = 25
+    Top = 127
+    Width = 75
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 4
+  end
+  object CancelButton: TButton
+    Left = 193
+    Height = 25
+    Top = 127
+    Width = 75
+    Cancel = True
+    Caption = 'Cancelar'
+    ModalResult = 2
+    TabOrder = 5
+  end
+end

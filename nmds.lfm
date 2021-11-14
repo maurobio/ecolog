@@ -1,0 +1,100 @@
+object NMDSDlg: TNMDSDlg
+  Left = 256
+  Height = 191
+  Top = 145
+  Width = 332
+  BorderStyle = bsDialog
+  Caption = 'Opções'
+  ClientHeight = 191
+  ClientWidth = 332
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.0.8.0'
+  object LabelTransform: TLabel
+    Left = 20
+    Height = 15
+    Top = 21
+    Width = 82
+    Caption = 'Transformação:'
+    ParentColor = False
+  end
+  object ComboBoxTransform: TComboBox
+    Left = 153
+    Height = 23
+    Top = 17
+    Width = 160
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object LabelCoef: TLabel
+    Left = 20
+    Height = 15
+    Top = 55
+    Width = 63
+    Caption = 'Coeficiente:'
+    ParentColor = False
+  end
+  object ComboBoxCoef: TComboBox
+    Left = 153
+    Height = 23
+    Top = 51
+    Width = 160
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 1
+  end
+  object LabelIter: TLabel
+    Left = 20
+    Height = 15
+    Top = 87
+    Width = 120
+    Caption = 'Número de Interações:'
+    ParentColor = False
+  end
+  object SpinEditIter: TSpinEdit
+    Left = 153
+    Height = 23
+    Top = 83
+    Width = 160
+    ReadOnly = True
+    TabOrder = 2
+    Value = 50
+  end
+  object LabelConfig: TLabel
+    Left = 20
+    Height = 15
+    Top = 121
+    Width = 109
+    Caption = 'Configuração Inicial:'
+    ParentColor = False
+  end
+  object ComboBoxConfig: TComboBox
+    Left = 153
+    Height = 23
+    Top = 117
+    Width = 160
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 3
+  end
+  object OKButton: TButton
+    Left = 150
+    Height = 25
+    Top = 151
+    Width = 75
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 4
+  end
+  object CancelButton: TButton
+    Left = 238
+    Height = 25
+    Top = 151
+    Width = 75
+    Cancel = True
+    Caption = 'Cancelar'
+    ModalResult = 2
+    TabOrder = 5
+  end
+end

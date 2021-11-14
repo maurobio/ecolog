@@ -1,0 +1,135 @@
+object MDIChild: TMDIChild
+  Left = 0
+  Height = 426
+  Top = 0
+  Width = 703
+  ClientHeight = 426
+  ClientWidth = 703
+  TabOrder = 0
+  DesignLeft = 299
+  DesignTop = 128
+  object HtmlViewer: THtmlViewer
+    Left = 0
+    Height = 426
+    Top = 0
+    Width = 703
+    BorderStyle = htFocused
+    DefBackground = clWhite
+    HistoryMaxCount = 0
+    NoSelect = False
+    PrintMarginBottom = 2
+    PrintMarginLeft = 2
+    PrintMarginRight = 2
+    PrintMarginTop = 2
+    PrintScale = 1
+    Align = alClient
+    TabOrder = 1
+    Visible = False
+  end
+  object DataGrid: TDBGrid
+    Left = 0
+    Height = 426
+    Top = 0
+    Width = 703
+    Align = alClient
+    AutoEdit = False
+    Color = clWindow
+    Columns = <>
+    Options = [dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ReadOnly = True
+    Scrollbars = ssAutoBoth
+    TabOrder = 0
+    OnMouseMove = DataGridMouseMove
+    OnTitleClick = DataGridTitleClick
+  end
+  object DataSource1: TDataSource
+    DataSet = Dataset1
+    Left = 24
+    Top = 56
+  end
+  object Dataset1: TsWorksheetDataset
+    FieldDefs = <>
+    Left = 64
+    Top = 56
+  end
+  object QueryConnection1: TZMConnection
+    Connected = False
+    FloatPrecision = 0
+    Left = 24
+    Top = 112
+  end
+  object QueryDataSet1: TZMQueryDataSet
+    FieldDefs = <>
+    ZMConnection = QueryConnection1
+    QueryExecuted = False
+    TableLoaded = False
+    TableSaved = False
+    DynamicFieldsCreated = False
+    PeristentFieldsCreated = False
+    MemoryDataSetOpened = False
+    PersistentSave = False
+    Parameters = <>
+    MasterDetailFiltration = False
+    FilterOptions = []
+    Left = 64
+    Top = 112
+  end
+  object CSVExporter1: TCSVExporter
+    Dataset = Dataset1
+    ExportFields = <>
+    RestorePosition = True
+    FormatSettings.DecimalSeparator = '.'
+    FormatSettings.CurrencyDigits = 0
+    FormatSettings.FieldDelimiter = ';'
+    FormatSettings.IgnoreOuterWhitespace = False
+    FormatSettings.RowDelimiter = #13#10
+    FormatSettings.QuoteChar = '"'
+    Left = 104
+    Top = 112
+  end
+  object DataSource2: TDataSource
+    DataSet = Dataset2
+    Left = 104
+    Top = 57
+  end
+  object Dataset2: TsWorksheetDataset
+    FieldDefs = <>
+    Left = 152
+    Top = 56
+  end
+  object QueryConnection2: TZMConnection
+    Connected = False
+    FloatPrecision = 0
+    Left = 149
+    Top = 113
+  end
+  object QueryDataSet2: TZMQueryDataSet
+    FieldDefs = <>
+    ZMConnection = QueryConnection2
+    QueryExecuted = False
+    TableLoaded = False
+    TableSaved = False
+    DynamicFieldsCreated = False
+    PeristentFieldsCreated = False
+    MemoryDataSetOpened = False
+    PersistentSave = False
+    Parameters = <>
+    MasterDetailFiltration = False
+    FilterOptions = []
+    Left = 192
+    Top = 112
+  end
+  object CSVExporter2: TCSVExporter
+    Dataset = Dataset2
+    ExportFields = <>
+    RestorePosition = True
+    FormatSettings.DecimalSeparator = '.'
+    FormatSettings.CurrencyDigits = 0
+    FormatSettings.FieldDelimiter = ';'
+    FormatSettings.IgnoreOuterWhitespace = False
+    FormatSettings.RowDelimiter = #13#10
+    FormatSettings.QuoteChar = '"'
+    Left = 232
+    Top = 113
+  end
+end

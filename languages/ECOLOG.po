@@ -1,0 +1,2599 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: about.strcomments
+msgid "Sistema de Banco de Dados para Levantamentos Ecológicos de Campo."
+msgstr ""
+
+#: about.strcompiler
+msgctxt "about.strcompiler"
+msgid "Compilador:"
+msgstr ""
+
+#: about.strinformation
+msgctxt "about.strinformation"
+msgid "Informação do Sistema"
+msgstr ""
+
+#: about.strplatform
+msgctxt "about.strplatform"
+msgid "Plataforma:"
+msgstr ""
+
+#: about.strwebsite
+msgctxt "about.strwebsite"
+msgid "Página do ECOLOG na Internet"
+msgstr ""
+
+#: ca.straxis
+msgctxt "ca.straxis"
+msgid "EIXO "
+msgstr ""
+
+#: ca.strca
+msgid "ANÁLISE DE CORRESPONDÊNCIAS"
+msgstr ""
+
+#: ca.strcumvar
+msgctxt "ca.strcumvar"
+msgid "%CUMULATIVA"
+msgstr ""
+
+#: ca.streigenval
+msgctxt "ca.streigenval"
+msgid "AUTOVALOR"
+msgstr ""
+
+#: ca.streigenvals
+msgctxt "ca.streigenvals"
+msgid "AUTOVALORES"
+msgstr ""
+
+#: ca.strpercentvar
+msgctxt "ca.strpercentvar"
+msgid "%VARIÂNCIA"
+msgstr ""
+
+#: ca.strsample
+msgctxt "ca.strsample"
+msgid "AMOSTRA"
+msgstr ""
+
+#: ca.strsamplescores
+msgctxt "ca.strsamplescores"
+msgid "ESCORES DAS AMOSTRAS"
+msgstr ""
+
+#: ca.strscalesamples
+msgctxt "ca.strscalesamples"
+msgid "Amostras"
+msgstr ""
+
+#: ca.strscalespecies
+msgctxt "ca.strscalespecies"
+msgid "Espécies"
+msgstr ""
+
+#: ca.strscalesymmetric
+msgctxt "ca.strscalesymmetric"
+msgid "Simétrica"
+msgstr ""
+
+#: ca.strspeciesscores
+msgctxt "ca.strspeciesscores"
+msgid "ESCORES DAS VARIÁVEIS"
+msgstr ""
+
+#: ca.strtransform
+msgctxt "ca.strtransform"
+msgid "Transformação: "
+msgstr ""
+
+#: ca.strtransformarcsin
+msgctxt "ca.strtransformarcsin"
+msgid "Arcosseno"
+msgstr ""
+
+#: ca.strtransformcommonlog
+msgctxt "ca.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr ""
+
+#: ca.strtransformnaturallog
+msgctxt "ca.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr ""
+
+#: ca.strtransformnone
+msgctxt "ca.strtransformnone"
+msgid "Sem Transformação"
+msgstr ""
+
+#: ca.strtransformsqrt
+msgctxt "ca.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr ""
+
+#: ca.strvariable
+msgctxt "ca.strvariable"
+msgid "VARIÁVEL"
+msgstr ""
+
+#: cca.straxis
+msgctxt "cca.straxis"
+msgid "EIXO "
+msgstr ""
+
+#: cca.strcca
+msgid "ANÁLISE DE CORRESPONDÊNCIAS CANÔNICA"
+msgstr ""
+
+#: cca.strchisquared
+msgctxt "cca.strchisquared"
+msgid "Qui-Quadrado"
+msgstr ""
+
+#: cca.strcumvar
+msgctxt "cca.strcumvar"
+msgid "%CUMULATIVA"
+msgstr ""
+
+#: cca.streigenval
+msgctxt "cca.streigenval"
+msgid "AUTOVALOR"
+msgstr ""
+
+#: cca.streigenvals
+msgctxt "cca.streigenvals"
+msgid "AUTOVALORES"
+msgstr ""
+
+#: cca.strinertia
+msgctxt "cca.strinertia"
+msgid "Inércia"
+msgstr ""
+
+#: cca.strpercentvar
+msgctxt "cca.strpercentvar"
+msgid "%VARIÂNCIA"
+msgstr ""
+
+#: cca.strsample
+msgctxt "cca.strsample"
+msgid "AMOSTRA"
+msgstr ""
+
+#: cca.strsamplescores
+msgctxt "cca.strsamplescores"
+msgid "ESCORES DAS AMOSTRAS"
+msgstr ""
+
+#: cca.strscalesamples
+msgctxt "cca.strscalesamples"
+msgid "Amostras"
+msgstr ""
+
+#: cca.strscalespecies
+msgctxt "cca.strscalespecies"
+msgid "Espécies"
+msgstr ""
+
+#: cca.strscalesymmetric
+msgctxt "cca.strscalesymmetric"
+msgid "Simétrica"
+msgstr ""
+
+#: cca.strspeciesscores
+msgctxt "cca.strspeciesscores"
+msgid "ESCORES DAS VARIÁVEIS"
+msgstr ""
+
+#: cca.strtransform
+msgctxt "cca.strtransform"
+msgid "Transformação: "
+msgstr ""
+
+#: cca.strtransformarcsin
+msgctxt "cca.strtransformarcsin"
+msgid "Arcosseno"
+msgstr ""
+
+#: cca.strtransformcommonlog
+msgctxt "cca.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr ""
+
+#: cca.strtransformnaturallog
+msgctxt "cca.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr ""
+
+#: cca.strtransformnone
+msgctxt "cca.strtransformnone"
+msgid "Sem Transformação"
+msgstr ""
+
+#: cca.strtransformsqrt
+msgctxt "cca.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr ""
+
+#: cca.strvariable
+msgctxt "cca.strvariable"
+msgid "VARIÁVEL"
+msgstr ""
+
+#: cca.strvariables
+msgctxt "cca.strvariables"
+msgid "Variáveis: "
+msgstr ""
+
+#: cluster.strcentroid
+msgid "Centroide (UPGMC)"
+msgstr ""
+
+#: cluster.strclm
+msgid "Ligação completa (CLM)"
+msgstr ""
+
+#: cluster.strclusteranalysis
+msgid "ANÁLISE DE AGRUPAMENTOS"
+msgstr ""
+
+#: cluster.strcoef
+msgctxt "cluster.strcoef"
+msgid "Coeficiente: "
+msgstr ""
+
+#: cluster.strcoefavgeuclidean
+msgctxt "cluster.strcoefavgeuclidean"
+msgid "Euclidiana normalizada"
+msgstr ""
+
+#: cluster.strcoefbray
+msgctxt "cluster.strcoefbray"
+msgid "Bray-Curtis"
+msgstr ""
+
+#: cluster.strcoefcanberra
+msgctxt "cluster.strcoefcanberra"
+msgid "Canberra"
+msgstr ""
+
+#: cluster.strcoefdice
+msgid "Dice-Sorenson"
+msgstr ""
+
+#: cluster.strcoefeuclidean
+msgctxt "cluster.strcoefeuclidean"
+msgid "Euclidiana"
+msgstr ""
+
+#: cluster.strcoefjaccard
+msgid "Jaccard"
+msgstr ""
+
+#: cluster.strcoefkulczynski
+msgid "Kulczynski"
+msgstr ""
+
+#: cluster.strcoefmanhattan
+msgctxt "cluster.strcoefmanhattan"
+msgid "Manhattan"
+msgstr ""
+
+#: cluster.strcoefmorisita
+msgctxt "cluster.strcoefmorisita"
+msgid "Morisita-Horn"
+msgstr ""
+
+#: cluster.strcoefochiai
+msgid "Ochiai"
+msgstr ""
+
+#: cluster.strcoefsqreuclidean
+msgctxt "cluster.strcoefsqreuclidean"
+msgid "Euclidiana quadrada"
+msgstr ""
+
+#: cluster.strcorrelation
+msgctxt "cluster.strcorrelation"
+msgid "Correlação"
+msgstr ""
+
+#: cluster.strdendrogram
+msgid "Dendrograma"
+msgstr ""
+
+#: cluster.strdistance
+msgid "Distância"
+msgstr ""
+
+#: cluster.strmedian
+msgid "Mediana (WPGMC)"
+msgstr ""
+
+#: cluster.strmethod
+msgid "Método: "
+msgstr ""
+
+#: cluster.strsamples
+msgctxt "cluster.strsamples"
+msgid "Amostras"
+msgstr ""
+
+#: cluster.strslm
+msgid "Ligação única (SLM)"
+msgstr ""
+
+#: cluster.strspecies
+msgctxt "cluster.strspecies"
+msgid "Espécies"
+msgstr ""
+
+#: cluster.strtransform
+msgctxt "cluster.strtransform"
+msgid "Transformação: "
+msgstr ""
+
+#: cluster.strtransformarcsin
+msgctxt "cluster.strtransformarcsin"
+msgid "Arcosseno"
+msgstr ""
+
+#: cluster.strtransformcommonlog
+msgctxt "cluster.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr ""
+
+#: cluster.strtransformnaturallog
+msgctxt "cluster.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr ""
+
+#: cluster.strtransformnone
+msgctxt "cluster.strtransformnone"
+msgid "Sem Transformação"
+msgstr ""
+
+#: cluster.strtransformsqrt
+msgctxt "cluster.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr ""
+
+#: cluster.strupgma
+msgid "Ligação média (UPGMA)"
+msgstr ""
+
+#: cluster.strward
+msgid "Método de Ward"
+msgstr ""
+
+#: cluster.strwpgma
+msgid "Ligação ponderada (WPGMA)"
+msgstr ""
+
+#: diversity.strdiversity
+msgid "ANÁLISE DE DIVERSIDADE"
+msgstr ""
+
+#: diversity.strexpectednumber
+msgid "NÚMERO ESPERADO"
+msgstr ""
+
+#: diversity.strrarefactioncurve
+msgid "CURVA DE RAREFAÇÃO"
+msgstr ""
+
+#: diversity.strsample
+msgctxt "diversity.strsample"
+msgid "LOCAL"
+msgstr ""
+
+#: diversity.strsamples
+msgctxt "diversity.strsamples"
+msgid "Amostras"
+msgstr ""
+
+#: diversity.strsamplesize
+msgid "NÚMERO DE AMOSTRAS"
+msgstr ""
+
+#: diversity.strspecies
+msgctxt "diversity.strspecies"
+msgid "Espécies"
+msgstr ""
+
+#: filter.strdifferent
+msgid "Diferente"
+msgstr ""
+
+#: filter.strequal
+msgid "Igual"
+msgstr ""
+
+#: filter.strgreater
+msgid "Maior"
+msgstr ""
+
+#: filter.strgreaterequal
+msgid "Maior ou Igual"
+msgstr ""
+
+#: filter.strlesser
+msgid "Menor"
+msgstr ""
+
+#: filter.strlesserequal
+msgid "Menor ou Igual"
+msgstr ""
+
+#: filter.strlike
+msgid "Contendo"
+msgstr ""
+
+#: info.strplot
+msgid "Parcela"
+msgstr ""
+
+#: info.strpoint
+msgid "Ponto"
+msgstr ""
+
+#: info.strquadrat
+msgid "Quadrante"
+msgstr ""
+
+#: info.strrandom
+msgid "Coleta Aleatória"
+msgstr ""
+
+#: info.strstation
+msgid "Estação"
+msgstr ""
+
+#: info.strtransect
+msgid "Transecção"
+msgstr ""
+
+#: main.stradd
+msgid "Deseja adicionar planilhas ao projeto?"
+msgstr ""
+
+#: main.straddsheet
+msgid "Adicionar"
+msgstr ""
+
+#: main.strbrahms
+msgid "Arquivo RDE/BRAHMS"
+msgstr ""
+
+#: main.strcep
+msgid "Matriz CEP"
+msgstr ""
+
+#: main.strcepfilter
+msgid "Cornell Ecology Programs (*.dta)|*.dta"
+msgstr ""
+
+#: main.strcolerror
+msgid "Número de oolunas da planilha deve ser maior ou igual a 4"
+msgstr ""
+
+#: main.strconfirmation
+msgid "Confirmação"
+msgstr ""
+
+#: main.strconnection
+msgid "Não foi detectada uma conexão com a Internet"
+msgstr ""
+
+#: main.strcsv
+msgid "Matriz CSV"
+msgstr ""
+
+#: main.strcsvfilter
+msgid "CSV (separado por vírgulas) (*.csv)|*.csv"
+msgstr ""
+
+#: main.strdatanotfound
+msgid "O projeto não contém arquivos de dados"
+msgstr ""
+
+#: main.strdatasheet
+msgid "Planilha de Dados"
+msgstr ""
+
+#: main.strdateformat
+msgid "Formato da Data"
+msgstr ""
+
+#: main.strdbffilter
+msgid "dBase (*.dbf)|*.dbf"
+msgstr ""
+
+#: main.strdelsheet
+msgid "Remover"
+msgstr ""
+
+#: main.strdescriptors
+msgid "Descritores"
+msgstr ""
+
+#: main.streml
+msgid "Metadados em EML"
+msgstr ""
+
+#: main.stremlfilter
+msgid "Ecological Metadata Language (*.eml)|*.eml"
+msgstr ""
+
+#: main.strerror
+msgctxt "main.strerror"
+msgid "Erro"
+msgstr ""
+
+#: main.strexport
+msgid "Exportar"
+msgstr ""
+
+#: main.strexportdata
+msgid "Dados gravados no arquivo: %s para %d amostras(s) e %d espécie(s)"
+msgstr ""
+
+#: main.strexportfitopac1
+msgid "Dados gravados no arquivo: %s para %d família(s), %d espécie(s) e %d indivíduo(s)"
+msgstr ""
+
+#: main.strexportfitopac2
+msgid "Dados gravados no arquivo: %s para %d família(s), %d espécie(s), %d indivíduo(s) e %d amostras(s)"
+msgstr ""
+
+#: main.strexportmetadata
+msgid "Metadados gravados no arquivo: %s"
+msgstr ""
+
+#: main.strexportrecords
+msgid "%d registros gravados no arquivo: %s"
+msgstr ""
+
+#: main.strfamilies
+msgid "Famílias"
+msgstr ""
+
+#: main.strfilter
+msgid "Deseja filtrar os registros?"
+msgstr ""
+
+#: main.strfitopac1
+msgid "Arquivos do Fitopac 1"
+msgstr ""
+
+#: main.strfitopac1filter
+msgid "Arquivos Fitopac 1 (*.dad)|*.dad"
+msgstr ""
+
+#: main.strfitopac2
+msgid "Arquivo do Fitopac 2"
+msgstr ""
+
+#: main.strfitopac2filter
+msgid "Arquivos Fitopac 2 (*.fpd)|*.fpd"
+msgstr ""
+
+#: main.strformat
+msgctxt "main.strformat"
+msgid "Formato:"
+msgstr ""
+
+#: main.strfpm
+msgid "Matriz Fitopac"
+msgstr ""
+
+#: main.strfpmfilter
+msgid "Matriz Fitopac (*.fpm)|*.fpm"
+msgstr ""
+
+#: main.strfull
+msgid "Extenso"
+msgstr ""
+
+#: main.strgenera
+msgid "Gêneros"
+msgstr ""
+
+#: main.strgraph
+msgid "Deseja construir gráfico?"
+msgstr ""
+
+#: main.strhtmlfilter
+msgid "Relatórios (*.htm *.html)|*.htm;*html"
+msgstr ""
+
+#: main.strinformation
+msgid "Informação"
+msgstr ""
+
+#: main.strinvalidchars
+msgid "Caracter inválido no nome da coluna %d (%s)"
+msgstr ""
+
+#: main.strinvalidmethod
+msgid "Tipo de levantamento deve ser parcela ou quadrante"
+msgstr ""
+
+#: main.strjsonfilter
+msgid "Projetos (*.json)|*.json"
+msgstr ""
+
+#: main.strkml
+msgid "Coordenadas em KML"
+msgstr ""
+
+#: main.strkmlfilter
+msgid "Keyhole Markup Language (*.kml)|*.kml"
+msgstr ""
+
+#: main.strlabelformat
+msgctxt "main.strlabelformat"
+msgid "Formato:"
+msgstr ""
+
+#: main.strmvsp
+msgid "Matriz MVSP"
+msgstr ""
+
+#: main.strmvspfilter
+msgid "Multivariate Statistical Package (*.mvs)|*.mvs"
+msgstr ""
+
+#: main.strnocoordinates
+msgid "Não há coordenadas geográficas na planilha"
+msgstr ""
+
+#: main.strnodescriptors
+msgid "Não há descritores na planilha"
+msgstr ""
+
+#: main.strnofields
+msgid "Campos insuficientes para geração do relatório"
+msgstr ""
+
+#: main.strnosequences
+msgid "Não há sequências na planilha"
+msgstr ""
+
+#: main.strnotexecute
+msgctxt "main.strnotexecute"
+msgid "Erro na execução do programa %s."
+msgstr ""
+
+#: main.strnovariables
+msgid "Não há variáveis na planilha"
+msgstr ""
+
+#: main.stropenfile
+msgid "Abrir arquivo existente"
+msgstr ""
+
+#: main.strplot
+msgid "parcela"
+msgstr ""
+
+#: main.strpromptsheet
+msgid "Planilha"
+msgstr ""
+
+#: main.strquadrat
+msgid "quadrante"
+msgstr ""
+
+#: main.strquit
+msgid "Deseja encerrar o programa?"
+msgstr ""
+
+#: main.strrdirectory
+msgid "Selecione diretório do R"
+msgstr ""
+
+#: main.strreport
+msgid "Relatório Estatístico"
+msgstr ""
+
+#: main.strrnotfound
+msgid "R não instalado ou não encontrado."
+msgstr ""
+
+#: main.strroman
+msgid "Romano"
+msgstr ""
+
+#: main.strsavefile
+msgid "Salvar arquivo como"
+msgstr ""
+
+#: main.strsearchcaption
+msgid "Pesquisar"
+msgstr ""
+
+#: main.strsearchprompt
+msgid "Digite o texto a ser pesquisado:"
+msgstr ""
+
+#: main.strsequences
+msgid "Sequências"
+msgstr ""
+
+#: main.strsheetfilter
+msgid "Planilhas (*.csv *.ods *.tsv *.xls *.xlsx)|*.csv;*.ods;*.tsv;*.xls;*.xlsx"
+msgstr ""
+
+#: main.strshp
+msgid "Shapefile ESRI"
+msgstr ""
+
+#: main.strshpfilter
+msgid "Shapefiles (*.shp)|*.shp"
+msgstr ""
+
+#: main.strsites
+msgid "Locais"
+msgstr ""
+
+#: main.strspecies
+msgctxt "main.strspecies"
+msgid "Espécies"
+msgstr ""
+
+#: main.strstandard
+msgid "Padrão"
+msgstr ""
+
+#: main.strstatistics
+msgid "Estatísticas:"
+msgstr ""
+
+#: main.strtextnotfound
+msgid "Texto não encontrado"
+msgstr ""
+
+#: main.strvariables
+msgid "Variáveis"
+msgstr ""
+
+#: main.strvariablesnotfound
+msgid "O projeto não contém uma planilha de variáveis"
+msgstr ""
+
+#: main.strvarsheet
+msgid "Planilha de Variáveis"
+msgstr ""
+
+#: main.strwarning
+msgid "Aviso"
+msgstr ""
+
+#: main.strwindowsonly
+msgid "Esta opção está disponível apenas para MS-Windows."
+msgstr ""
+
+#: nmds.strcoef
+msgctxt "nmds.strcoef"
+msgid "Coeficiente: "
+msgstr ""
+
+#: nmds.strcoefavgeuclidean
+msgctxt "nmds.strcoefavgeuclidean"
+msgid "Euclidiana normalizada"
+msgstr ""
+
+#: nmds.strcoefbray
+msgctxt "nmds.strcoefbray"
+msgid "Bray-Curtis"
+msgstr ""
+
+#: nmds.strcoefcanberra
+msgctxt "nmds.strcoefcanberra"
+msgid "Canberra"
+msgstr ""
+
+#: nmds.strcoefeuclidean
+msgctxt "nmds.strcoefeuclidean"
+msgid "Euclidiana"
+msgstr ""
+
+#: nmds.strcoefmanhattan
+msgctxt "nmds.strcoefmanhattan"
+msgid "Manhattan"
+msgstr ""
+
+#: nmds.strcoefmorisita
+msgctxt "nmds.strcoefmorisita"
+msgid "Morisita-Horn"
+msgstr ""
+
+#: nmds.strcoefsqreuclidean
+msgctxt "nmds.strcoefsqreuclidean"
+msgid "Euclidiana quadrada"
+msgstr ""
+
+#: nmds.strconfig
+msgid "Configuração Inicial: "
+msgstr ""
+
+#: nmds.strconfigpco
+msgid "Coordenadas Principais"
+msgstr ""
+
+#: nmds.strconfigrandom
+msgid "Aleatória"
+msgstr ""
+
+#: nmds.strcoords
+msgid "COORDENADAS"
+msgstr ""
+
+#: nmds.strdim
+msgid "DIMENSÃO "
+msgstr ""
+
+#: nmds.striter
+msgid "Número de Iterações: "
+msgstr ""
+
+#: nmds.strnmds
+msgid "ESCALONAMENTO MULTIDIMENSIONAL NÃO-MÉTRICO"
+msgstr ""
+
+#: nmds.strsample
+msgctxt "nmds.strsample"
+msgid "AMOSTRA"
+msgstr ""
+
+#: nmds.strsamples
+msgctxt "nmds.strsamples"
+msgid "Amostras"
+msgstr ""
+
+#: nmds.strspecies
+msgctxt "nmds.strspecies"
+msgid "Espécies"
+msgstr ""
+
+#: nmds.strstress
+msgid "Stress = "
+msgstr ""
+
+#: nmds.strtransform
+msgctxt "nmds.strtransform"
+msgid "Transformação: "
+msgstr ""
+
+#: nmds.strtransformarcsin
+msgctxt "nmds.strtransformarcsin"
+msgid "Arcosseno"
+msgstr ""
+
+#: nmds.strtransformcommonlog
+msgctxt "nmds.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr ""
+
+#: nmds.strtransformnaturallog
+msgctxt "nmds.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr ""
+
+#: nmds.strtransformnone
+msgctxt "nmds.strtransformnone"
+msgid "Sem Transformação"
+msgstr ""
+
+#: nmds.strtransformsqrt
+msgctxt "nmds.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr ""
+
+#: pca.straxis
+msgctxt "pca.straxis"
+msgid "EIXO "
+msgstr ""
+
+#: pca.strbiplot
+msgid "BIPLOT"
+msgstr ""
+
+#: pca.strcenter
+msgid "Dados Centrados"
+msgstr ""
+
+#: pca.strcoef
+msgctxt "pca.strcoef"
+msgid "Coeficiente: "
+msgstr ""
+
+#: pca.strcorrelation
+msgctxt "pca.strcorrelation"
+msgid "Correlação"
+msgstr ""
+
+#: pca.strcovariance
+msgid "Covariância"
+msgstr ""
+
+#: pca.strcumvar
+msgctxt "pca.strcumvar"
+msgid "%CUMULATIVA"
+msgstr ""
+
+#: pca.streigenval
+msgctxt "pca.streigenval"
+msgid "AUTOVALOR"
+msgstr ""
+
+#: pca.streigenvals
+msgctxt "pca.streigenvals"
+msgid "AUTOVALORES"
+msgstr ""
+
+#: pca.streigenvec
+msgctxt "pca.streigenvec"
+msgid "AUTOVETOR"
+msgstr ""
+
+#: pca.streigenvecs
+msgctxt "pca.streigenvecs"
+msgid "AUTOVETORES"
+msgstr ""
+
+#: pca.strpca
+msgid "ANÁLISE DE COMPONENTES PRINCIPAIS"
+msgstr ""
+
+#: pca.strpercentvar
+msgctxt "pca.strpercentvar"
+msgid "%VARIÂNCIA"
+msgstr ""
+
+#: pca.strsamples
+msgctxt "pca.strsamples"
+msgid "Amostras"
+msgstr ""
+
+#: pca.strscatterplot
+msgctxt "pca.strscatterplot"
+msgid "DIAGRAMA DE DISPERSÃO"
+msgstr ""
+
+#: pca.strscreeplot
+msgid "GRÁFICO DE DECLIVIDADE"
+msgstr ""
+
+#: pca.strspecies
+msgctxt "pca.strspecies"
+msgid "Espécies"
+msgstr ""
+
+#: pca.strstand
+msgid "Dados Estandardizados"
+msgstr ""
+
+#: pca.strtransform
+msgctxt "pca.strtransform"
+msgid "Transformação: "
+msgstr ""
+
+#: pca.strtransformarcsin
+msgctxt "pca.strtransformarcsin"
+msgid "Arcosseno"
+msgstr ""
+
+#: pca.strtransformcommonlog
+msgctxt "pca.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr ""
+
+#: pca.strtransformnaturallog
+msgctxt "pca.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr ""
+
+#: pca.strtransformnone
+msgctxt "pca.strtransformnone"
+msgid "Sem Transformação"
+msgstr ""
+
+#: pca.strtransformsqrt
+msgctxt "pca.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr ""
+
+#: pca.strvariable
+msgctxt "pca.strvariable"
+msgid "VARIÁVEL"
+msgstr ""
+
+#: pca.strvariance
+msgid "VARIÂNCIA"
+msgstr ""
+
+#: pco.straxis
+msgctxt "pco.straxis"
+msgid "EIXO "
+msgstr ""
+
+#: pco.strcoef
+msgctxt "pco.strcoef"
+msgid "Coeficiente: "
+msgstr ""
+
+#: pco.strcoefavgeuclidean
+msgctxt "pco.strcoefavgeuclidean"
+msgid "Euclidiana normalizada"
+msgstr ""
+
+#: pco.strcoefbray
+msgctxt "pco.strcoefbray"
+msgid "Bray-Curtis"
+msgstr ""
+
+#: pco.strcoefcanberra
+msgctxt "pco.strcoefcanberra"
+msgid "Canberra"
+msgstr ""
+
+#: pco.strcoefeuclidean
+msgctxt "pco.strcoefeuclidean"
+msgid "Euclidiana"
+msgstr ""
+
+#: pco.strcoefmanhattan
+msgctxt "pco.strcoefmanhattan"
+msgid "Manhattan"
+msgstr ""
+
+#: pco.strcoefmorisita
+msgctxt "pco.strcoefmorisita"
+msgid "Morisita-Horn"
+msgstr ""
+
+#: pco.strcoefsqreuclidean
+msgctxt "pco.strcoefsqreuclidean"
+msgid "Euclidiana quadrada"
+msgstr ""
+
+#: pco.strcumvar
+msgctxt "pco.strcumvar"
+msgid "%CUMULATIVA"
+msgstr ""
+
+#: pco.streigenval
+msgctxt "pco.streigenval"
+msgid "AUTOVALOR"
+msgstr ""
+
+#: pco.streigenvals
+msgctxt "pco.streigenvals"
+msgid "AUTOVALORES"
+msgstr ""
+
+#: pco.streigenvec
+msgctxt "pco.streigenvec"
+msgid "AUTOVETOR"
+msgstr ""
+
+#: pco.streigenvecs
+msgctxt "pco.streigenvecs"
+msgid "AUTOVETORES"
+msgstr ""
+
+#: pco.strpco
+msgid "ANÁLISE DE COORDENADAS PRINCIPAIS"
+msgstr ""
+
+#: pco.strpercentvar
+msgctxt "pco.strpercentvar"
+msgid "%VARIÂNCIA"
+msgstr ""
+
+#: pco.strsamples
+msgctxt "pco.strsamples"
+msgid "Amostras"
+msgstr ""
+
+#: pco.strscatterplot
+msgctxt "pco.strscatterplot"
+msgid "DIAGRAMA DE DISPERSÃO"
+msgstr ""
+
+#: pco.strspecies
+msgctxt "pco.strspecies"
+msgid "Espécies"
+msgstr ""
+
+#: pco.strtransform
+msgctxt "pco.strtransform"
+msgid "Transformação: "
+msgstr ""
+
+#: pco.strtransformarcsin
+msgctxt "pco.strtransformarcsin"
+msgid "Arcosseno"
+msgstr ""
+
+#: pco.strtransformcommonlog
+msgctxt "pco.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr ""
+
+#: pco.strtransformnaturallog
+msgctxt "pco.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr ""
+
+#: pco.strtransformnone
+msgctxt "pco.strtransformnone"
+msgid "Sem Transformação"
+msgstr ""
+
+#: pco.strtransformsqrt
+msgctxt "pco.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr ""
+
+#: pco.strvariable
+msgctxt "pco.strvariable"
+msgid "VARIÁVEL"
+msgstr ""
+
+#: rda.straxis
+msgctxt "rda.straxis"
+msgid "EIXO "
+msgstr ""
+
+#: rda.strcorrelation
+msgctxt "rda.strcorrelation"
+msgid "Correlação"
+msgstr ""
+
+#: rda.strcumvar
+msgctxt "rda.strcumvar"
+msgid "%CUMULATIVA"
+msgstr ""
+
+#: rda.streigenval
+msgctxt "rda.streigenval"
+msgid "AUTOVALOR"
+msgstr ""
+
+#: rda.streigenvals
+msgctxt "rda.streigenvals"
+msgid "AUTOVALORES"
+msgstr ""
+
+#: rda.strinertia
+msgctxt "rda.strinertia"
+msgid "Inércia"
+msgstr ""
+
+#: rda.strpercentvar
+msgctxt "rda.strpercentvar"
+msgid "%VARIÂNCIA"
+msgstr ""
+
+#: rda.strrda
+msgid "ANÁLISE DE REDUNDÂNCIAS"
+msgstr ""
+
+#: rda.strsample
+msgctxt "rda.strsample"
+msgid "AMOSTRA"
+msgstr ""
+
+#: rda.strsamplescores
+msgctxt "rda.strsamplescores"
+msgid "ESCORES DAS AMOSTRAS"
+msgstr ""
+
+#: rda.strscalesamples
+msgctxt "rda.strscalesamples"
+msgid "Amostras"
+msgstr ""
+
+#: rda.strscalespecies
+msgctxt "rda.strscalespecies"
+msgid "Espécies"
+msgstr ""
+
+#: rda.strscalesymmetric
+msgctxt "rda.strscalesymmetric"
+msgid "Simétrica"
+msgstr ""
+
+#: rda.strspeciesscores
+msgctxt "rda.strspeciesscores"
+msgid "ESCORES DAS VARIÁVEIS"
+msgstr ""
+
+#: rda.strtransform
+msgctxt "rda.strtransform"
+msgid "Transformação: "
+msgstr ""
+
+#: rda.strtransformarcsin
+msgctxt "rda.strtransformarcsin"
+msgid "Arcosseno"
+msgstr ""
+
+#: rda.strtransformcommonlog
+msgctxt "rda.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr ""
+
+#: rda.strtransformnaturallog
+msgctxt "rda.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr ""
+
+#: rda.strtransformnone
+msgctxt "rda.strtransformnone"
+msgid "Sem Transformação"
+msgstr ""
+
+#: rda.strtransformsqrt
+msgctxt "rda.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr ""
+
+#: rda.strvariable
+msgctxt "rda.strvariable"
+msgid "VARIÁVEL"
+msgstr ""
+
+#: rda.strvariables
+msgctxt "rda.strvariables"
+msgid "Variáveis: "
+msgstr ""
+
+#: rda.strvariance
+msgid "Variância"
+msgstr ""
+
+#: report.straccessory
+msgid "Acessória"
+msgstr ""
+
+#: report.straccidental
+msgid "Acidental"
+msgstr ""
+
+#: report.strbergerindex
+msgid " Índice de Berger-Parker (d)   = "
+msgstr ""
+
+#: report.strcases
+msgid "CASOS"
+msgstr ""
+
+#: report.strcategory
+msgid "CATEGORIA"
+msgstr ""
+
+#: report.strcheck
+msgid "Verificar Nomes"
+msgstr ""
+
+#: report.strcheckednames
+msgid "NOMES VERIFICADOS"
+msgstr ""
+
+#: report.strchecknames
+msgid "Verificando nomes..."
+msgstr ""
+
+#: report.strcoded
+msgid "TOTAL DE REGISTROS GEOCODIFICADOS = "
+msgstr ""
+
+#: report.strcodon
+msgid "CÓDON"
+msgstr ""
+
+#: report.strcodonfrequency
+msgid "Frequência de CÓDONS"
+msgstr ""
+
+#: report.strcodonscount
+msgid " códon(s)"
+msgstr ""
+
+#: report.strconstant
+msgid "Constante"
+msgstr ""
+
+#: report.strcv
+msgid "COEF.VAR. (.%)"
+msgstr ""
+
+#: report.strdate
+msgid "Data: "
+msgstr ""
+
+#: report.strdepth
+msgid "Prof. "
+msgstr ""
+
+#: report.strdescriptor
+msgid "DESCRITOR"
+msgstr ""
+
+#: report.strdescriptorscount
+msgid " descritor(es)"
+msgstr ""
+
+#: report.strdescriptorstatistics
+msgid "Estatística de DESCRITORES"
+msgstr ""
+
+#: report.strdiversity
+msgid "DIVERSIDADE"
+msgstr ""
+
+#: report.strdiversityanalysis
+msgid "Análise de DIVERSIDADE"
+msgstr ""
+
+#: report.strdom
+msgid "DOM.%"
+msgstr ""
+
+#: report.strelevation
+msgid "Alt. "
+msgstr ""
+
+#: report.strerror
+msgctxt "report.strerror"
+msgid "Erro"
+msgstr ""
+
+#: report.strevenness
+msgid "EQUITABILIDADE"
+msgstr ""
+
+#: report.strevennessindex
+msgid " Equitabilidade (J)            = "
+msgstr ""
+
+#: report.strfamiliescount
+msgid " família(s)"
+msgstr ""
+
+#: report.strfamily
+msgid "FAMÍLIA"
+msgstr ""
+
+#: report.strfamilystatistics
+msgid "Estatística de FAMÍLIAS"
+msgstr ""
+
+#: report.strfamilytitle
+msgid "FREQUÊNCIA DE ESPÉCIES POR FAMÍLIA"
+msgstr ""
+
+#: report.strfilter
+msgid "FILTRO: "
+msgstr ""
+
+#: report.strfr
+msgid "F.R.%"
+msgstr ""
+
+#: report.strfreq
+msgid "FREQ"
+msgstr ""
+
+#: report.strgeneracount
+msgid " gênero(s)"
+msgstr ""
+
+#: report.strgenus
+msgid "GÊNERO"
+msgstr ""
+
+#: report.strgenusstatistics
+msgid "Estatística de GÊNEROS"
+msgstr ""
+
+#: report.strgenustitle
+msgid "FREQUÊNCIA DE ESPÉCIES POR GÊNERO"
+msgstr ""
+
+#: report.strhurlbertindex
+msgid " Índice de Hurlbert (PIE)      = "
+msgstr ""
+
+#: report.strlatitude
+msgid "LATITUDE"
+msgstr ""
+
+#: report.strlocality
+msgid "LOCALIDADE"
+msgstr ""
+
+#: report.strlongitude
+msgid "LONGITUDE"
+msgstr ""
+
+#: report.strmargalefindex
+msgid " Índice de Margalef  (D1)      = "
+msgstr ""
+
+#: report.strmax
+msgid "MÁX."
+msgstr ""
+
+#: report.strmaximum
+msgid "MÁXIMO"
+msgstr ""
+
+#: report.strmcintoshindex
+msgid " Índice de McIntosh (M)        = "
+msgstr ""
+
+#: report.strmean
+msgid "MÉDIA"
+msgstr ""
+
+#: report.strmenhinickindex
+msgid " Índice de Menhinick (D2)      = "
+msgstr ""
+
+#: report.strmin
+msgid "MÍN."
+msgstr ""
+
+#: report.strminimum
+msgid "MÍNIMO"
+msgstr ""
+
+#: report.strnoind
+msgid "NO.IND."
+msgstr ""
+
+#: report.strnorecord
+msgid " -- sem registro"
+msgstr ""
+
+#: report.strnospp
+msgid "NO.SPP."
+msgstr ""
+
+#: report.strnotexecute
+msgctxt "report.strnotexecute"
+msgid "Erro na execução do programa %s."
+msgstr ""
+
+#: report.strnucleotidecomposition
+msgid "Composição de NUCLEOTÍDEOS"
+msgstr ""
+
+#: report.strnumber
+msgid "NÚMERO"
+msgstr ""
+
+#: report.strnumeric
+msgid "Numérico"
+msgstr ""
+
+#: report.strobs
+msgid "N"
+msgstr ""
+
+#: report.strpercent
+msgid "% DE RECUPERAÇÃO/TOTAL: "
+msgstr ""
+
+#: report.strpercentspp
+msgid "%SPP"
+msgstr ""
+
+#: report.strplottitle
+msgid "CURVA DO COLETOR"
+msgstr ""
+
+#: report.strplotxlabel
+msgid "AMOSTRAS"
+msgstr ""
+
+#: report.strplotylabel
+msgid "NÚMERO CUMULATIVO DE ESPÉCIES"
+msgstr ""
+
+#: report.strprojectname
+msgid "Projeto: "
+msgstr ""
+
+#: report.strprovince
+msgid "  Mun. "
+msgstr ""
+
+#: report.strreportcatalog
+msgid "CATÁLOGO DE COLETAS"
+msgstr ""
+
+#: report.strreportcheck
+msgid "RELATÓRIO DE VERIFICAÇÃO NOMENCLATURAL"
+msgstr ""
+
+#: report.strreportdate
+msgid "Data - "
+msgstr ""
+
+#: report.strreportgeneral
+msgid "RELATÓRIO GERAL DE ESPÉCIES"
+msgstr ""
+
+#: report.strreportgeoref
+msgid "RELATÓRIO DE GEOCODIFICAÇÃO"
+msgstr ""
+
+#: report.strreportstatistics
+msgid "RELATÓRIO ESTATÍSTICO"
+msgstr ""
+
+#: report.strreporttime
+msgid "Hora - "
+msgstr ""
+
+#: report.strretrievedrecords
+msgid "NÚMERO DE REGISTROS RECUPERADOS: "
+msgstr ""
+
+#: report.strsample
+msgctxt "report.strsample"
+msgid "LOCAL"
+msgstr ""
+
+#: report.strsamplescount
+msgid " locais"
+msgstr ""
+
+#: report.strsamplestatistics
+msgid "Estatística de LOCAIS"
+msgstr ""
+
+#: report.strsd
+msgid "DESV.PAD."
+msgstr ""
+
+#: report.strsequencescount
+msgid " sequência(s)"
+msgstr ""
+
+#: report.strsequencestatistics
+msgid "Estatística de SEQUÊNCIAS"
+msgstr ""
+
+#: report.strshannonindex
+msgid " Índice de Shannon-Weaver (H') = "
+msgstr ""
+
+#: report.strsimpsonindex
+msgid " Índice de Simpson (C)         = "
+msgstr ""
+
+#: report.strspecies
+msgid "ESPÉCIE"
+msgstr ""
+
+#: report.strspeciescount
+msgid " espécie(s)"
+msgstr ""
+
+#: report.strspeciesrichness
+msgid "RIQUEZA DE ESPÉCIES"
+msgstr ""
+
+#: report.strspeciesstatistics
+msgid "Estatística de ESPÉCIES"
+msgstr ""
+
+#: report.strspeciestitle
+msgid "FREQUÊNCIA DE INDIVÍDUOS POR ESPÉCIE"
+msgstr ""
+
+#: report.strspecimen
+msgid "INDIVÍDUO"
+msgstr ""
+
+#: report.strspecimenscount
+msgid " indivíduo(s)"
+msgstr ""
+
+#: report.strstddev
+msgid "DESVIO-PADRÃO"
+msgstr ""
+
+#: report.strsurveytype
+msgid "Tipo de Levantamento: "
+msgstr ""
+
+#: report.strsuspectednames
+msgid "NOMES SUSPEITOS"
+msgstr ""
+
+#: report.strsynonym
+msgid " -- sinônimo de "
+msgstr ""
+
+#: report.strsynonyms
+msgid "TOTAL DE SINÔNIMOS = "
+msgstr ""
+
+#: report.strtaxonomicqualityindex
+msgid "ÍNDICE DE QUALIDADE TAXONÔMICA = "
+msgstr ""
+
+#: report.strtext
+msgid "Texto"
+msgstr ""
+
+#: report.strtotalcodons
+msgid "TOTAL DE CÓDONS = "
+msgstr ""
+
+#: report.strtotaldescriptors
+msgid "TOTAL DE DESCRITORES = "
+msgstr ""
+
+#: report.strtotalfamilies
+msgid "TOTAL DE FAMÍLIAS = "
+msgstr ""
+
+#: report.strtotalgenera
+msgid "TOTAL DE GÊNEROS = "
+msgstr ""
+
+#: report.strtotalnames
+msgid "TOTAL DE NOMES = "
+msgstr ""
+
+#: report.strtotalrecords
+msgid "TOTAL DE REGISTROS ARMAZENADOS: "
+msgstr ""
+
+#: report.strtotalsamples
+msgid "TOTAL DE LOCAIS = "
+msgstr ""
+
+#: report.strtotalsequences
+msgid "TOTAL DE SEQUÊNCIAS = "
+msgstr ""
+
+#: report.strtotalspecies
+msgid "TOTAL DE ESPÉCIES = "
+msgstr ""
+
+#: report.strtotalspecimens
+msgid "TOTAL DE INDIVÍDUOS = "
+msgstr ""
+
+#: report.strtotalsuspectednames
+msgid "TOTAL DE NOMES SUSPEITOS = "
+msgstr ""
+
+#: report.strtotalvariables
+msgid "TOTAL DE VARIÁVEIS = "
+msgstr ""
+
+#: report.strtype
+msgid "TIPO"
+msgstr ""
+
+#: report.struncoded
+msgid "TOTAL DE REGISTROS NÃO-GEOCODIFICADOS = "
+msgstr ""
+
+#: report.strunit
+msgid "UNIDADE"
+msgstr ""
+
+#: report.strunknown
+msgid "Desconhecido"
+msgstr ""
+
+#: report.strvalidname
+msgid " -- nome válido"
+msgstr ""
+
+#: report.strvalidnames
+msgid "TOTAL DE NOMES VÁLIDOS = "
+msgstr ""
+
+#: report.strvariable
+msgctxt "report.strvariable"
+msgid "VARIÁVEL"
+msgstr ""
+
+#: report.strvariablescount
+msgid " variáveis"
+msgstr ""
+
+#: report.strvariablestatistics
+msgid "Estatística de VARIÁVEIS AMBIENTAIS"
+msgstr ""
+
+#: report.strxlabel
+msgid "FREQUÊNCIA RELATIVA (%)"
+msgstr ""
+
+#: taboutbox.caption
+msgctxt "taboutbox.caption"
+msgid "Sobre ECOLOG"
+msgstr ""
+
+#: taboutbox.comments.caption
+msgid "Comments"
+msgstr ""
+
+#: taboutbox.compiler.caption
+msgctxt "taboutbox.compiler.caption"
+msgid "Compilador:"
+msgstr ""
+
+#: taboutbox.copyright.caption
+msgid "Copyright © 1990-2021 Mauro J. Cavalcanti"
+msgstr ""
+
+#: taboutbox.ide.caption
+msgid "IDE:"
+msgstr ""
+
+#: taboutbox.information.caption
+msgctxt "taboutbox.information.caption"
+msgid "Informação do Sistema"
+msgstr ""
+
+#: taboutbox.okbutton.caption
+msgctxt "taboutbox.okbutton.caption"
+msgid "OK"
+msgstr ""
+
+#: taboutbox.operatingsystem.caption
+msgid "OS:"
+msgstr ""
+
+#: taboutbox.platform.caption
+msgctxt "taboutbox.platform.caption"
+msgid "Plataforma:"
+msgstr ""
+
+#: taboutbox.productname.caption
+msgctxt "taboutbox.productname.caption"
+msgid "ECOLOG"
+msgstr ""
+
+#: taboutbox.versionnumber.caption
+msgid "v 0.0.0"
+msgstr ""
+
+#: taboutbox.website.caption
+msgctxt "taboutbox.website.caption"
+msgid "Página do ECOLOG na Internet"
+msgstr ""
+
+#: tccadlg.cancelbutton.caption
+msgctxt "tccadlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr ""
+
+#: tccadlg.caption
+msgctxt "tccadlg.caption"
+msgid "Opções"
+msgstr ""
+
+#: tccadlg.checkboxscale.caption
+msgctxt "tccadlg.checkboxscale.caption"
+msgid "Escala:"
+msgstr ""
+
+#: tccadlg.labeltransform.caption
+msgctxt "tccadlg.labeltransform.caption"
+msgid "Transformação:"
+msgstr ""
+
+#: tccadlg.okbutton.caption
+msgctxt "tccadlg.okbutton.caption"
+msgid "OK"
+msgstr ""
+
+#: tclusterdlg.cancelbutton.caption
+msgctxt "tclusterdlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr ""
+
+#: tclusterdlg.caption
+msgid "Métodos de Agrupamento"
+msgstr ""
+
+#: tclusterdlg.labelcoef.caption
+msgid "Coeficiente:"
+msgstr ""
+
+#: tclusterdlg.labelmethod.caption
+msgctxt "tclusterdlg.labelmethod.caption"
+msgid "Método:"
+msgstr ""
+
+#: tclusterdlg.labeltransform.caption
+msgctxt "tclusterdlg.labeltransform.caption"
+msgid "Transformação:"
+msgstr ""
+
+#: tclusterdlg.okbutton.caption
+msgctxt "tclusterdlg.okbutton.caption"
+msgid "OK"
+msgstr ""
+
+#: tfilterdlg.cancelbtn.caption
+msgctxt "tfilterdlg.cancelbtn.caption"
+msgid "Cancelar"
+msgstr ""
+
+#: tfilterdlg.caption
+msgid "Definir Filtro"
+msgstr ""
+
+#: tfilterdlg.clearbtn.hint
+msgid "Limpar lista de condições"
+msgstr ""
+
+#: tfilterdlg.excludebtn.hint
+msgid "Excluir condição"
+msgstr ""
+
+#: tfilterdlg.includebtn.hint
+msgid "Incluir condição"
+msgstr ""
+
+#: tfilterdlg.label1.caption
+msgid "Campos:"
+msgstr ""
+
+#: tfilterdlg.label2.caption
+msgid "Valor:"
+msgstr ""
+
+#: tfilterdlg.label3.caption
+msgid "Operador:"
+msgstr ""
+
+#: tfilterdlg.label5.caption
+msgid "Lista de Condições:"
+msgstr ""
+
+#: tfilterdlg.okbtn.caption
+msgctxt "tfilterdlg.okbtn.caption"
+msgid "OK"
+msgstr ""
+
+#: tfilterdlg.rband.caption
+msgid "E"
+msgstr ""
+
+#: tfilterdlg.rbor.caption
+msgid "Ou"
+msgstr ""
+
+#: tmainform.addbutton.caption
+msgctxt "tmainform.addbutton.caption"
+msgid "Adicionar..."
+msgstr ""
+
+#: tmainform.addbutton.hint
+msgctxt "tmainform.addbutton.hint"
+msgid "Adicionar arquivo ao projeto atual"
+msgstr ""
+
+#: tmainform.analysisclusteritem.caption
+msgctxt "tmainform.analysisclusteritem.caption"
+msgid "Agrupamento..."
+msgstr ""
+
+#: tmainform.analysisclusteritem.hint
+msgctxt "tmainform.analysisclusteritem.hint"
+msgid "Análise de agrupamentos"
+msgstr ""
+
+#: tmainform.analysisdiversityitem.caption
+msgctxt "tmainform.analysisdiversityitem.caption"
+msgid "Diversidade"
+msgstr ""
+
+#: tmainform.analysisdiversityitem.hint
+msgctxt "tmainform.analysisdiversityitem.hint"
+msgid "Análise de diversidade"
+msgstr ""
+
+#: tmainform.analysismenu.caption
+msgid "&Análises"
+msgstr ""
+
+#: tmainform.analysisordinationitem.caption
+msgctxt "tmainform.analysisordinationitem.caption"
+msgid "Ordenação"
+msgstr ""
+
+#: tmainform.caitem.caption
+msgctxt "tmainform.caitem.caption"
+msgid "Análise de Correspondências..."
+msgstr ""
+
+#: tmainform.caption
+msgctxt "tmainform.caption"
+msgid "ECOLOG"
+msgstr ""
+
+#: tmainform.catalogbutton.caption
+msgctxt "tmainform.catalogbutton.caption"
+msgid "&Catálogo..."
+msgstr ""
+
+#: tmainform.catalogbutton.hint
+msgctxt "tmainform.catalogbutton.hint"
+msgid "Catálogo das coletas"
+msgstr ""
+
+#: tmainform.ccaitem.caption
+msgctxt "tmainform.ccaitem.caption"
+msgid "Análise de Correspondências Canônica..."
+msgstr ""
+
+#: tmainform.checklistbutton.caption
+msgctxt "tmainform.checklistbutton.caption"
+msgid "&Geral..."
+msgstr ""
+
+#: tmainform.checklistbutton.hint
+msgctxt "tmainform.checklistbutton.hint"
+msgid "Relatório geral de espécies"
+msgstr ""
+
+#: tmainform.clusterbutton.caption
+msgctxt "tmainform.clusterbutton.caption"
+msgid "Agrupamento..."
+msgstr ""
+
+#: tmainform.clusterbutton.hint
+msgctxt "tmainform.clusterbutton.hint"
+msgid "Análise de agrupamentos"
+msgstr ""
+
+#: tmainform.d1.caption
+msgid "D1"
+msgstr ""
+
+#: tmainform.d2.caption
+msgid "D2"
+msgstr ""
+
+#: tmainform.d3.caption
+msgid "D3"
+msgstr ""
+
+#: tmainform.diversitybutton.caption
+msgctxt "tmainform.diversitybutton.caption"
+msgid "Diversidade"
+msgstr ""
+
+#: tmainform.diversitybutton.hint
+msgctxt "tmainform.diversitybutton.hint"
+msgid "Análise de diversidade"
+msgstr ""
+
+#: tmainform.fileadditem.caption
+msgctxt "tmainform.fileadditem.caption"
+msgid "Adicionar..."
+msgstr ""
+
+#: tmainform.fileadditem.hint
+msgctxt "tmainform.fileadditem.hint"
+msgid "Adicionar arquivo ao projeto atual"
+msgstr ""
+
+#: tmainform.filechangeitem.caption
+msgid "&Modificar..."
+msgstr ""
+
+#: tmainform.filechangeitem.hint
+msgid "Modificar o projeto atual"
+msgstr ""
+
+#: tmainform.filecloseitem.caption
+msgctxt "tmainform.filecloseitem.caption"
+msgid "&Fechar"
+msgstr ""
+
+#: tmainform.filecloseitem.hint
+msgid "Fechar o projeto atual"
+msgstr ""
+
+#: tmainform.fileexit.caption
+msgid "&Sair"
+msgstr ""
+
+#: tmainform.fileexit.hint
+msgid "Encerrar o programa"
+msgstr ""
+
+#: tmainform.fileexportitem.caption
+msgid "Exportar..."
+msgstr ""
+
+#: tmainform.fileexportitem.hint
+msgid "Exportar dados para outros programas"
+msgstr ""
+
+#: tmainform.filemenu.caption
+msgid "&Projeto"
+msgstr ""
+
+#: tmainform.filenewitem.caption
+msgctxt "tmainform.filenewitem.caption"
+msgid "&Novo..."
+msgstr ""
+
+#: tmainform.filenewitem.hint
+msgctxt "tmainform.filenewitem.hint"
+msgid "Criar um novo projeto"
+msgstr ""
+
+#: tmainform.fileopenitem.caption
+msgctxt "tmainform.fileopenitem.caption"
+msgid "&Abrir..."
+msgstr ""
+
+#: tmainform.fileopenitem.hint
+msgctxt "tmainform.fileopenitem.hint"
+msgid "Abrir um projeto existente"
+msgstr ""
+
+#: tmainform.filereloaditem.caption
+msgctxt "tmainform.filereloaditem.caption"
+msgid "&Recarregar"
+msgstr ""
+
+#: tmainform.filereloaditem.hint
+msgctxt "tmainform.filereloaditem.hint"
+msgid "Recarregar o projeto atual"
+msgstr ""
+
+#: tmainform.fileremoveitem.caption
+msgctxt "tmainform.fileremoveitem.caption"
+msgid "Remover..."
+msgstr ""
+
+#: tmainform.fileremoveitem.hint
+msgctxt "tmainform.fileremoveitem.hint"
+msgid "Remover arquivo do projeto atual"
+msgstr ""
+
+#: tmainform.filterbutton.caption
+msgctxt "tmainform.filterbutton.caption"
+msgid "&Filtrar..."
+msgstr ""
+
+#: tmainform.filterbutton.hint
+msgctxt "tmainform.filterbutton.hint"
+msgid "Definir filtro para exibição de registros"
+msgstr ""
+
+#: tmainform.findbutton.caption
+msgctxt "tmainform.findbutton.caption"
+msgid "&Pesquisar..."
+msgstr ""
+
+#: tmainform.findbutton.hint
+msgctxt "tmainform.findbutton.hint"
+msgid "Pesquisar registros na tabela atual"
+msgstr ""
+
+#: tmainform.geocodebutton.caption
+msgctxt "tmainform.geocodebutton.caption"
+msgid "&Geocodificação..."
+msgstr ""
+
+#: tmainform.geocodebutton.hint
+msgctxt "tmainform.geocodebutton.hint"
+msgid "Verificar coordenadas geográficas"
+msgstr ""
+
+#: tmainform.helpaboutitem.caption
+msgctxt "tmainform.helpaboutitem.caption"
+msgid "Sobre ECOLOG"
+msgstr ""
+
+#: tmainform.helpaboutitem.hint
+msgid "Exibir informação sobre o programa"
+msgstr ""
+
+#: tmainform.helpmenu.caption
+msgid "Ajuda"
+msgstr ""
+
+#: tmainform.labelsbutton.caption
+msgctxt "tmainform.labelsbutton.caption"
+msgid "&Etiquetas..."
+msgstr ""
+
+#: tmainform.labelsbutton.hint
+msgctxt "tmainform.labelsbutton.hint"
+msgid "Etiquetas de coleta"
+msgstr ""
+
+#: tmainform.languagemenu.caption
+msgid "&Idioma"
+msgstr ""
+
+#: tmainform.languagemenuenglishitem.caption
+msgid "English"
+msgstr ""
+
+#: tmainform.languagemenuenglishitem.hint
+msgid "Show the interface in English"
+msgstr ""
+
+#: tmainform.languagemenuportugueseitem.caption
+msgid "Português"
+msgstr ""
+
+#: tmainform.languagemenuportugueseitem.hint
+msgid "Exibir a interface em português"
+msgstr ""
+
+#: tmainform.languagemenuspanishitem.caption
+msgid "Español"
+msgstr ""
+
+#: tmainform.languagemenuspanishitem.hint
+msgid "Mostrar la interfaz en español"
+msgstr ""
+
+#: tmainform.namesbutton.caption
+msgctxt "tmainform.namesbutton.caption"
+msgid "&Nomenclatura..."
+msgstr ""
+
+#: tmainform.namesbutton.hint
+msgctxt "tmainform.namesbutton.hint"
+msgid "Verificar nomes"
+msgstr ""
+
+#: tmainform.newbutton.caption
+msgctxt "tmainform.newbutton.caption"
+msgid "&Novo..."
+msgstr ""
+
+#: tmainform.newbutton.hint
+msgctxt "tmainform.newbutton.hint"
+msgid "Criar um novo projeto"
+msgstr ""
+
+#: tmainform.nmdsitem.caption
+msgctxt "tmainform.nmdsitem.caption"
+msgid "Escalonamento Multidimensional Não-Métrico..."
+msgstr ""
+
+#: tmainform.openbutton.caption
+msgctxt "tmainform.openbutton.caption"
+msgid "&Abrir..."
+msgstr ""
+
+#: tmainform.openbutton.hint
+msgctxt "tmainform.openbutton.hint"
+msgid "Abrir um projeto existente"
+msgstr ""
+
+#: tmainform.ordinationbutton.caption
+msgctxt "tmainform.ordinationbutton.caption"
+msgid "Ordenação"
+msgstr ""
+
+#: tmainform.ordinationcaitem.caption
+msgctxt "tmainform.ordinationcaitem.caption"
+msgid "Análise de Correspondências..."
+msgstr ""
+
+#: tmainform.ordinationcaitem.hint
+msgid "Análise de correspondências (CA)"
+msgstr ""
+
+#: tmainform.ordinationccaitem.caption
+msgctxt "tmainform.ordinationccaitem.caption"
+msgid "Análise de Correspondências Canônica..."
+msgstr ""
+
+#: tmainform.ordinationccaitem.hint
+msgid "Análise de correspondências canônica (CCA)"
+msgstr ""
+
+#: tmainform.ordinationnmdsitem.caption
+msgctxt "tmainform.ordinationnmdsitem.caption"
+msgid "Escalonamento Multidimensional Não-Métrico..."
+msgstr ""
+
+#: tmainform.ordinationnmdsitem.hint
+msgid "Escalonamento multidimensional não-métrico (NMDS)"
+msgstr ""
+
+#: tmainform.ordinationpcaitem.caption
+msgctxt "tmainform.ordinationpcaitem.caption"
+msgid "Análise de Componentes Principais..."
+msgstr ""
+
+#: tmainform.ordinationpcaitem.hint
+msgid "Análise de componentes principais (PCA)"
+msgstr ""
+
+#: tmainform.ordinationpcoitem.caption
+msgctxt "tmainform.ordinationpcoitem.caption"
+msgid "Análise de Coordenadas Principais..."
+msgstr ""
+
+#: tmainform.ordinationpcoitem.hint
+msgid "Análise de coordenadas principais (PCOA)"
+msgstr ""
+
+#: tmainform.ordinationrdaitem.caption
+msgctxt "tmainform.ordinationrdaitem.caption"
+msgid "Análise de Redundâncias..."
+msgstr ""
+
+#: tmainform.ordinationrdaitem.hint
+msgid "Análise de redundâncias (RDA)"
+msgstr ""
+
+#: tmainform.pcaitem.caption
+msgctxt "tmainform.pcaitem.caption"
+msgid "Análise de Componentes Principais..."
+msgstr ""
+
+#: tmainform.pcoitem.caption
+msgctxt "tmainform.pcoitem.caption"
+msgid "Análise de Coordenadas Principais..."
+msgstr ""
+
+#: tmainform.raitem.caption
+msgctxt "tmainform.raitem.caption"
+msgid "Análise de Redundâncias..."
+msgstr ""
+
+#: tmainform.reloadbutton.caption
+msgctxt "tmainform.reloadbutton.caption"
+msgid "&Recarregar"
+msgstr ""
+
+#: tmainform.reloadbutton.hint
+msgctxt "tmainform.reloadbutton.hint"
+msgid "Recarregar o projeto atual"
+msgstr ""
+
+#: tmainform.removebutton.caption
+msgctxt "tmainform.removebutton.caption"
+msgid "Remover..."
+msgstr ""
+
+#: tmainform.removebutton.hint
+msgctxt "tmainform.removebutton.hint"
+msgid "Remover arquivo do projeto atual"
+msgstr ""
+
+#: tmainform.reportcatalogitem.caption
+msgctxt "tmainform.reportcatalogitem.caption"
+msgid "&Catálogo..."
+msgstr ""
+
+#: tmainform.reportcatalogitem.hint
+msgctxt "tmainform.reportcatalogitem.hint"
+msgid "Catálogo das coletas"
+msgstr ""
+
+#: tmainform.reportchecklistitem.caption
+msgctxt "tmainform.reportchecklistitem.caption"
+msgid "&Geral..."
+msgstr ""
+
+#: tmainform.reportchecklistitem.hint
+msgctxt "tmainform.reportchecklistitem.hint"
+msgid "Relatório geral de espécies"
+msgstr ""
+
+#: tmainform.reportgeocodeitem.caption
+msgctxt "tmainform.reportgeocodeitem.caption"
+msgid "&Geocodificação..."
+msgstr ""
+
+#: tmainform.reportgeocodeitem.hint
+msgctxt "tmainform.reportgeocodeitem.hint"
+msgid "Verificar coordenadas geográficas"
+msgstr ""
+
+#: tmainform.reportlabelsitem.caption
+msgctxt "tmainform.reportlabelsitem.caption"
+msgid "&Etiquetas..."
+msgstr ""
+
+#: tmainform.reportlabelsitem.hint
+msgctxt "tmainform.reportlabelsitem.hint"
+msgid "Etiquetas de coleta"
+msgstr ""
+
+#: tmainform.reportmenu.caption
+msgid "&Relatórios"
+msgstr ""
+
+#: tmainform.reportnamesitem.caption
+msgctxt "tmainform.reportnamesitem.caption"
+msgid "&Nomenclatura..."
+msgstr ""
+
+#: tmainform.reportnamesitem.hint
+msgctxt "tmainform.reportnamesitem.hint"
+msgid "Verificar nomes"
+msgstr ""
+
+#: tmainform.reportstatisticsitem.caption
+msgctxt "tmainform.reportstatisticsitem.caption"
+msgid "E&statísticas..."
+msgstr ""
+
+#: tmainform.reportstatisticsitem.hint
+msgctxt "tmainform.reportstatisticsitem.hint"
+msgid "Relatório estatístico"
+msgstr ""
+
+#: tmainform.searchfilteritem.caption
+msgctxt "tmainform.searchfilteritem.caption"
+msgid "&Filtrar..."
+msgstr ""
+
+#: tmainform.searchfilteritem.hint
+msgctxt "tmainform.searchfilteritem.hint"
+msgid "Definir filtro para exibição de registros"
+msgstr ""
+
+#: tmainform.searchfilterresetitem.caption
+msgid "Cance&lar Filtro"
+msgstr ""
+
+#: tmainform.searchfilterresetitem.hint
+msgid "Cancelar o filtro atual"
+msgstr ""
+
+#: tmainform.searchfinditem.caption
+msgctxt "tmainform.searchfinditem.caption"
+msgid "&Pesquisar..."
+msgstr ""
+
+#: tmainform.searchfinditem.hint
+msgctxt "tmainform.searchfinditem.hint"
+msgid "Pesquisar registros na tabela atual"
+msgstr ""
+
+#: tmainform.searchmenu.caption
+msgid "&Dados"
+msgstr ""
+
+#: tmainform.searchsortitem.caption
+msgctxt "tmainform.searchsortitem.caption"
+msgid "&Ordenar"
+msgstr ""
+
+#: tmainform.searchsortitem.hint
+msgctxt "tmainform.searchsortitem.hint"
+msgid "Ordenar registros da tabela atual"
+msgstr ""
+
+#: tmainform.sortbutton.caption
+msgctxt "tmainform.sortbutton.caption"
+msgid "&Ordenar"
+msgstr ""
+
+#: tmainform.sortbutton.hint
+msgctxt "tmainform.sortbutton.hint"
+msgid "Ordenar registros da tabela atual"
+msgstr ""
+
+#: tmainform.statisticsbutton.caption
+msgctxt "tmainform.statisticsbutton.caption"
+msgid "E&statísticas..."
+msgstr ""
+
+#: tmainform.statisticsbutton.hint
+msgctxt "tmainform.statisticsbutton.hint"
+msgid "Relatório estatístico"
+msgstr ""
+
+#: tmainform.toolbar.caption
+msgid "ToolBar"
+msgstr ""
+
+#: tmainform.windowcascadeitem.caption
+msgid "Em &Cascata"
+msgstr ""
+
+#: tmainform.windowcloseitem.caption
+msgctxt "tmainform.windowcloseitem.caption"
+msgid "&Fechar"
+msgstr ""
+
+#: tmainform.windowmenu.caption
+msgid "&Janela"
+msgstr ""
+
+#: tmainform.windownextitem.caption
+msgid "&Próxima"
+msgstr ""
+
+#: tmainform.windowpreviousitem.caption
+msgid "&Anterior"
+msgstr ""
+
+#: tmainform.windowtilehorizontalitem.caption
+msgid "Lado a Lado &Horizontal"
+msgstr ""
+
+#: tmainform.windowtileverticalitem.caption
+msgid "Lado a Lado &Vertical"
+msgstr ""
+
+#: tprojectdlg.address1label.caption
+msgid "Setor:"
+msgstr ""
+
+#: tprojectdlg.address2label.caption
+msgid "Endereço:"
+msgstr ""
+
+#: tprojectdlg.authorlabel.caption
+msgid "Responsável:"
+msgstr ""
+
+#: tprojectdlg.cancelbutton.caption
+msgctxt "tprojectdlg.cancelbutton.caption"
+msgid "Cancel"
+msgstr ""
+
+#: tprojectdlg.caption
+msgid "Informações do Projeto"
+msgstr ""
+
+#: tprojectdlg.citylabel.caption
+msgid "Cidade:"
+msgstr ""
+
+#: tprojectdlg.countrylabel.caption
+msgid "País:"
+msgstr ""
+
+#: tprojectdlg.descriptionlabel.caption
+msgid "Descrição:"
+msgstr ""
+
+#: tprojectdlg.elevationlabel.caption
+msgid "Altitude/Profundidade:"
+msgstr ""
+
+#: tprojectdlg.emaillabel.caption
+msgid "E-mail:"
+msgstr ""
+
+#: tprojectdlg.fundinglabel.caption
+msgid "Apoio:"
+msgstr ""
+
+#: tprojectdlg.institutionlabel.caption
+msgid "Instituição:"
+msgstr ""
+
+#: tprojectdlg.latitudelabel.caption
+msgid "Latitude:"
+msgstr ""
+
+#: tprojectdlg.localitylabel.caption
+msgid "Localidade:"
+msgstr ""
+
+#: tprojectdlg.longitudelabel.caption
+msgid "Longitude:"
+msgstr ""
+
+#: tprojectdlg.methodlabel.caption
+msgctxt "tprojectdlg.methodlabel.caption"
+msgid "Método:"
+msgstr ""
+
+#: tprojectdlg.okbutton.caption
+msgctxt "tprojectdlg.okbutton.caption"
+msgid "OK"
+msgstr ""
+
+#: tprojectdlg.phonelabel.caption
+msgid "Telefone:"
+msgstr ""
+
+#: tprojectdlg.provincelabel.caption
+msgid "Município:"
+msgstr ""
+
+#: tprojectdlg.rolelabel.caption
+msgid "Função:"
+msgstr ""
+
+#: tprojectdlg.sizelabel.caption
+msgid "Tamanho (unidade):"
+msgstr ""
+
+#: tprojectdlg.statelabel.caption
+msgctxt "tprojectdlg.statelabel.caption"
+msgid "Estado:"
+msgstr ""
+
+#: tprojectdlg.tabsheetcontact.caption
+msgid "Contato"
+msgstr ""
+
+#: tprojectdlg.tabsheetdescription.caption
+msgid "Descrição"
+msgstr ""
+
+#: tprojectdlg.tabsheetsite.caption
+msgid "Localização"
+msgstr ""
+
+#: tprojectdlg.titlelabel.caption
+msgid "Título:"
+msgstr ""
+
+#: tprojectdlg.uflabel.caption
+msgctxt "tprojectdlg.uflabel.caption"
+msgid "Estado:"
+msgstr ""
+
+#: tprojectdlg.websitelabel.caption
+msgid "Website:"
+msgstr ""
+
+#: tprojectdlg.ziplabel.caption
+msgid "CEP:"
+msgstr ""
+
+#: trdadlg.cancelbutton.caption
+msgctxt "trdadlg.cancelbutton.caption"
+msgid "Cancel"
+msgstr ""
+
+#: trdadlg.caption
+msgctxt "trdadlg.caption"
+msgid "Opções"
+msgstr ""
+
+#: trdadlg.labelinertia.caption
+msgid "Inércia:"
+msgstr ""
+
+#: trdadlg.labelscale.caption
+msgctxt "trdadlg.labelscale.caption"
+msgid "Escala:"
+msgstr ""
+
+#: trdadlg.labeltransform.caption
+msgctxt "trdadlg.labeltransform.caption"
+msgid "Transformação:"
+msgstr ""
+
+#: trdadlg.okbutton.caption
+msgctxt "trdadlg.okbutton.caption"
+msgid "OK"
+msgstr ""
+
