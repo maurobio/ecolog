@@ -40,11 +40,9 @@
 {     NaturalSort (wiki.freepascal.org/NaturalSort)                            }
 {                                                                              }
 {   Histórico de Revisões / Revision History:                                  }
-{     Versão 6.0.1 "Amaranthus", 08/11/2021                                    }
+{     Versão 6.0.1 "Amaranthus", 14/11/2021                                    }
 {       -- Utilização direta de planilhas eletrônicas nos formatos do          }
 {          MS-Excel (xls, xlsx), OO-Calc (ods) e texto delimitado (csv, tsv).  }
-{       -- Opções para análise de dados (inclusive análises multivariadas) por }
-{          meio do sistema para análise estatística e gráficos R.              }
 {       -- Opções para exportação de dados em diferentes formatos de programas }
 {          externos (Cornell, Fitopac, MVSP, BRAHMS).                          }
 {       -- Integração com o sistema estatístico e gráfico R para análises      }
