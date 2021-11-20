@@ -33,7 +33,8 @@
 {   Requerimentos / Requirements:                                              }
 {     Free Pascal Compiler 3.0+ (www.freepascal.org)                           }
 {     Lazarus IDE 2.0+ (www.lazarus.freepascal.org)                            }
-{     FPSpreadsheetDataset 1.13 (github.com/wp-xyz/FPSpreadsheetDataset)       }
+{     FPSpreadsheetDataset 1.13+ (github.com/wp-xyz/FPSpreadsheetDataset)      }
+{     FuzzyWuzzy (github.com/DavidMoraisFerreira/FuzzyWuzzy.pas                }
 {     HtmlViewer 11.9+ (wiki.freepascal.org/THtmlPort)                         }
 {     JSON Tools (github.com/sysrpl/JsonTools)                                 }
 {     MultiDoc 0.3+ (wiki.lazarus.freepascal.org/MultiDoc)                     }
