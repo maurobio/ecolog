@@ -1,4 +1,4 @@
-unit Eval;
+unit eval;
 
 {$mode objfpc}{$H+}
 

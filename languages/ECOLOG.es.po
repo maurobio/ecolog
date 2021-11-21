@@ -1746,61 +1746,6 @@ msgstr "Estadística de VARIABLES AMBIENTALES"
 msgid "FREQUÊNCIA RELATIVA (%)"
 msgstr "FRECUENCIA RELATIVA (%)"
 
-#: taboutbox.caption
-msgctxt "taboutbox.caption"
-msgid "Sobre ECOLOG"
-msgstr "Acerca de ECOLOG"
-
-#: taboutbox.comments.caption
-msgid "Comments"
-msgstr "Comments"
-
-#: taboutbox.compiler.caption
-msgctxt "taboutbox.compiler.caption"
-msgid "Compilador:"
-msgstr "Compilador:"
-
-#: taboutbox.copyright.caption
-msgid "Copyright © 1990-2021 Mauro J. Cavalcanti"
-msgstr "Copyright © 1990-2021 Mauro J. Cavalcanti"
-
-#: taboutbox.ide.caption
-msgid "IDE:"
-msgstr "IDE:"
-
-#: taboutbox.information.caption
-msgctxt "taboutbox.information.caption"
-msgid "Informação do Sistema"
-msgstr "Información del Sistema"
-
-#: taboutbox.okbutton.caption
-msgctxt "taboutbox.okbutton.caption"
-msgid "OK"
-msgstr "OK"
-
-#: taboutbox.operatingsystem.caption
-msgid "OS:"
-msgstr "SO:"
-
-#: taboutbox.platform.caption
-msgctxt "taboutbox.platform.caption"
-msgid "Plataforma:"
-msgstr "Plataforma:"
-
-#: taboutbox.productname.caption
-msgctxt "taboutbox.productname.caption"
-msgid "ECOLOG"
-msgstr "ECOLOG"
-
-#: taboutbox.versionnumber.caption
-msgid "v 0.0.0"
-msgstr "v 0.0.0"
-
-#: taboutbox.website.caption
-msgctxt "taboutbox.website.caption"
-msgid "Página do ECOLOG na Internet"
-msgstr "Página del ECOLOG en Internet"
-
 #: tccadlg.cancelbutton.caption
 msgctxt "tccadlg.cancelbutton.caption"
 msgid "Cancelar"
@@ -1853,56 +1798,6 @@ msgstr "Transformación:"
 msgctxt "tclusterdlg.okbutton.caption"
 msgid "OK"
 msgstr "OK"
-
-#: tfilterdlg.cancelbtn.caption
-msgctxt "tfilterdlg.cancelbtn.caption"
-msgid "Cancelar"
-msgstr "Cancel"
-
-#: tfilterdlg.caption
-msgid "Definir Filtro"
-msgstr "Configurar filtro para mostrar registros"
-
-#: tfilterdlg.clearbtn.hint
-msgid "Limpar lista de condições"
-msgstr "Limpiar lista de condiciones"
-
-#: tfilterdlg.excludebtn.hint
-msgid "Excluir condição"
-msgstr "Excluir condición"
-
-#: tfilterdlg.includebtn.hint
-msgid "Incluir condição"
-msgstr "Incluir condición"
-
-#: tfilterdlg.label1.caption
-msgid "Campos:"
-msgstr "Campos:"
-
-#: tfilterdlg.label2.caption
-msgid "Valor:"
-msgstr "Valor:"
-
-#: tfilterdlg.label3.caption
-msgid "Operador:"
-msgstr "Operador:"
-
-#: tfilterdlg.label5.caption
-msgid "Lista de Condições:"
-msgstr "Lista de Condiciones:"
-
-#: tfilterdlg.okbtn.caption
-msgctxt "tfilterdlg.okbtn.caption"
-msgid "OK"
-msgstr "OK"
-
-#: tfilterdlg.rband.caption
-msgid "E"
-msgstr "Y"
-
-#: tfilterdlg.rbor.caption
-msgid "Ou"
-msgstr "O"
 
 #: tmainform.addbutton.caption
 msgctxt "tmainform.addbutton.caption"

@@ -169,7 +169,7 @@ begin
     AValue := AField.AsString;
     if Pos('+', AValue) > 0 then
     begin
-      res := eval.Eval(AValue);
+      res := eval.eval(AValue);
       cnt := AValue.CountChar('+') + 1;
       a[len] := (res / cnt);
     end

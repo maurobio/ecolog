@@ -30,7 +30,7 @@ uses {$IFDEF UNIX} {$IFDEF UseCThreads}
   diversity,
  {$IFDEF WINDOWS}ShpAPI129,
  {$ENDIF} progress,
-  Eval;
+  eval;
 
 {$R *.res}
 

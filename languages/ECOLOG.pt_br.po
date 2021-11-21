@@ -1737,61 +1737,6 @@ msgstr ""
 msgid "FREQUÊNCIA RELATIVA (%)"
 msgstr ""
 
-#: taboutbox.caption
-msgctxt "taboutbox.caption"
-msgid "Sobre ECOLOG"
-msgstr ""
-
-#: taboutbox.comments.caption
-msgid "Comments"
-msgstr ""
-
-#: taboutbox.compiler.caption
-msgctxt "taboutbox.compiler.caption"
-msgid "Compilador:"
-msgstr ""
-
-#: taboutbox.copyright.caption
-msgid "Copyright © 1990-2021 Mauro J. Cavalcanti"
-msgstr ""
-
-#: taboutbox.ide.caption
-msgid "IDE:"
-msgstr ""
-
-#: taboutbox.information.caption
-msgctxt "taboutbox.information.caption"
-msgid "Informação do Sistema"
-msgstr ""
-
-#: taboutbox.okbutton.caption
-msgctxt "taboutbox.okbutton.caption"
-msgid "OK"
-msgstr ""
-
-#: taboutbox.operatingsystem.caption
-msgid "OS:"
-msgstr ""
-
-#: taboutbox.platform.caption
-msgctxt "taboutbox.platform.caption"
-msgid "Plataforma:"
-msgstr ""
-
-#: taboutbox.productname.caption
-msgctxt "taboutbox.productname.caption"
-msgid "ECOLOG"
-msgstr ""
-
-#: taboutbox.versionnumber.caption
-msgid "v 0.0.0"
-msgstr ""
-
-#: taboutbox.website.caption
-msgctxt "taboutbox.website.caption"
-msgid "Página do ECOLOG na Internet"
-msgstr ""
-
 #: tccadlg.cancelbutton.caption
 msgctxt "tccadlg.cancelbutton.caption"
 msgid "Cancelar"
@@ -1843,56 +1788,6 @@ msgstr ""
 #: tclusterdlg.okbutton.caption
 msgctxt "tclusterdlg.okbutton.caption"
 msgid "OK"
-msgstr ""
-
-#: tfilterdlg.cancelbtn.caption
-msgctxt "tfilterdlg.cancelbtn.caption"
-msgid "Cancelar"
-msgstr ""
-
-#: tfilterdlg.caption
-msgid "Definir Filtro"
-msgstr ""
-
-#: tfilterdlg.clearbtn.hint
-msgid "Limpar lista de condições"
-msgstr ""
-
-#: tfilterdlg.excludebtn.hint
-msgid "Excluir condição"
-msgstr ""
-
-#: tfilterdlg.includebtn.hint
-msgid "Incluir condição"
-msgstr ""
-
-#: tfilterdlg.label1.caption
-msgid "Campos:"
-msgstr ""
-
-#: tfilterdlg.label2.caption
-msgid "Valor:"
-msgstr ""
-
-#: tfilterdlg.label3.caption
-msgid "Operador:"
-msgstr ""
-
-#: tfilterdlg.label5.caption
-msgid "Lista de Condições:"
-msgstr ""
-
-#: tfilterdlg.okbtn.caption
-msgctxt "tfilterdlg.okbtn.caption"
-msgid "OK"
-msgstr ""
-
-#: tfilterdlg.rband.caption
-msgid "E"
-msgstr ""
-
-#: tfilterdlg.rbor.caption
-msgid "Ou"
 msgstr ""
 
 #: tmainform.addbutton.caption

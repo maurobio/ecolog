@@ -192,7 +192,6 @@
       <Unit19>
         <Filename Value="eval.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Eval"/>
       </Unit19>
     </Units>
   </ProjectOptions>

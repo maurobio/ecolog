@@ -151,7 +151,7 @@ object ClusterDlg: TClusterDlg
     AutoSelect = False
     ItemHeight = 15
     Style = csDropDownList
-    TabOrder = 1
+    TabOrder = 2
   end
   object LabelMethod: TLabel
     Left = 16
@@ -213,6 +213,6 @@ object ClusterDlg: TClusterDlg
     Width = 160
     ItemHeight = 15
     Style = csDropDownList
-    TabOrder = 2
+    TabOrder = 1
   end
 end
