@@ -66,6 +66,7 @@ begin
   AssignFile(outfile, 'diversity.R');
   Rewrite(outfile);
   WriteLn(outfile, 'options(warn=-1)');
+  WriteLn(outfile, 'options(digits=4)');
   WriteLn(outfile, 'suppressPackageStartupMessages(library(vegan))');
   WriteLn(outfile, 'library(vegan, quietly=TRUE)');
   WriteLn(outfile, 'df.data <- read.csv("rdata.csv", row.names=1)');
@@ -77,8 +78,10 @@ begin
   WriteLn(outfile, 'N1 <- exp(H)');
   WriteLn(outfile, 'N2 <- diversity(t(df.data), "inv")');
   WriteLn(outfile, 'result <- data.frame(N0, H, N1, 1-c, N2)');
-  WriteLn(outfile,
-    'write.table(result, "diversity.csv", sep=";", row.names=TRUE, col.names=FALSE)');
+  WriteLn(outfile, 'colnames(result) <- c("H0", "H", "N1", "1-c", "N2")');
+  WriteLn(outfile, 'sink("diversity.txt")');
+  WriteLn(outfile, 'print(result)');
+  WriteLn(outfile, 'sink()');
   WriteLn(outfile, 'curve <- specaccum(df.data, method="rarefaction")');
   WriteLn(outfile, 'ppi <- 100');
   figf := GetFileNameWithoutExt(fname) + '.png';
@@ -95,10 +98,8 @@ end;
 
 procedure Divers(fname: string; n, m: integer);
 var
-  L, C: TStringList;
-  i, j: integer;
-  figf: string;
-  outfile: TextFile;
+  line, figf: string;
+  infile, outfile: TextFile;
 begin
   AssignFile(outfile, fname);
   Rewrite(outfile);
@@ -107,51 +108,25 @@ begin
   WriteLn(outfile, IntToStr(n) + ' ' + LowerCase(strSamples) + ' x ' +
     IntToStr(m) + ' ' + LowerCase(strSpecies) + '<br><br>');
 
-  WriteLn(outfile, '<table border=1 cellspacing=1 cellpadding=1 width="100%">');
-  WriteLn(outfile, '<tr><th>' + strSample + '</th>');
-  WriteLn(outfile, '<th>N0 (S)</th>');
-  WriteLn(outfile, '<th>H''</th>');
-  WriteLn(outfile, '<th>N1</th>');
-  WriteLn(outfile, '<th>1-&lambda;</th>');
-  WriteLn(outfile, '<th>N2 (1/&lambda;)</th>');
-  WriteLn(outfile, '</tr>');
-
-  DefaultFormatSettings.DecimalSeparator := '.';
-  L := TStringList.Create;
-  L.LoadFromFile('diversity.csv');
-  C := TStringList.Create;
-  C.Delimiter := ';';
-  for i := 0 to L.Count - 1 do
+  WriteLn(outfile, '<pre>');
+  AssignFile(infile, 'diversity.txt');
+  Reset(infile);
+  while not EOF(infile) do
   begin
-    WriteLn(outfile, '<tr>');
-    C.DelimitedText := L[i];
-    for j := 0 to C.Count - 1 do
-    begin
-      if j = 0 then
-        WriteLn(outfile, '<td align="Left">' + C[j] + '</td>')
-      else if j = 1 then
-        WriteLn(outfile, '<td align="Center">' + C[j] + '</td>')
-      else if (j > 1) and (j < 5) then
-        WriteLn(outfile, '<td align="Center">' +
-          FloatToStrF(StrToFloat(C[j]), ffFixed, 5, 3) + '</td>')
-      else if j = 5 then
-        WriteLn(outfile, '<td align="Center">' +
-          FloatToStrF(StrToFloat(C[j]), ffFixed, 5, 1) + '</td>');
-    end;
-    WriteLn(outfile, '</tr>');
+    ReadLn(infile, line);
+    WriteLn(outfile, line);
   end;
-  C.Free;
-  L.Free;
-  WriteLn(outfile, '</table>');
+  CloseFile(infile);
+  WriteLn(outfile, '</pre>');
 
   figf := GetFileNameWithoutExt(fname) + '.png';
-  WriteLn(outfile, '<p align="center"><img src="' + figf + '"></p>');
+  WriteLn(outfile, '<p align="left"><img src="' + figf + '"></p>');
 
   WriteLn(outfile, '</body>');
   WriteLn(outfile, '</html>');
   CloseFile(outfile);
-  if FileExists('diversity.csv') then
-    DeleteFile('diversity.csv');
+  if FileExists('diversity.txt') then
+    DeleteFile('diversity.txt');
 end;
 
 end.

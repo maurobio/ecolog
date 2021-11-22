@@ -229,7 +229,7 @@ begin
     WriteLn(outfile, strMethod + strMethod + strWard + '<br><br>');
 
   figf := GetFileNameWithoutExt(fname) + '.png';
-  WriteLn(outfile, '<p align="center"><img src="' + figf + '"></p>');
+  WriteLn(outfile, '<p align="left"><img src="' + figf + '"></p>');
 
   WriteLn(outfile, '</body>');
   WriteLn(outfile, '</html>');

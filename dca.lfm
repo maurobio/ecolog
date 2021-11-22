@@ -1,0 +1,137 @@
+object DCADlg: TDCADlg
+  Left = 313
+  Height = 190
+  Top = 190
+  Width = 308
+  BorderStyle = bsDialog
+  Caption = 'Opções'
+  ClientHeight = 190
+  ClientWidth = 308
+  Color = clBtnFace
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.0.12.0'
+  object LabelRescalingN: TLabel
+    Left = 146
+    Height = 15
+    Top = 89
+    Width = 92
+    Caption = 'Número de eixos:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object LabelNSegs: TLabel
+    Left = 15
+    Height = 15
+    Top = 61
+    Width = 99
+    Caption = 'No. de segmentos:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object CheckBoxDetrended: TCheckBox
+    Left = 15
+    Height = 19
+    Top = 6
+    Width = 145
+    HelpContext = 2161
+    Alignment = taLeftJustify
+    Caption = 'Análise Corrigida (DCA)'
+    Checked = True
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    State = cbChecked
+    TabOrder = 0
+  end
+  object CheckBoxDownweight: TCheckBox
+    Left = 15
+    Height = 19
+    Top = 30
+    Width = 181
+    HelpContext = 2161
+    Alignment = taLeftJustify
+    Caption = 'Reduzir peso de espécies raras '
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+  end
+  object CheckBoxRescaling: TCheckBox
+    Left = 15
+    Height = 19
+    Hint = 'Reajustar a escala para expandir os extremos dos eixos'
+    Top = 86
+    Width = 114
+    HelpContext = 2161
+    Alignment = taLeftJustify
+    Caption = 'Usar "Rescaling" ?'
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+  end
+  object OKButton: TButton
+    Left = 77
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 6
+  end
+  object CancelButton: TButton
+    Left = 166
+    Height = 25
+    Top = 152
+    Width = 66
+    Cancel = True
+    Caption = 'Cancelar'
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 7
+  end
+  object SpinEditNSegs: TSpinEdit
+    Left = 126
+    Height = 23
+    Top = 57
+    Width = 50
+    Alignment = taRightJustify
+    MaxValue = 46
+    MinValue = 10
+    ParentFont = False
+    TabOrder = 2
+    Value = 26
+  end
+  object SpinEditNRescaling: TSpinEdit
+    Left = 246
+    Height = 23
+    Top = 86
+    Width = 50
+    Alignment = taRightJustify
+    ParentFont = False
+    TabOrder = 4
+    Value = 4
+  end
+  object LabelScale: TLabel
+    Left = 15
+    Height = 15
+    Top = 119
+    Width = 35
+    Caption = 'Escala:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBoxScale: TComboBox
+    Left = 72
+    Height = 23
+    Top = 115
+    Width = 224
+    ItemHeight = 15
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 5
+  end
+end

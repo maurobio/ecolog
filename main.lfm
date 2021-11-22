@@ -1795,6 +1795,11 @@ object MainForm: TMainForm
           Hint = 'Análise de correspondências (CA)'
           OnClick = OrdinationCAItemClick
         end
+        object OrdinationDCAItem: TMenuItem
+          Caption = 'Análise de Correspondências Corrigida...'
+          Hint = 'Análise de correspondências corrigida (DECORANA)'
+          OnClick = OrdinationDCAItemClick
+        end
         object OrdinationRDAItem: TMenuItem
           Caption = 'Análise de Redundâncias...'
           Hint = 'Análise de redundâncias (RDA)'

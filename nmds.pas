@@ -41,10 +41,7 @@ uses report, useful;
 
 resourcestring
   strNMDS = 'ESCALONAMENTO MULTIDIMENSIONAL NÃO-MÉTRICO';
-  //strScatterplot = 'DIAGRAMA DE DISPERSÃO';
   strDim = 'DIMENSÃO ';
-  strSample = 'AMOSTRA';
-  strCoords = 'COORDENADAS';
   strStress = 'Stress = ';
   strTransform = 'Transformação: ';
   strTransformNone = 'Sem Transformação';
@@ -125,6 +122,7 @@ begin
   AssignFile(outfile, 'nmds.R');
   Rewrite(outfile);
   WriteLn(outfile, 'options(warn=-1)');
+  WriteLn(outfile, 'options(digits=4)');
   WriteLn(outfile, 'suppressPackageStartupMessages(library(vegan))');
   WriteLn(outfile, 'suppressPackageStartupMessages(library(MASS))');
   WriteLn(outfile, 'library(vegan, quietly=TRUE)');
@@ -142,16 +140,16 @@ begin
     WriteLn(outfile, 'df.dist <- dist(df.data, diag=TRUE)^2')
   else if coef = 6 then
     WriteLn(outfile, 'df.dist <- designdist(df.data, "1-J/sqrt(A*B)")');
+  WriteLn(outfile, 'sink("nmds.txt")');
   if config = 0 then
     WriteLn(outfile, 'nmds <- isoMDS(df.dist, k=2, maxit=' + IntToStr(iter) +
-      ', trace=FALSE, tol=1e-7)')
+      ', trace=TRUE, tol=1e-7)')
   else if config = 1 then
     WriteLn(outfile,
       'nmds <- isoMDS(df.dist, initMDS(df.dist), k=2, maxit=' +
-      IntToStr(iter) + ', trace=FALSE, tol=1e-7)');
-  WriteLn(outfile,
-    'write.table(data.frame(nmds), "nmds.csv", sep=" ", row.names=FALSE, col.names=FALSE)');
-  WriteLn(outfile, 'cat(as.character(nmds$stress), file="stress.txt")');
+      IntToStr(iter) + ', trace=TRUE, tol=1e-7)');
+  WriteLn(outfile, 'cat("\nstress =", nmds$stress)');
+  WriteLn(outfile, 'sink()');
   WriteLn(outfile, 'ppi <- 100');
   figf := GetFileNameWithoutExt(fname) + '.png';
   WriteLn(outfile, 'png("' + figf + '", width=6*ppi, height=6*ppi, res=ppi)');
@@ -170,13 +168,8 @@ end;
 
 procedure TNMDSDlg.NMDS(fname: string; transf, coef, iter, config: integer;
   n, m: integer);
-const
-  ndim = 2; //3;
 var
-  pts: array of array of double;
-  i, j, k: integer;
-  x1, x2, {x3,} stress: double;
-  figf: string;
+  line, figf: string;
   infile, outfile: TextFile;
 begin
   AssignFile(outfile, fname);
@@ -215,57 +208,25 @@ begin
     WriteLn(outfile, strConfigRandom + '<br><br>');
   Write(outfile, strIter + IntToStr(iter) + '<br><br>');
 
-  AssignFile(infile, 'nmds.csv');
+  WriteLn(outfile, '<pre>');
+  AssignFile(infile, 'nmds.txt');
   Reset(infile);
-  k := 0;
-  SetLength(pts, 1, ndim);
   while not EOF(infile) do
   begin
-    //ReadLn(infile, x1, x2, x3);
-    ReadLn(infile, x1, x2);
-    pts[k, 0] := x1;
-    pts[k, 1] := x2;
-    //pts[k, 2] := x3;
-    Inc(k);
-    SetLength(pts, Length(pts) + 1, ndim);
+    ReadLn(infile, line);
+    WriteLn(outfile, line);
   end;
   CloseFile(infile);
-
-  AssignFile(infile, 'stress.txt');
-  Reset(infile);
-  ReadLn(infile, stress);
-  CloseFile(infile);
-  if stress < 0.0001 then
-    stress := 0.00;
-
-  WriteLn(outfile, strStress + FloatToStrF(stress, ffFixed, 9, 7) + '<br><br>');
-  WriteLn(outfile, strCoords + '<br>');
-  WriteLn(outfile, '<table border=1 cellspacing=1 cellpadding=1 width="100%">');
-  WriteLn(outfile, '<tr><th>' + strSample + '</th>');
-  for i := 1 to ndim do
-    WriteLn(outfile, '<th>' + strDim + IntToStr(i) + '</th>');
-  WriteLn(outfile, '</tr>');
-  for i := 0 to k - 1 do
-  begin
-    WriteLn(outfile, '<tr>');
-    WriteLn(outfile, '<td align="Center">' + IntToStr(i + 1) + '</td>');
-    for j := 0 to ndim - 1 do
-      WriteLn(outfile, '<td align="Center">' +
-        FloatToStrF(pts[i, j], ffFixed, 5, 3) + '</td>');
-    WriteLn(outfile, '</tr>');
-  end;
-  WriteLn(outfile, '</table><br><br>');
+  WriteLn(outfile, '</pre>');
 
   figf := GetFileNameWithoutExt(fname) + '.png';
-  WriteLn(outfile, '<p align="center"><img src="' + figf + '"></p>');
+  WriteLn(outfile, '<p align="left"><img src="' + figf + '"></p>');
 
   WriteLn(outfile, '</body>');
   WriteLn(outfile, '</html>');
   CloseFile(outfile);
-  if FileExists('nmds.csv') then
-    DeleteFile('nmds.csv');
-  if FileExists('stress.txt') then
-    DeleteFile('stress.txt');
+  if FileExists('nmds.txt') then
+    DeleteFile('nmds.txt');
 end;
 
 end.

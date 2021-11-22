@@ -41,17 +41,10 @@ uses report, useful;
 
 resourcestring
   strPCA = 'ANÁLISE DE COMPONENTES PRINCIPAIS';
-  strEigenvals = 'AUTOVALORES';
   strEigenval = 'AUTOVALOR';
-  strEigenvecs = 'AUTOVETORES';
-  strEigenvec = 'AUTOVETOR';
-  strPercentVar = '%VARIÂNCIA';
-  strCumVar = '%CUMULATIVA';
-  strVariable = 'VARIÁVEL';
   strVariance = 'VARIÂNCIA';
   strScatterplot = 'DIAGRAMA DE DISPERSÃO';
   strScreeplot = 'GRÁFICO DE DECLIVIDADE';
-  strBiplot = 'BIPLOT';
   strAxis = 'EIXO ';
   strTransform = 'Transformação: ';
   strTransformNone = 'Sem Transformação';
@@ -120,18 +113,17 @@ begin
   AssignFile(outfile, 'pca.R');
   Rewrite(outfile);
   WriteLn(outfile, 'options(warn=-1)');
+  WriteLn(outfile, 'options(digits=4)');
   WriteLn(outfile, 'df.data <- read.csv("rdata.csv", row.names=1)');
   WriteLn(outfile, 'df.data <- t(df.data)');
   if Length(stransf) > 0 then
     WriteLn(outfile, 'df.data <- ' + stransf + '(df.data + 1)');
   WriteLn(outfile, 'pca <- prcomp(df.data, scale=' + IfThen(scale, 'TRUE', 'FALSE') +
     ', ' + 'center=' + IfThen(center, 'TRUE', 'FALSE') + ')');
+  WriteLn(outfile, 'sink("pca.txt")');
+  WriteLn(outfile, 'summary(pca)');
+  WriteLn(outfile, 'sink()');
   WriteLn(outfile, 'pcavar <- round((pca$sdev^2) / sum((pca$sdev^2)), 3)*100');
-  WriteLn(outfile,
-    'write.table(data.frame(pca$sdev^2, pcavar, cumsum(pcavar)), "pca.csv", sep=" ", row.names=FALSE, col.names=FALSE)');
-  WriteLn(outfile, 'loadings <- pca$rotation');
-  WriteLn(outfile,
-    'write.table(loadings, "loadings.csv", sep=" ", row.names=FALSE, col.names=FALSE)');
   WriteLn(outfile, 'scores <- pca$x');
   WriteLn(outfile, 'ppi <- 100');
   figf1 := GetFileNameWithoutExt(fname) + '1.png';
@@ -153,25 +145,14 @@ begin
     '", from=''UTF-8'', to=''latin1''), pch=19, col="black")');
   WriteLn(outfile, 'lines(pca$sdev^2)');
   WriteLn(outfile, 'invisible(dev.off())');
-  figf3 := GetFileNameWithoutExt(fname) + '3.png';
-  WriteLn(outfile, 'png("' + figf3 + '", width=6*ppi, height=6*ppi, res=ppi)');
-  WriteLn(outfile, 'biplot(pca, scale=0, cex=.7, xlab="' + strAxis +
-    '1", ylab="' + strAxis + '2", main="' + strBiplot + '")');
-  WriteLn(outfile, 'invisible(dev.off())');
   WriteLn(outfile, 'options(warn=0)');
   CloseFile(outfile);
 end;
 
 procedure TPCADlg.PCA(fname: string; transf, coef: integer;
   center, scale: boolean; n, m: integer);
-const
-  nvec = 3;
 var
-  eig_val, sumvariance, cumvariance: array of double;
-  eig_vec: array of array of double;
-  i, j, k: integer;
-  x1, x2, x3: double;
-  figf1, figf2, figf3: string;
+  line, figf1, figf2: string;
   infile, outfile: TextFile;
 begin
   AssignFile(outfile, fname);
@@ -202,94 +183,27 @@ begin
   if scale then
     WriteLn(outfile, strStand + '<br><br>');
 
-  WriteLn(outfile, strEigenvals + '<br>');
-  WriteLn(outfile, '<table border=1 cellspacing=1 cellpadding=1 width="100%">');
-  WriteLn(outfile, '<tr><th>i</th>');
-  WriteLn(outfile, '<th>' + strEigenval + '</th>');
-  WriteLn(outfile, '<th>' + strPercentVar + '</th>');
-  WriteLn(outfile, '<th>' + strCumVar + '</th>');
-  WriteLn(outfile, '</tr>');
-
-  AssignFile(infile, 'pca.csv');
+  WriteLn(outfile, '<pre>');
+  AssignFile(infile, 'pca.txt');
   Reset(infile);
-  k := 0;
-  SetLength(eig_val, 1);
-  SetLength(sumvariance, 1);
-  SetLength(cumvariance, 1);
   while not EOF(infile) do
   begin
-    ReadLn(infile, x1, x2, x3);
-    eig_val[k] := x1;
-    sumvariance[k] := x2;
-    cumvariance[k] := x3;
-    Inc(k);
-    SetLength(eig_val, Length(eig_val) + 1);
-    SetLength(sumvariance, Length(sumvariance) + 1);
-    SetLength(cumvariance, Length(cumvariance) + 1);
+    ReadLn(infile, line);
+    WriteLn(outfile, line);
   end;
   CloseFile(infile);
-
-  for k := 0 to k - 1 do
-  begin
-    if eig_val[k] < 0.0001 then
-      break;
-    WriteLn(outfile, '<tr><td align="Center">' + IntToStr(k + 1) + '</td>');
-    WriteLn(outfile, '<td align="Center">' + FloatToStrF(eig_val[k],
-      ffFixed, 5, 3) + '</td>');
-    WriteLn(outfile, '<td align="Center">' + FloatToStrF(sumvariance[k],
-      ffFixed, 5, 2) + '</td>');
-    WriteLn(outfile, '<td align="Center">' + FloatToStrF(cumvariance[k],
-      ffFixed, 5, 2) + '</td>');
-    WriteLn(outfile, '</tr>');
-  end;
-  WriteLn(outfile, '</table><br><br>');
-
-  AssignFile(infile, 'loadings.csv');
-  Reset(infile);
-  k := 0;
-  SetLength(eig_vec, 1, nvec);
-  while not EOF(infile) do
-  begin
-    ReadLn(infile, x1, x2, x3);
-    eig_vec[k, 0] := x1;
-    eig_vec[k, 1] := x2;
-    eig_vec[k, 2] := x3;
-    Inc(k);
-    SetLength(eig_vec, Length(eig_vec) + 1, nvec);
-  end;
-  CloseFile(infile);
-
-  WriteLn(outfile, strEigenvecs + '<br>');
-  WriteLn(outfile, '<table border=1 cellspacing=1 cellpadding=1 width="100%">');
-  WriteLn(outfile, '<tr><th>' + strVariable + '</th>');
-  for i := 1 to nvec do
-    WriteLn(outfile, '<th>' + strAxis + IntToStr(i) + '</th>');
-  WriteLn(outfile, '</tr>');
-  for i := 0 to k - 1 do
-  begin
-    WriteLn(outfile, '<tr>');
-    WriteLn(outfile, '<td align="Center">' + IntToStr(i + 1) + '</td>');
-    for j := 0 to nvec - 1 do
-      WriteLn(outfile, '<td align="Center">' +
-        FloatToStrF(eig_vec[i, j], ffFixed, 5, 3) + '</td>');
-    WriteLn(outfile, '</tr>');
-  end;
-  WriteLn(outfile, '</table>');
+  WriteLn(outfile, '</pre>');
 
   figf1 := GetFileNameWithoutExt(fname) + '1.png';
-  WriteLn(outfile, '<p align="center"><img src="' + figf1 + '"></p>');
+  WriteLn(outfile, '<p align="left"><img src="' + figf1 + '"></p>');
   figf2 := GetFileNameWithoutExt(fname) + '2.png';
-  WriteLn(outfile, '<p align="center"><img src="' + figf2 + '"></p>');
-  figf3 := GetFileNameWithoutExt(fname) + '3.png';
-  WriteLn(outfile, '<p align="center"><img src="' + figf3 + '"></p>');
+  WriteLn(outfile, '<p align="left"><img src="' + figf2 + '"></p>');
 
   WriteLn(outfile, '</body>');
   WriteLn(outfile, '</html>');
   CloseFile(outfile);
-  if FileExists('pca.csv') then
-    DeleteFile('pca.csv');
-  if FileExists('loadings.csv') then
-    DeleteFile('loadings.csv');
+  if FileExists('pca.txt') then
+    DeleteFile('pca.txt');
 end;
 
 end.

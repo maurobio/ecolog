@@ -43,39 +43,13 @@ msgctxt "ca.straxis"
 msgid "EIXO "
 msgstr "EJE "
 
+#: ca.strbiplot
+msgid "BIPLOT"
+msgstr ""
+
 #: ca.strca
 msgid "ANÁLISE DE CORRESPONDÊNCIAS"
 msgstr "ANÁLISIS DE CORRESPONDENCIAS"
-
-#: ca.strcumvar
-msgctxt "ca.strcumvar"
-msgid "%CUMULATIVA"
-msgstr "%ACUMULADA"
-
-#: ca.streigenval
-msgctxt "ca.streigenval"
-msgid "AUTOVALOR"
-msgstr "AUTOVALOR"
-
-#: ca.streigenvals
-msgctxt "ca.streigenvals"
-msgid "AUTOVALORES"
-msgstr "AUTOVALORES"
-
-#: ca.strpercentvar
-msgctxt "ca.strpercentvar"
-msgid "%VARIÂNCIA"
-msgstr "%VARIANZA"
-
-#: ca.strsample
-msgctxt "ca.strsample"
-msgid "AMOSTRA"
-msgstr "MUESTRA"
-
-#: ca.strsamplescores
-msgctxt "ca.strsamplescores"
-msgid "ESCORES DAS AMOSTRAS"
-msgstr "SCORES DE LAS MUESTRAS"
 
 #: ca.strscalesamples
 msgctxt "ca.strscalesamples"
@@ -91,11 +65,6 @@ msgstr "Especies"
 msgctxt "ca.strscalesymmetric"
 msgid "Simétrica"
 msgstr "Simétrico"
-
-#: ca.strspeciesscores
-msgctxt "ca.strspeciesscores"
-msgid "ESCORES DAS VARIÁVEIS"
-msgstr "SCORES DE LAS VARIABLES"
 
 #: ca.strtransform
 msgctxt "ca.strtransform"
@@ -127,11 +96,6 @@ msgctxt "ca.strtransformsqrt"
 msgid "Raiz quadrada"
 msgstr "Raíz cuadrada"
 
-#: ca.strvariable
-msgctxt "ca.strvariable"
-msgid "VARIÁVEL"
-msgstr "VARIABLE"
-
 #: cca.straxis
 msgctxt "cca.straxis"
 msgid "EIXO "
@@ -146,40 +110,10 @@ msgctxt "cca.strchisquared"
 msgid "Qui-Quadrado"
 msgstr "Chi Cuadrado"
 
-#: cca.strcumvar
-msgctxt "cca.strcumvar"
-msgid "%CUMULATIVA"
-msgstr "%ACUMULADA"
-
-#: cca.streigenval
-msgctxt "cca.streigenval"
-msgid "AUTOVALOR"
-msgstr "AUTOVALOR"
-
-#: cca.streigenvals
-msgctxt "cca.streigenvals"
-msgid "AUTOVALORES"
-msgstr "AUTOVALORES"
-
 #: cca.strinertia
 msgctxt "cca.strinertia"
 msgid "Inércia"
 msgstr "Inercia"
-
-#: cca.strpercentvar
-msgctxt "cca.strpercentvar"
-msgid "%VARIÂNCIA"
-msgstr "%VARIANZA"
-
-#: cca.strsample
-msgctxt "cca.strsample"
-msgid "AMOSTRA"
-msgstr "MUESTRA"
-
-#: cca.strsamplescores
-msgctxt "cca.strsamplescores"
-msgid "ESCORES DAS AMOSTRAS"
-msgstr "SCORES DE LAS MUESTRAS"
 
 #: cca.strscalesamples
 msgctxt "cca.strscalesamples"
@@ -191,15 +125,11 @@ msgctxt "cca.strscalespecies"
 msgid "Espécies"
 msgstr "Especies"
 
-#: cca.strscalesymmetric
-msgctxt "cca.strscalesymmetric"
-msgid "Simétrica"
-msgstr "Simétrico"
-
-#: cca.strspeciesscores
-msgctxt "cca.strspeciesscores"
-msgid "ESCORES DAS VARIÁVEIS"
-msgstr "SCORES DE LAS VARIABLES"
+#: cca.strscatterplot
+#, fuzzy
+msgctxt "cca.strscatterplot"
+msgid "DIAGRAMA DE DISPERSÃO"
+msgstr "DIAGRAMA DE DISPERSIÓN"
 
 #: cca.strtransform
 msgctxt "cca.strtransform"
@@ -230,11 +160,6 @@ msgstr "Sin Transformación"
 msgctxt "cca.strtransformsqrt"
 msgid "Raiz quadrada"
 msgstr "Raíz cuadrada"
-
-#: cca.strvariable
-msgctxt "cca.strvariable"
-msgid "VARIÁVEL"
-msgstr "VARIABLE"
 
 #: cca.strvariables
 msgctxt "cca.strvariables"
@@ -385,6 +310,63 @@ msgstr "Método de Ward"
 #: cluster.strwpgma
 msgid "Ligação ponderada (WPGMA)"
 msgstr "Ligamiento ponderado (WPGMA)"
+
+#: dca.straxis
+#, fuzzy
+msgctxt "dca.straxis"
+msgid "EIXO "
+msgstr "EJE "
+
+#: dca.strdca
+msgctxt "dca.strdca"
+msgid "ANÁLISE DE CORRESPONDÊNCIAS CORRIGIDA"
+msgstr ""
+
+#: dca.strdetrended
+msgid "AUTOVALORES CORRIGIDOS"
+msgstr ""
+
+#: dca.streigenvals
+#, fuzzy
+msgctxt "dca.streigenvals"
+msgid "AUTOVALORES"
+msgstr "AUTOVALORES"
+
+#: dca.strsamples
+#, fuzzy
+msgctxt "dca.strsamples"
+msgid "Amostras"
+msgstr "Muestras"
+
+#: dca.strscalesamples
+#, fuzzy
+msgctxt "dca.strscalesamples"
+msgid "Amostras"
+msgstr "Muestras"
+
+#: dca.strscalespecies
+#, fuzzy
+msgctxt "dca.strscalespecies"
+msgid "Espécies"
+msgstr "Especies"
+
+#: dca.strscalesymmetric
+#, fuzzy
+msgctxt "dca.strscalesymmetric"
+msgid "Simétrica"
+msgstr "Simétrico"
+
+#: dca.strscatterplot
+#, fuzzy
+msgctxt "dca.strscatterplot"
+msgid "DIAGRAMA DE DISPERSÃO"
+msgstr "DIAGRAMA DE DISPERSIÓN"
+
+#: dca.strspecies
+#, fuzzy
+msgctxt "dca.strspecies"
+msgid "Espécies"
+msgstr "Especies"
 
 #: diversity.strdiversity
 msgid "ANÁLISE DE DIVERSIDADE"
@@ -845,10 +827,6 @@ msgstr "Coordenadas Principales"
 msgid "Aleatória"
 msgstr "Aleatoria"
 
-#: nmds.strcoords
-msgid "COORDENADAS"
-msgstr "COORDENADAS"
-
 #: nmds.strdim
 msgid "DIMENSÃO "
 msgstr "DIMENSIÓN"
@@ -860,11 +838,6 @@ msgstr "Número de Iteraciones:"
 #: nmds.strnmds
 msgid "ESCALONAMENTO MULTIDIMENSIONAL NÃO-MÉTRICO"
 msgstr "ESCALAMIENTO MULTIDIMENSIONAL NO METRICO"
-
-#: nmds.strsample
-msgctxt "nmds.strsample"
-msgid "AMOSTRA"
-msgstr "MUESTRA"
 
 #: nmds.strsamples
 msgctxt "nmds.strsamples"
@@ -915,10 +888,6 @@ msgctxt "pca.straxis"
 msgid "EIXO "
 msgstr "EJE "
 
-#: pca.strbiplot
-msgid "BIPLOT"
-msgstr "BIPLOT"
-
 #: pca.strcenter
 msgid "Dados Centrados"
 msgstr "Datos Centrados"
@@ -937,39 +906,14 @@ msgstr "Correlación"
 msgid "Covariância"
 msgstr "Covarianza"
 
-#: pca.strcumvar
-msgctxt "pca.strcumvar"
-msgid "%CUMULATIVA"
-msgstr "%ACUMULADA"
-
 #: pca.streigenval
 msgctxt "pca.streigenval"
 msgid "AUTOVALOR"
 msgstr "AUTOVALOR"
 
-#: pca.streigenvals
-msgctxt "pca.streigenvals"
-msgid "AUTOVALORES"
-msgstr "AUTOVALORES"
-
-#: pca.streigenvec
-msgctxt "pca.streigenvec"
-msgid "AUTOVETOR"
-msgstr "AUTOVETOR"
-
-#: pca.streigenvecs
-msgctxt "pca.streigenvecs"
-msgid "AUTOVETORES"
-msgstr "AUTOVETORES"
-
 #: pca.strpca
 msgid "ANÁLISE DE COMPONENTES PRINCIPAIS"
 msgstr "ANÁLISIS DE COMPONENTES PRINCIPALES"
-
-#: pca.strpercentvar
-msgctxt "pca.strpercentvar"
-msgid "%VARIÂNCIA"
-msgstr "%VARIANZA"
 
 #: pca.strsamples
 msgctxt "pca.strsamples"
@@ -1024,11 +968,6 @@ msgctxt "pca.strtransformsqrt"
 msgid "Raiz quadrada"
 msgstr "Raíz cuadrada"
 
-#: pca.strvariable
-msgctxt "pca.strvariable"
-msgid "VARIÁVEL"
-msgstr "VARIABLE"
-
 #: pca.strvariance
 msgid "VARIÂNCIA"
 msgstr "VARIANZA"
@@ -1080,39 +1019,9 @@ msgctxt "pco.strcoefsqreuclidean"
 msgid "Euclidiana quadrada"
 msgstr "Euclidiano cuadrado"
 
-#: pco.strcumvar
-msgctxt "pco.strcumvar"
-msgid "%CUMULATIVA"
-msgstr "%ACUMULADA"
-
-#: pco.streigenval
-msgctxt "pco.streigenval"
-msgid "AUTOVALOR"
-msgstr "AUTOVALOR"
-
-#: pco.streigenvals
-msgctxt "pco.streigenvals"
-msgid "AUTOVALORES"
-msgstr "AUTOVALORES"
-
-#: pco.streigenvec
-msgctxt "pco.streigenvec"
-msgid "AUTOVETOR"
-msgstr "AUTOVETOR"
-
-#: pco.streigenvecs
-msgctxt "pco.streigenvecs"
-msgid "AUTOVETORES"
-msgstr "AUTOVETORES"
-
 #: pco.strpco
 msgid "ANÁLISE DE COORDENADAS PRINCIPAIS"
 msgstr "ANÁLISIS DE COORDENADAS PRINCIPALES"
-
-#: pco.strpercentvar
-msgctxt "pco.strpercentvar"
-msgid "%VARIÂNCIA"
-msgstr "%VARIANZA"
 
 #: pco.strsamples
 msgctxt "pco.strsamples"
@@ -1159,11 +1068,6 @@ msgctxt "pco.strtransformsqrt"
 msgid "Raiz quadrada"
 msgstr "Raíz cuadrada"
 
-#: pco.strvariable
-msgctxt "pco.strvariable"
-msgid "VARIÁVEL"
-msgstr "VARIABLE"
-
 #: rda.straxis
 msgctxt "rda.straxis"
 msgid "EIXO "
@@ -1174,44 +1078,14 @@ msgctxt "rda.strcorrelation"
 msgid "Correlação"
 msgstr "Correlación"
 
-#: rda.strcumvar
-msgctxt "rda.strcumvar"
-msgid "%CUMULATIVA"
-msgstr "%ACUMULADA"
-
-#: rda.streigenval
-msgctxt "rda.streigenval"
-msgid "AUTOVALOR"
-msgstr "AUTOVALOR"
-
-#: rda.streigenvals
-msgctxt "rda.streigenvals"
-msgid "AUTOVALORES"
-msgstr "AUTOVALORES"
-
 #: rda.strinertia
 msgctxt "rda.strinertia"
 msgid "Inércia"
 msgstr "Inercia"
 
-#: rda.strpercentvar
-msgctxt "rda.strpercentvar"
-msgid "%VARIÂNCIA"
-msgstr "%VARIANZA"
-
 #: rda.strrda
 msgid "ANÁLISE DE REDUNDÂNCIAS"
 msgstr "ANÁLISIS DE REDUNDANCIA"
-
-#: rda.strsample
-msgctxt "rda.strsample"
-msgid "AMOSTRA"
-msgstr "MUESTRA"
-
-#: rda.strsamplescores
-msgctxt "rda.strsamplescores"
-msgid "ESCORES DAS AMOSTRAS"
-msgstr "SCORES DE LAS MUESTRAS"
 
 #: rda.strscalesamples
 msgctxt "rda.strscalesamples"
@@ -1228,10 +1102,11 @@ msgctxt "rda.strscalesymmetric"
 msgid "Simétrica"
 msgstr "Simétrico"
 
-#: rda.strspeciesscores
-msgctxt "rda.strspeciesscores"
-msgid "ESCORES DAS VARIÁVEIS"
-msgstr "SCORES DE LAS VARIABLES"
+#: rda.strscatterplot
+#, fuzzy
+msgctxt "rda.strscatterplot"
+msgid "DIAGRAMA DE DISPERSÃO"
+msgstr "DIAGRAMA DE DISPERSIÓN"
 
 #: rda.strtransform
 msgctxt "rda.strtransform"
@@ -1262,11 +1137,6 @@ msgstr "Sin Transformación"
 msgctxt "rda.strtransformsqrt"
 msgid "Raiz quadrada"
 msgstr "Raíz cuadrada"
-
-#: rda.strvariable
-msgctxt "rda.strvariable"
-msgid "VARIÁVEL"
-msgstr "VARIABLE"
 
 #: rda.strvariables
 msgctxt "rda.strvariables"
@@ -1746,6 +1616,61 @@ msgstr "Estadística de VARIABLES AMBIENTALES"
 msgid "FREQUÊNCIA RELATIVA (%)"
 msgstr "FRECUENCIA RELATIVA (%)"
 
+#: taboutbox.caption
+msgctxt "taboutbox.caption"
+msgid "Sobre ECOLOG"
+msgstr "Acerca de ECOLOG"
+
+#: taboutbox.comments.caption
+msgid "Comments"
+msgstr "Comments"
+
+#: taboutbox.compiler.caption
+msgctxt "taboutbox.compiler.caption"
+msgid "Compilador:"
+msgstr "Compilador:"
+
+#: taboutbox.copyright.caption
+msgid "Copyright © 1990-2021 Mauro J. Cavalcanti"
+msgstr "Copyright © 1990-2021 Mauro J. Cavalcanti"
+
+#: taboutbox.ide.caption
+msgid "IDE:"
+msgstr "IDE:"
+
+#: taboutbox.information.caption
+msgctxt "taboutbox.information.caption"
+msgid "Informação do Sistema"
+msgstr "Información del Sistema"
+
+#: taboutbox.okbutton.caption
+msgctxt "taboutbox.okbutton.caption"
+msgid "OK"
+msgstr "OK"
+
+#: taboutbox.operatingsystem.caption
+msgid "OS:"
+msgstr "SO:"
+
+#: taboutbox.platform.caption
+msgctxt "taboutbox.platform.caption"
+msgid "Plataforma:"
+msgstr "Plataforma:"
+
+#: taboutbox.productname.caption
+msgctxt "taboutbox.productname.caption"
+msgid "ECOLOG"
+msgstr "ECOLOG"
+
+#: taboutbox.versionnumber.caption
+msgid "v 0.0.0"
+msgstr "v 0.0.0"
+
+#: taboutbox.website.caption
+msgctxt "taboutbox.website.caption"
+msgid "Página do ECOLOG na Internet"
+msgstr "Página del ECOLOG en Internet"
+
 #: tccadlg.cancelbutton.caption
 msgctxt "tccadlg.cancelbutton.caption"
 msgid "Cancelar"
@@ -1781,6 +1706,7 @@ msgid "Métodos de Agrupamento"
 msgstr "Métodos de agrupación"
 
 #: tclusterdlg.labelcoef.caption
+msgctxt "tclusterdlg.labelcoef.caption"
 msgid "Coeficiente:"
 msgstr "Coeficiente:"
 
@@ -1798,6 +1724,104 @@ msgstr "Transformación:"
 msgctxt "tclusterdlg.okbutton.caption"
 msgid "OK"
 msgstr "OK"
+
+#: tdcadlg.cancelbutton.caption
+#, fuzzy
+msgctxt "tdcadlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: tdcadlg.caption
+#, fuzzy
+msgctxt "tdcadlg.caption"
+msgid "Opções"
+msgstr "Opciones"
+
+#: tdcadlg.checkboxdetrended.caption
+msgid "Análise Corrigida (DCA)"
+msgstr ""
+
+#: tdcadlg.checkboxdownweight.caption
+msgid "Reduzir peso de espécies raras "
+msgstr ""
+
+#: tdcadlg.checkboxrescaling.caption
+msgid "Usar \"Rescaling\" ?"
+msgstr ""
+
+#: tdcadlg.checkboxrescaling.hint
+msgid "Reajustar a escala para expandir os extremos dos eixos"
+msgstr ""
+
+#: tdcadlg.labelnsegs.caption
+msgid "No. de segmentos:"
+msgstr ""
+
+#: tdcadlg.labelrescalingn.caption
+msgid "Número de eixos:"
+msgstr ""
+
+#: tdcadlg.labelscale.caption
+#, fuzzy
+msgctxt "tdcadlg.labelscale.caption"
+msgid "Escala:"
+msgstr "Escala:"
+
+#: tdcadlg.okbutton.caption
+#, fuzzy
+msgctxt "tdcadlg.okbutton.caption"
+msgid "OK"
+msgstr "OK"
+
+#: tfilterdlg.cancelbtn.caption
+msgctxt "tfilterdlg.cancelbtn.caption"
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: tfilterdlg.caption
+msgid "Definir Filtro"
+msgstr "Configurar filtro para mostrar registros"
+
+#: tfilterdlg.clearbtn.hint
+msgid "Limpar lista de condições"
+msgstr "Limpiar lista de condiciones"
+
+#: tfilterdlg.excludebtn.hint
+msgid "Excluir condição"
+msgstr "Excluir condición"
+
+#: tfilterdlg.includebtn.hint
+msgid "Incluir condição"
+msgstr "Incluir condición"
+
+#: tfilterdlg.label1.caption
+msgid "Campos:"
+msgstr "Campos:"
+
+#: tfilterdlg.label2.caption
+msgid "Valor:"
+msgstr "Valor:"
+
+#: tfilterdlg.label3.caption
+msgid "Operador:"
+msgstr "Operador:"
+
+#: tfilterdlg.label5.caption
+msgid "Lista de Condições:"
+msgstr "Lista de Condiciones:"
+
+#: tfilterdlg.okbtn.caption
+msgctxt "tfilterdlg.okbtn.caption"
+msgid "OK"
+msgstr "OK"
+
+#: tfilterdlg.rband.caption
+msgid "E"
+msgstr "Y"
+
+#: tfilterdlg.rbor.caption
+msgid "Ou"
+msgstr "O"
 
 #: tmainform.addbutton.caption
 msgctxt "tmainform.addbutton.caption"
@@ -2131,6 +2155,14 @@ msgstr "Análisis de Correspondencias Canónica..."
 msgid "Análise de correspondências canônica (CCA)"
 msgstr "Análisis de correspondencias canónica (CCA)"
 
+#: tmainform.ordinationdcaitem.caption
+msgid "Análise de Correspondências Corrigida..."
+msgstr ""
+
+#: tmainform.ordinationdcaitem.hint
+msgid "Análise de correspondências corrigida (DECORANA)"
+msgstr ""
+
 #: tmainform.ordinationnmdsitem.caption
 msgctxt "tmainform.ordinationnmdsitem.caption"
 msgid "Escalonamento Multidimensional Não-Métrico..."
@@ -2360,6 +2392,44 @@ msgstr "Mosaico &Horizontal"
 #: tmainform.windowtileverticalitem.caption
 msgid "Lado a Lado &Vertical"
 msgstr "Mosaico &Vertical"
+
+#: tnmdsdlg.cancelbutton.caption
+#, fuzzy
+msgctxt "tnmdsdlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: tnmdsdlg.caption
+#, fuzzy
+msgctxt "tnmdsdlg.caption"
+msgid "Opções"
+msgstr "Opciones"
+
+#: tnmdsdlg.labelcoef.caption
+#, fuzzy
+msgctxt "tnmdsdlg.labelcoef.caption"
+msgid "Coeficiente:"
+msgstr "Coeficiente:"
+
+#: tnmdsdlg.labelconfig.caption
+msgid "Configuração Inicial:"
+msgstr ""
+
+#: tnmdsdlg.labeliter.caption
+msgid "Número de Interações:"
+msgstr ""
+
+#: tnmdsdlg.labeltransform.caption
+#, fuzzy
+msgctxt "tnmdsdlg.labeltransform.caption"
+msgid "Transformação:"
+msgstr "Transformación:"
+
+#: tnmdsdlg.okbutton.caption
+#, fuzzy
+msgctxt "tnmdsdlg.okbutton.caption"
+msgid "OK"
+msgstr "OK"
 
 #: tprojectdlg.address1label.caption
 msgid "Setor:"

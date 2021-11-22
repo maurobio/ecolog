@@ -49,6 +49,9 @@
 {       -- Integração com o sistema estatístico e gráfico R para análises      }
 {          multivariadas de dados ecológicos (índices de similaridade, análise }
 {          de agrupamentos e métodos de ordenação).                            }
+{     Versão 6.0.2 "Begonia", 22/11/2021                                       }
+{       -- Inclusão da Análise de Correspondências Corrigida (DECORANA).       }
+{       -- Inclusãão das saídas do R nos relatórios analíticos do sistema.     }
 {==============================================================================}
 unit main;
 
@@ -86,6 +89,7 @@ type
     LanguageMenuEnglishItem: TMenuItem;
     LanguageMenuPortugueseItem: TMenuItem;
     LanguageMenuSpanishItem: TMenuItem;
+    OrdinationDCAItem: TMenuItem;
     N7: TMenuItem;
     SearchFilterResetItem: TMenuItem;
     SearchMenu: TMenuItem;
@@ -165,6 +169,7 @@ type
     procedure LanguageMenuEnglishItemClick(Sender: TObject);
     procedure LanguageMenuPortugueseItemClick(Sender: TObject);
     procedure LanguageMenuSpanishItemClick(Sender: TObject);
+    procedure OrdinationDCAItemClick(Sender: TObject);
     procedure ReportCatalogItemClick(Sender: TObject);
     procedure ReportChecklistItemClick(Sender: TObject);
     procedure ReportGeocodeItemClick(Sender: TObject);
@@ -231,6 +236,7 @@ uses
   pco,
   nmds,
   ca,
+  dca,
   rda,
   cca,
   export,
@@ -375,7 +381,7 @@ end;
 function TMainForm.LocateR: boolean;
 begin
   if not FileExists(RPath) then
-     RPath := '';
+    RPath := '';
   if RPath = '' then
   begin
     if Copy(OSVersion, 1, Pos(' ', OSVersion) - 1) <> 'Windows' then
@@ -385,7 +391,7 @@ begin
       Screen.Cursor := crHourGlass;
       RPath := FindR;
       if RPath <> '' then
-         RPath := Concat(RPath, 'Rscript.exe');
+        RPath := Concat(RPath, 'Rscript.exe');
       Screen.Cursor := crDefault;
     end;
     if RPath = '' then
@@ -1393,6 +1399,60 @@ begin
   SetDefaultLang('es', 'language', True);
   IniFile.WriteString('Options', 'Language', 'es');
   IniFile.Free;
+end;
+
+procedure TMainForm.OrdinationDCAItemClick(Sender: TObject);
+var
+  n, m: integer;
+  s: ansistring;
+begin
+  if not LocateR then
+    Exit;
+  SaveDialog.Title := strSaveFile;
+  SaveDialog.DefaultExt := '.htm';
+  SaveDialog.Filter := strHtmlFilter;
+  SaveDialog.Filename := '';
+  if SaveDialog.Execute then
+  begin
+    MainForm.MultiDoc.SetActiveChild(0);
+    with DCADlg do
+    begin
+      if ShowModal = mrOk then
+      begin
+        GridToArray('rdata.csv', ',', n, m);
+        CreateDCA(SaveDialog.Filename,
+          StrToInt(IfThen(CheckBoxDetrended.Checked, '0', '1')),
+          StrToInt(IfThen(CheckBoxDownweight.Checked, '1', '0')),
+          SpinEditNSegs.Value,
+          StrToInt(IfThen(CheckBoxRescaling.Checked, '0', '1')),
+          SpinEditNRescaling.Value, ComboBoxScale.ItemIndex);
+        Screen.Cursor := crHourGlass;
+        if RunCommand(RPath, ['--vanilla', 'dca.R'], s, [poNoConsole]) then
+        begin
+          DCA(SaveDialog.Filename,
+            StrToInt(IfThen(CheckBoxDetrended.Checked, '0', '1')),
+            StrToInt(IfThen(CheckBoxDownweight.Checked, '1', '0')),
+            SpinEditNSegs.Value,
+            StrToInt(IfThen(CheckBoxRescaling.Checked, '0', '1')),
+            SpinEditNRescaling.Value, n, m);
+          CreateMDIChild(ExtractFileName(SaveDialog.Filename));
+          with MultiDoc.ActiveObject as TMDIChild do
+          begin
+            DataGrid.Visible := False;
+            HtmlViewer.Visible := True;
+            HtmlViewer.LoadFromFile(SaveDialog.Filename);
+          end;
+          UpdateTitleBar(ProjectFile);
+        end
+        else
+        begin
+          Screen.Cursor := crDefault;
+          MessageDlg(strError, Format(strNotExecute, ['R']), mtError, [mbOK], 0);
+        end;
+        Screen.Cursor := crDefault;
+      end;
+    end;
+  end;
 end;
 
 procedure TMainForm.ReportCatalogItemClick(Sender: TObject);

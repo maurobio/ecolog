@@ -37,13 +37,6 @@ uses report, useful;
 
 resourcestring
   strPCO = 'ANÁLISE DE COORDENADAS PRINCIPAIS';
-  strEigenvals = 'AUTOVALORES';
-  strEigenval = 'AUTOVALOR';
-  strEigenvecs = 'AUTOVETORES';
-  strEigenvec = 'AUTOVETOR';
-  strPercentVar = '%VARIÂNCIA';
-  strCumVar = '%CUMULATIVA';
-  strVariable = 'VARIÁVEL';
   strScatterplot = 'DIAGRAMA DE DISPERSÃO';
   strAxis = 'EIXO ';
   strTransform = 'Transformação: ';
@@ -115,6 +108,7 @@ begin
   AssignFile(outfile, 'pco.R');
   Rewrite(outfile);
   WriteLn(outfile, 'options(warn=-1)');
+  WriteLn(outfile, 'options(digits=4)');
   WriteLn(outfile, 'suppressPackageStartupMessages(library(vegan))');
   WriteLn(outfile, 'library(vegan, quietly=TRUE)');
   WriteLn(outfile, 'df.data <- read.csv("rdata.csv", row.names=1)');
@@ -131,12 +125,20 @@ begin
   else if coef = 6 then
     WriteLn(outfile, 'df.dist <- designdist(df.data, "1-J/sqrt(A*B)")');
   WriteLn(outfile, 'pcovec <- cmdscale(df.dist, k=2, eig=FALSE)');
-  WriteLn(outfile,
-    'write.table(pcovec, "vectors.csv", sep=" ", row.names=FALSE, col.names=FALSE)');
   WriteLn(outfile, 'pco <- cmdscale(df.dist, k=2, eig=TRUE)');
   WriteLn(outfile, 'pcovar <- pco$eig / sum(pco$eig[pco$eig > 0])');
-  WriteLn(outfile,
-    'write.table(data.frame(pco$eig, pcovar*100, cumsum(pcovar)*100), "pco.csv", sep=" ", row.names=FALSE, col.names=FALSE)');
+  WriteLn(outfile, 'results <- data.frame(pco$eig, pcovar, cumsum(pcovar))');
+  WriteLn(outfile, 'results <- t(results)');
+  WriteLn(outfile, 'rownames(results) <- c("Standard deviation", "Proportion of Variance", "Cumulative Proportion")');
+  WriteLn(outfile, 'k <- nrow(pco$points)');
+  WriteLn(outfile, 'nms <- c()');
+  WriteLn(outfile, 'for (i in 1:k) {');
+  WriteLn(outfile, 'nms <- c(nms, paste0("PC", i))}');
+  WriteLn(outfile, 'colnames(results) <- nms');
+  WriteLn(outfile, 'sink("pco.txt")');
+  WriteLn(outfile, 'cat("Importance of components\n\n")');
+  WriteLn(outfile, 'print(results)');
+  WriteLn(outfile, 'sink()');
   WriteLn(outfile, 'ppi <- 100');
   figf := GetFileNameWithoutExt(fname) + '.png';
   WriteLn(outfile, 'png("' + figf + '", width=6*ppi, height=6*ppi, res=ppi)');
@@ -153,14 +155,8 @@ begin
 end;
 
 procedure TPCODlg.PCOA(fname: string; transf, coef: integer; n, m: integer);
-const
-  nvec = 3;
 var
-  eig_val, sumvariance, cumvariance: array of double;
-  eig_vec: array of array of double;
-  i, j, k: integer;
-  x1, x2, x3: double;
-  figf: string;
+  line, figf: string;
   infile, outfile: TextFile;
 begin
   AssignFile(outfile, fname);
@@ -192,90 +188,25 @@ begin
   else if coef = 4 then
     WriteLn(outfile, strCoef + strCoefMorisita + '<br><br>');
 
-  WriteLn(outfile, strEigenvals + '<br>');
-  WriteLn(outfile, '<table border=1 cellspacing=1 cellpadding=1 width="100%">');
-  WriteLn(outfile, '<tr><th>i</th>');
-  WriteLn(outfile, '<th>' + strEigenval + '</th>');
-  WriteLn(outfile, '<th>' + strPercentVar + '</th>');
-  WriteLn(outfile, '<th>' + strCumVar + '</th>');
-  WriteLn(outfile, '</tr>');
-
-  AssignFile(infile, 'pco.csv');
+  WriteLn(outfile, '<pre>');
+  AssignFile(infile, 'pco.txt');
   Reset(infile);
-  k := 0;
-  SetLength(eig_val, 1);
-  SetLength(sumvariance, 1);
-  SetLength(cumvariance, 1);
   while not EOF(infile) do
   begin
-    ReadLn(infile, x1, x2, x3);
-    eig_val[k] := x1;
-    sumvariance[k] := x2;
-    cumvariance[k] := x3;
-    Inc(k);
-    SetLength(eig_val, Length(eig_val) + 1);
-    SetLength(sumvariance, Length(sumvariance) + 1);
-    SetLength(cumvariance, Length(cumvariance) + 1);
+    ReadLn(infile, line);
+    WriteLn(outfile, line);
   end;
   CloseFile(infile);
-
-  for k := 0 to k - 1 do
-  begin
-    if eig_val[k] < 0.0001 then
-      break;
-    WriteLn(outfile, '<tr><td align="Center">' + IntToStr(k + 1) + '</td>');
-    WriteLn(outfile, '<td align="Center">' + FloatToStrF(eig_val[k],
-      ffFixed, 5, 3) + '</td>');
-    WriteLn(outfile, '<td align="Center">' + FloatToStrF(sumvariance[k],
-      ffFixed, 5, 2) + '</td>');
-    WriteLn(outfile, '<td align="Center">' + FloatToStrF(cumvariance[k],
-      ffFixed, 5, 2) + '</td>');
-    WriteLn(outfile, '</tr>');
-  end;
-  WriteLn(outfile, '</table><br><br>');
-
-  AssignFile(infile, 'vectors.csv');
-  Reset(infile);
-  k := 0;
-  SetLength(eig_vec, 1, nvec);
-  while not EOF(infile) do
-  begin
-    ReadLn(infile, x1, x2, x3);
-    eig_vec[k, 0] := x1;
-    eig_vec[k, 1] := x2;
-    eig_vec[k, 2] := x3;
-    Inc(k);
-    SetLength(eig_vec, Length(eig_vec) + 1, nvec);
-  end;
-  CloseFile(infile);
-
-  WriteLn(outfile, strEigenvecs + '<br>');
-  WriteLn(outfile, '<table border=1 cellspacing=1 cellpadding=1 width="100%">');
-  WriteLn(outfile, '<tr><th>' + strVariable + '</th>');
-  for i := 1 to nvec do
-    WriteLn(outfile, '<th>' + strAxis + IntToStr(i) + '</th>');
-  WriteLn(outfile, '</tr>');
-  for i := 0 to k - 1 do
-  begin
-    WriteLn(outfile, '<tr>');
-    WriteLn(outfile, '<td align="Center">' + IntToStr(i + 1) + '</td>');
-    for j := 0 to nvec - 1 do
-      WriteLn(outfile, '<td align="Center">' +
-        FloatToStrF(eig_vec[i, j], ffFixed, 5, 3) + '</td>');
-    WriteLn(outfile, '</tr>');
-  end;
-  WriteLn(outfile, '</table>');
+  WriteLn(outfile, '</pre>');
 
   figf := GetFileNameWithoutExt(fname) + '.png';
-  WriteLn(outfile, '<p align="center"><img src="' + figf + '"></p>');
+  WriteLn(outfile, '<p align="left"><img src="' + figf + '"></p>');
 
   WriteLn(outfile, '</body>');
   WriteLn(outfile, '</html>');
   CloseFile(outfile);
-  if FileExists('pco.csv') then
-    DeleteFile('pco.csv');
-  if FileExists('vectors.csv') then
-    DeleteFile('vectors.csv');
+  if FileExists('pco.txt') then
+    DeleteFile('pco.txt');
 end;
 
 end.
