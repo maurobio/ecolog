@@ -42,7 +42,7 @@ msgstr "AXIS "
 
 #: ca.strbiplot
 msgid "BIPLOT"
-msgstr ""
+msgstr "BIPLOT"
 
 #: ca.strca
 msgid "ANÁLISE DE CORRESPONDÊNCIAS"
@@ -123,7 +123,6 @@ msgid "Espécies"
 msgstr "Species"
 
 #: cca.strscatterplot
-#, fuzzy
 msgctxt "cca.strscatterplot"
 msgid "DIAGRAMA DE DISPERSÃO"
 msgstr "SCATTERPLOT"
@@ -309,7 +308,6 @@ msgid "Ligação ponderada (WPGMA)"
 msgstr "Weighted linkage (WPGMA)"
 
 #: dca.straxis
-#, fuzzy
 msgctxt "dca.straxis"
 msgid "EIXO "
 msgstr "AXIS "
@@ -317,50 +315,43 @@ msgstr "AXIS "
 #: dca.strdca
 msgctxt "dca.strdca"
 msgid "ANÁLISE DE CORRESPONDÊNCIAS CORRIGIDA"
-msgstr ""
+msgstr "DETRENDED CORRESPONDENCE ANALYSIS"
 
 #: dca.strdetrended
 msgid "AUTOVALORES CORRIGIDOS"
-msgstr ""
+msgstr "DETRENDED EIGENVALUES"
 
 #: dca.streigenvals
-#, fuzzy
 msgctxt "dca.streigenvals"
 msgid "AUTOVALORES"
 msgstr "EIGENVALUES"
 
 #: dca.strsamples
-#, fuzzy
 msgctxt "dca.strsamples"
 msgid "Amostras"
 msgstr "Samples"
 
 #: dca.strscalesamples
-#, fuzzy
 msgctxt "dca.strscalesamples"
 msgid "Amostras"
 msgstr "Samples"
 
 #: dca.strscalespecies
-#, fuzzy
 msgctxt "dca.strscalespecies"
 msgid "Espécies"
 msgstr "Species"
 
 #: dca.strscalesymmetric
-#, fuzzy
 msgctxt "dca.strscalesymmetric"
 msgid "Simétrica"
 msgstr "Symmetric"
 
 #: dca.strscatterplot
-#, fuzzy
 msgctxt "dca.strscatterplot"
 msgid "DIAGRAMA DE DISPERSÃO"
 msgstr "SCATTERPLOT"
 
 #: dca.strspecies
-#, fuzzy
 msgctxt "dca.strspecies"
 msgid "Espécies"
 msgstr "Species"
@@ -775,7 +766,6 @@ msgid "Coeficiente: "
 msgstr "Coefficient:"
 
 #: nmds.strcoefavgeuclidean
-#, fuzzy
 msgctxt "nmds.strcoefavgeuclidean"
 msgid "Euclidiana normalizada"
 msgstr "Average Euclidean"
@@ -806,7 +796,6 @@ msgid "Morisita-Horn"
 msgstr "Morisita-Horn"
 
 #: nmds.strcoefsqreuclidean
-#, fuzzy
 msgctxt "nmds.strcoefsqreuclidean"
 msgid "Euclidiana quadrada"
 msgstr "Squared Euclidean"
@@ -979,7 +968,6 @@ msgid "Coeficiente: "
 msgstr "Coefficient:"
 
 #: pco.strcoefavgeuclidean
-#, fuzzy
 msgctxt "pco.strcoefavgeuclidean"
 msgid "Euclidiana normalizada"
 msgstr "Average Euclidean"
@@ -1010,7 +998,6 @@ msgid "Morisita-Horn"
 msgstr "Morisita-Horn"
 
 #: pco.strcoefsqreuclidean
-#, fuzzy
 msgctxt "pco.strcoefsqreuclidean"
 msgid "Euclidiana quadrada"
 msgstr "Squared Euclidean"
@@ -1099,7 +1086,6 @@ msgid "Simétrica"
 msgstr "Symmetric"
 
 #: rda.strscatterplot
-#, fuzzy
 msgctxt "rda.strscatterplot"
 msgid "DIAGRAMA DE DISPERSÃO"
 msgstr "SCATTERPLOT"
@@ -1721,49 +1707,41 @@ msgid "OK"
 msgstr "OK"
 
 #: tdcadlg.cancelbutton.caption
-#, fuzzy
 msgctxt "tdcadlg.cancelbutton.caption"
 msgid "Cancelar"
 msgstr "Cancel"
 
 #: tdcadlg.caption
-#, fuzzy
 msgctxt "tdcadlg.caption"
 msgid "Opções"
 msgstr "Options"
 
 #: tdcadlg.checkboxdetrended.caption
 msgid "Análise Corrigida (DCA)"
-msgstr ""
+msgstr "Detrended Analysis (DCA)"
 
 #: tdcadlg.checkboxdownweight.caption
 msgid "Reduzir peso de espécies raras "
-msgstr ""
+msgstr "Downweight rare species"
 
 #: tdcadlg.checkboxrescaling.caption
-msgid "Usar \"Rescaling\" ?"
-msgstr ""
-
-#: tdcadlg.checkboxrescaling.hint
-msgid "Reajustar a escala para expandir os extremos dos eixos"
-msgstr ""
+msgid "Rescalonamento"
+msgstr "Rescaling"
 
 #: tdcadlg.labelnsegs.caption
-msgid "No. de segmentos:"
-msgstr ""
+msgid "Número de segmentos:"
+msgstr "Number of segments:"
 
 #: tdcadlg.labelrescalingn.caption
 msgid "Número de eixos:"
-msgstr ""
+msgstr "Number of axes:"
 
 #: tdcadlg.labelscale.caption
-#, fuzzy
 msgctxt "tdcadlg.labelscale.caption"
 msgid "Escala:"
 msgstr "Scale:"
 
 #: tdcadlg.okbutton.caption
-#, fuzzy
 msgctxt "tdcadlg.okbutton.caption"
 msgid "OK"
 msgstr "OK"
@@ -2152,11 +2130,11 @@ msgstr "Canonical correspondence analysis (CCA)"
 
 #: tmainform.ordinationdcaitem.caption
 msgid "Análise de Correspondências Corrigida..."
-msgstr ""
+msgstr "Detrended Correspondence Analysis..."
 
 #: tmainform.ordinationdcaitem.hint
 msgid "Análise de correspondências corrigida (DECORANA)"
-msgstr ""
+msgstr "Detrended correspondence analysis (DECORANA)"
 
 #: tmainform.ordinationnmdsitem.caption
 msgctxt "tmainform.ordinationnmdsitem.caption"
@@ -2389,39 +2367,34 @@ msgid "Lado a Lado &Vertical"
 msgstr "Tile &Vertical"
 
 #: tnmdsdlg.cancelbutton.caption
-#, fuzzy
 msgctxt "tnmdsdlg.cancelbutton.caption"
 msgid "Cancelar"
 msgstr "Cancel"
 
 #: tnmdsdlg.caption
-#, fuzzy
 msgctxt "tnmdsdlg.caption"
 msgid "Opções"
 msgstr "Options"
 
 #: tnmdsdlg.labelcoef.caption
-#, fuzzy
 msgctxt "tnmdsdlg.labelcoef.caption"
 msgid "Coeficiente:"
 msgstr "Coefficient:"
 
 #: tnmdsdlg.labelconfig.caption
 msgid "Configuração Inicial:"
-msgstr ""
+msgstr "Initial Configuration:"
 
 #: tnmdsdlg.labeliter.caption
 msgid "Número de Interações:"
-msgstr ""
+msgstr "Number of Interations:"
 
 #: tnmdsdlg.labeltransform.caption
-#, fuzzy
 msgctxt "tnmdsdlg.labeltransform.caption"
 msgid "Transformação:"
 msgstr "Transformation:"
 
 #: tnmdsdlg.okbutton.caption
-#, fuzzy
 msgctxt "tnmdsdlg.okbutton.caption"
 msgid "OK"
 msgstr "OK"
@@ -2575,4 +2548,3 @@ msgstr "Transformation:"
 msgctxt "trdadlg.okbutton.caption"
 msgid "OK"
 msgstr "OK"
-

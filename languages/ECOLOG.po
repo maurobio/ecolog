@@ -1715,15 +1715,11 @@ msgid "Reduzir peso de espécies raras "
 msgstr ""
 
 #: tdcadlg.checkboxrescaling.caption
-msgid "Usar \"Rescaling\" ?"
-msgstr ""
-
-#: tdcadlg.checkboxrescaling.hint
-msgid "Reajustar a escala para expandir os extremos dos eixos"
+msgid "Rescalonamento"
 msgstr ""
 
 #: tdcadlg.labelnsegs.caption
-msgid "No. de segmentos:"
+msgid "Número de segmentos:"
 msgstr ""
 
 #: tdcadlg.labelrescalingn.caption
