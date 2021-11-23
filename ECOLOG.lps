@@ -20,11 +20,11 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="1420"/>
-        <CursorPos X="3" Y="1409"/>
+        <TopLine Value="1429"/>
+        <CursorPos X="21" Y="1437"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="child.pas"/>
@@ -45,8 +45,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="22"/>
-        <TopLine Value="108"/>
-        <CursorPos X="17" Y="117"/>
+        <TopLine Value="86"/>
+        <CursorPos X="3" Y="88"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -56,10 +56,13 @@
         <ComponentName Value="AboutBox"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="17"/>
+        <TopLine Value="7"/>
         <CursorPos X="21" Y="13"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="cluster.pas"/>
@@ -92,7 +95,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="9"/>
-        <TopLine Value="18"/>
+        <TopLine Value="17"/>
         <CursorPos X="5" Y="96"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
@@ -232,7 +235,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="3" Y="6"/>
+        <TopLine Value="70"/>
+        <CursorPos X="36" Y="76"/>
         <UsageCount Value="29"/>
         <Loaded Value="True"/>
       </Unit20>
@@ -356,119 +360,127 @@
         <UsageCount Value="9"/>
       </Unit35>
     </Units>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="main.pas"/>
-        <Caret Line="1426" Column="32" TopLine="1364"/>
-      </Position1>
-      <Position2>
-        <Filename Value="dca.pas"/>
-        <Caret Line="231" Column="5" TopLine="216"/>
-      </Position2>
-      <Position3>
-        <Filename Value="main.pas"/>
-        <Caret Line="48" Column="101" TopLine="20"/>
-      </Position3>
-      <Position4>
-        <Filename Value="diversity.pas"/>
-        <Caret Line="104" Column="9" TopLine="100"/>
-      </Position4>
-      <Position5>
-        <Filename Value="dca.pas"/>
-        <Caret Line="41" Column="7" TopLine="33"/>
-      </Position5>
-      <Position6>
         <Filename Value="pca.pas"/>
         <Caret Line="209" Column="42" TopLine="203"/>
-      </Position6>
-      <Position7>
+      </Position1>
+      <Position2>
         <Filename Value="pca.pas"/>
         <Caret Line="181" Column="29" TopLine="176"/>
-      </Position7>
-      <Position8>
+      </Position2>
+      <Position3>
         <Filename Value="pca.pas"/>
         <Caret Line="46" TopLine="40"/>
-      </Position8>
-      <Position9>
+      </Position3>
+      <Position4>
         <Filename Value="pca.pas"/>
         <Caret Line="140" Column="20" TopLine="131"/>
-      </Position9>
-      <Position10>
+      </Position4>
+      <Position5>
         <Filename Value="diversity.pas"/>
         <Caret Line="110" Column="27" TopLine="110"/>
-      </Position10>
-      <Position11>
+      </Position5>
+      <Position6>
         <Filename Value="diversity.pas"/>
         <Caret Line="26" Column="25" TopLine="19"/>
-      </Position11>
-      <Position12>
+      </Position6>
+      <Position7>
         <Filename Value="diversity.pas"/>
         <Caret Line="27" Column="12" TopLine="19"/>
+      </Position7>
+      <Position8>
+        <Filename Value="dca.pas"/>
+        <Caret Line="110" TopLine="104"/>
+      </Position8>
+      <Position9>
+        <Filename Value="dca.pas"/>
+        <Caret Line="97" Column="35" TopLine="92"/>
+      </Position9>
+      <Position10>
+        <Filename Value="dca.pas"/>
+        <Caret Line="46" Column="33" TopLine="39"/>
+      </Position10>
+      <Position11>
+        <Filename Value="dca.pas"/>
+        <Caret Line="98" Column="50" TopLine="90"/>
+      </Position11>
+      <Position12>
+        <Filename Value="dca.pas"/>
+        <Caret Line="96" Column="26" TopLine="22"/>
       </Position12>
       <Position13>
         <Filename Value="dca.pas"/>
-        <Caret Line="110" TopLine="104"/>
+        <Caret Line="98" Column="26" TopLine="81"/>
       </Position13>
       <Position14>
         <Filename Value="dca.pas"/>
-        <Caret Line="97" Column="35" TopLine="92"/>
+        <Caret Line="104" Column="26" TopLine="87"/>
       </Position14>
       <Position15>
         <Filename Value="dca.pas"/>
-        <Caret Line="46" Column="33" TopLine="39"/>
+        <Caret Line="56" Column="3" TopLine="54"/>
       </Position15>
       <Position16>
         <Filename Value="dca.pas"/>
-        <Caret Line="98" Column="50" TopLine="90"/>
+        <Caret Line="62" Column="49" TopLine="54"/>
       </Position16>
       <Position17>
-        <Filename Value="dca.pas"/>
-        <Caret Line="96" Column="26" TopLine="22"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="1163" Column="110" TopLine="1160"/>
       </Position17>
       <Position18>
         <Filename Value="dca.pas"/>
-        <Caret Line="98" Column="26" TopLine="81"/>
+        <Caret Line="96" Column="73" TopLine="84"/>
       </Position18>
       <Position19>
         <Filename Value="dca.pas"/>
-        <Caret Line="104" Column="26" TopLine="87"/>
+        <Caret Line="52" TopLine="43"/>
       </Position19>
       <Position20>
-        <Filename Value="dca.pas"/>
-        <Caret Line="56" Column="3" TopLine="54"/>
+        <Filename Value="ca.pas"/>
+        <Caret Line="40" Column="8" TopLine="32"/>
       </Position20>
       <Position21>
-        <Filename Value="dca.pas"/>
-        <Caret Line="62" Column="49" TopLine="54"/>
+        <Filename Value="rda.pas"/>
+        <Caret Line="176" Column="23" TopLine="171"/>
       </Position21>
       <Position22>
-        <Filename Value="main.pas"/>
-        <Caret Line="1163" Column="110" TopLine="1160"/>
+        <Filename Value="rda.pas"/>
+        <Caret Line="77" Column="5" TopLine="60"/>
       </Position22>
       <Position23>
-        <Filename Value="dca.pas"/>
-        <Caret Line="96" Column="73" TopLine="84"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="1373" Column="44" TopLine="1366"/>
       </Position23>
       <Position24>
         <Filename Value="dca.pas"/>
-        <Caret Line="52" TopLine="43"/>
+        <Caret Line="8" Column="54"/>
       </Position24>
       <Position25>
-        <Filename Value="ca.pas"/>
-        <Caret Line="40" Column="8" TopLine="32"/>
+        <Filename Value="dca.pas"/>
+        <Caret Line="72" Column="26" TopLine="72"/>
       </Position25>
       <Position26>
-        <Filename Value="rda.pas"/>
-        <Caret Line="176" Column="23" TopLine="171"/>
+        <Filename Value="dca.pas"/>
+        <Caret Line="68" Column="3" TopLine="54"/>
       </Position26>
       <Position27>
-        <Filename Value="rda.pas"/>
-        <Caret Line="77" Column="5" TopLine="60"/>
+        <Filename Value="dca.pas"/>
+        <Caret Line="75" Column="3" TopLine="73"/>
       </Position27>
       <Position28>
-        <Filename Value="main.pas"/>
-        <Caret Line="1373" Column="44" TopLine="1366"/>
+        <Filename Value="dca.pas"/>
+        <Caret Line="70" Column="8" TopLine="70"/>
       </Position28>
+      <Position29>
+        <Filename Value="main.pas"/>
+        <Caret Line="1428" Column="19" TopLine="1419"/>
+      </Position29>
+      <Position30>
+        <Filename Value="filter.pas"/>
+        <Caret Line="112" Column="64" TopLine="108"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

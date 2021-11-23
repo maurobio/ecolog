@@ -9,10 +9,6 @@ object FilterDlg: TFilterDlg
   ClientHeight = 303
   ClientWidth = 448
   Color = clBtnFace
-  Font.Color = clBlack
-  Font.Height = -11
-  Font.Name = 'MS Sans Serif'
-  Font.Pitch = fpVariable
   Icon.Data = {
     3E1000000000010001001F200000010020002810000016000000280000001F00
     0000400000000100200000000000800F00006400000064000000000000000000
@@ -169,9 +165,9 @@ object FilterDlg: TFilterDlg
   end
   object Label1: TLabel
     Left = 16
-    Height = 13
-    Top = 17
-    Width = 41
+    Height = 15
+    Top = 14
+    Width = 47
     Caption = 'Campos:'
     Color = clBtnFace
     ParentColor = False
@@ -179,19 +175,19 @@ object FilterDlg: TFilterDlg
   end
   object Label2: TLabel
     Left = 16
-    Height = 13
+    Height = 15
     Top = 56
-    Width = 27
+    Width = 29
     Caption = 'Valor:'
     Color = clBtnFace
     ParentColor = False
     Transparent = False
   end
   object Label3: TLabel
-    Left = 298
-    Height = 13
-    Top = 17
-    Width = 47
+    Left = 294
+    Height = 15
+    Top = 14
+    Width = 53
     Caption = 'Operador:'
     Color = clBtnFace
     ParentColor = False
@@ -237,9 +233,9 @@ object FilterDlg: TFilterDlg
   end
   object Label5: TLabel
     Left = 16
-    Height = 13
-    Top = 139
-    Width = 93
+    Height = 15
+    Top = 136
+    Width = 102
     Caption = 'Lista de Condições:'
     Color = clBtnFace
     ParentColor = False
@@ -275,30 +271,30 @@ object FilterDlg: TFilterDlg
   end
   object comboFields: TComboBox
     Left = 16
-    Height = 21
+    Height = 23
     Top = 30
     Width = 243
-    ItemHeight = 13
+    ItemHeight = 15
     OnChange = comboFieldsChange
     Style = csDropDownList
     TabOrder = 0
   end
   object editFilter: TComboBox
     Left = 16
-    Height = 21
-    Top = 69
+    Height = 23
+    Top = 71
     Width = 329
-    ItemHeight = 13
+    ItemHeight = 15
     OnDropDown = editFilterClick
     OnKeyDown = editFilterKeyDown
     TabOrder = 2
   end
   object comboConditional: TComboBox
     Left = 266
-    Height = 21
+    Height = 23
     Top = 30
     Width = 79
-    ItemHeight = 13
+    ItemHeight = 15
     Style = csDropDownList
     TabOrder = 1
   end
@@ -334,7 +330,7 @@ object FilterDlg: TFilterDlg
     Left = 16
     Height = 19
     Top = 97
-    Width = 27
+    Width = 26
     Caption = 'E'
     TabOrder = 3
   end
@@ -342,7 +338,7 @@ object FilterDlg: TFilterDlg
     Left = 63
     Height = 19
     Top = 97
-    Width = 34
+    Width = 36
     Caption = 'Ou'
     TabOrder = 4
   end

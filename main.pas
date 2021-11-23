@@ -1425,7 +1425,7 @@ begin
           StrToInt(IfThen(CheckBoxDownweight.Checked, '1', '0')),
           SpinEditNSegs.Value,
           StrToInt(IfThen(CheckBoxRescaling.Checked, '0', '1')),
-          SpinEditNRescaling.Value, ComboBoxScale.ItemIndex);
+          SpinEditRescaling.Value, ComboBoxScale.ItemIndex);
         Screen.Cursor := crHourGlass;
         if RunCommand(RPath, ['--vanilla', 'dca.R'], s, [poNoConsole]) then
         begin
@@ -1434,7 +1434,7 @@ begin
             StrToInt(IfThen(CheckBoxDownweight.Checked, '1', '0')),
             SpinEditNSegs.Value,
             StrToInt(IfThen(CheckBoxRescaling.Checked, '0', '1')),
-            SpinEditNRescaling.Value, n, m);
+            SpinEditRescaling.Value, n, m);
           CreateMDIChild(ExtractFileName(SaveDialog.Filename));
           with MultiDoc.ActiveObject as TMDIChild do
           begin

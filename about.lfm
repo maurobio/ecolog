@@ -8,8 +8,6 @@ object AboutBox: TAboutBox
   ClientHeight = 312
   ClientWidth = 448
   Color = clBtnFace
-  Font.Height = -11
-  Font.Name = 'MS Sans Serif'
   Icon.Data = {
     3E1000000000010001001F200000010020002810000016000000280000001F00
     0000400000000100200000000000800F00006400000064000000000000000000
@@ -145,20 +143,21 @@ object AboutBox: TAboutBox
   }
   OnShow = FormShow
   Position = poMainFormCenter
-  LCLVersion = '2.0.8.0'
+  LCLVersion = '2.0.12.0'
   object Panel1: TPanel
     Left = 8
-    Height = 264
+    Height = 254
     Top = 8
-    Width = 433
+    Width = 324
+    AutoSize = True
     BevelOuter = bvNone
-    ClientHeight = 264
-    ClientWidth = 433
+    ClientHeight = 254
+    ClientWidth = 324
     TabOrder = 0
     object ProgramIcon: TImage
       Left = 0
       Height = 40
-      Top = 8
+      Top = 0
       Width = 40
       Picture.Data = {
         1754506F727461626C654E6574776F726B47726170686963AB03000089504E47
@@ -196,117 +195,99 @@ object AboutBox: TAboutBox
       Transparent = True
     end
     object ProductName: TLabel
-      Left = 48
-      Height = 13
-      Top = 8
-      Width = 43
+      Left = 39
+      Height = 15
+      Top = 0
+      Width = 46
       Caption = 'ECOLOG'
-      Font.Height = -11
-      Font.Pitch = fpVariable
-      Font.Quality = fqDraft
       Font.Style = [fsBold]
       ParentColor = False
       ParentFont = False
     end
     object Copyright: TLabel
-      Left = 48
-      Height = 13
-      Top = 57
-      Width = 221
+      Left = 39
+      Height = 15
+      Top = 49
+      Width = 229
       Caption = 'Copyright © 1990-2021 Mauro J. Cavalcanti'
-      Font.Height = -11
       ParentColor = False
       ParentFont = False
     end
     object VersionNumber: TLabel
-      Left = 97
-      Height = 13
-      Top = 8
-      Width = 32
+      Left = 88
+      Height = 15
+      Top = 0
+      Width = 33
       Caption = 'v 0.0.0'
-      Font.Height = -11
       ParentColor = False
       ParentFont = False
     end
     object OperatingSystem: TLabel
-      Left = 48
-      Height = 13
-      Top = 194
+      Left = 39
+      Height = 15
+      Top = 186
       Width = 18
       Caption = 'OS:'
-      Font.Height = -11
       ParentColor = False
       ParentFont = False
     end
     object Website: TLabel
       Cursor = crHandPoint
-      Left = 48
-      Height = 13
-      Top = 243
-      Width = 159
+      Left = 39
+      Height = 15
+      Top = 235
+      Width = 162
       Caption = 'Página do ECOLOG na Internet'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlue
-      Font.Height = -11
-      Font.Pitch = fpVariable
-      Font.Quality = fqDraft
       Font.Style = [fsUnderline]
       ParentColor = False
       ParentFont = False
       OnClick = WebsiteClick
     end
     object Compiler: TLabel
-      Left = 48
-      Height = 13
-      Top = 135
-      Width = 63
+      Left = 39
+      Height = 15
+      Top = 127
+      Width = 66
       Caption = 'Compilador:'
-      Font.Height = -11
       ParentColor = False
       ParentFont = False
     end
     object IDE: TLabel
-      Left = 48
-      Height = 13
-      Top = 154
+      Left = 39
+      Height = 15
+      Top = 146
       Width = 20
       Caption = 'IDE:'
-      Font.Height = -11
       ParentColor = False
       ParentFont = False
     end
     object Platform: TLabel
-      Left = 48
-      Height = 13
-      Top = 174
-      Width = 58
+      Left = 39
+      Height = 15
+      Top = 166
+      Width = 61
       Caption = 'Plataforma:'
-      Font.Height = -11
       ParentColor = False
       ParentFont = False
     end
     object Comments: TLabel
-      Left = 48
-      Height = 13
-      Top = 31
-      Width = 54
+      Left = 39
+      Height = 15
+      Top = 23
+      Width = 59
       Caption = 'Comments'
-      Font.Height = -11
       ParentColor = False
       ParentFont = False
     end
     object Information: TLabel
-      Left = 49
-      Height = 13
-      Top = 115
-      Width = 117
+      Left = 39
+      Height = 15
+      Top = 107
+      Width = 122
       Caption = 'Informação do Sistema'
       Font.CharSet = ANSI_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Segoe UI'
-      Font.Pitch = fpVariable
-      Font.Quality = fqDraft
       ParentColor = False
       ParentFont = False
     end
@@ -314,7 +295,7 @@ object AboutBox: TAboutBox
       Cursor = crHandPoint
       Left = 232
       Height = 26
-      Top = 236
+      Top = 228
       Width = 92
       AutoSize = True
       OnClick = DonationClick

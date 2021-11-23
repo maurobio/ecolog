@@ -17,12 +17,13 @@ type
     CancelButton: TButton;
     CheckBoxDetrended: TCheckBox;
     CheckBoxDownweight: TCheckBox;
-    SpinEditNRescaling: TSpinEdit;
+    SpinEditRescaling: TSpinEdit;
     SpinEditNSegs: TSpinEdit;
     TransformMemo: TMemo;
     CheckBoxRescaling: TCheckBox;
-    LabelRescalingN: TLabel;
+    LabelRescaling: TLabel;
     LabelNSegs: TLabel;
+    procedure CheckBoxRescalingClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -63,6 +64,16 @@ begin
     Add(strScaleSymmetric);
   end;
   ComboBoxScale.ItemIndex := 0;
+  CheckBoxRescaling.Checked := False;
+  SpinEditRescaling.Enabled := False;
+end;
+
+procedure TDCADlg.CheckBoxRescalingClick(Sender: TObject);
+begin
+  if CheckBoxRescaling.Checked then
+    SpinEditRescaling.Enabled := True
+  else
+    SpinEditRescaling.Enabled := False;
 end;
 
 procedure TDCADlg.CreateDCA(fname: string; ira, iweigh, mk, scale, iresc, axis: integer);
