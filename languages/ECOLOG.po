@@ -429,6 +429,116 @@ msgstr ""
 msgid "Transecção"
 msgstr ""
 
+#: kmeans.strclusters
+msgid "Número de Agrupamentos: "
+msgstr ""
+
+#: kmeans.strcoef
+msgctxt "kmeans.strcoef"
+msgid "Coeficiente: "
+msgstr ""
+
+#: kmeans.strcoefavgeuclidean
+msgctxt "kmeans.strcoefavgeuclidean"
+msgid "Euclidiana normalizada"
+msgstr ""
+
+#: kmeans.strcoefbray
+msgctxt "kmeans.strcoefbray"
+msgid "Bray-Curtis"
+msgstr ""
+
+#: kmeans.strcoefcanberra
+msgctxt "kmeans.strcoefcanberra"
+msgid "Canberra"
+msgstr ""
+
+#: kmeans.strcoefeuclidean
+msgctxt "kmeans.strcoefeuclidean"
+msgid "Euclidiana"
+msgstr ""
+
+#: kmeans.strcoefmanhattan
+msgctxt "kmeans.strcoefmanhattan"
+msgid "Manhattan"
+msgstr ""
+
+#: kmeans.strcoefmorisita
+msgctxt "kmeans.strcoefmorisita"
+msgid "Morisita-Horn"
+msgstr ""
+
+#: kmeans.strcoefsqreuclidean
+msgctxt "kmeans.strcoefsqreuclidean"
+msgid "Euclidiana quadrada"
+msgstr ""
+
+#: kmeans.strcompactness
+msgid "Compactness = "
+msgstr ""
+
+#: kmeans.strconfig
+msgctxt "kmeans.strconfig"
+msgid "Configuração Inicial: "
+msgstr ""
+
+#: kmeans.strdistance
+msgid "DISTÂNCIA"
+msgstr ""
+
+#: kmeans.striter
+msgctxt "kmeans.striter"
+msgid "Número de Iterações: "
+msgstr ""
+
+#: kmeans.strkmeans
+msgid "K-MÉDIAS"
+msgstr ""
+
+#: kmeans.strnstart
+msgid "Número Inicial de Partições: "
+msgstr ""
+
+#: kmeans.strsamples
+msgctxt "kmeans.strsamples"
+msgid "Amostras"
+msgstr ""
+
+#: kmeans.strspecies
+msgctxt "kmeans.strspecies"
+msgid "Espécies"
+msgstr ""
+
+#: kmeans.strtransform
+msgctxt "kmeans.strtransform"
+msgid "Transformação: "
+msgstr ""
+
+#: kmeans.strtransformarcsin
+msgctxt "kmeans.strtransformarcsin"
+msgid "Arcosseno"
+msgstr ""
+
+#: kmeans.strtransformcommonlog
+msgctxt "kmeans.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr ""
+
+#: kmeans.strtransformnaturallog
+msgctxt "kmeans.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr ""
+
+#: kmeans.strtransformnone
+msgctxt "kmeans.strtransformnone"
+msgid "Sem Transformação"
+msgstr ""
+
+#: kmeans.strtransformsqrt
+msgctxt "kmeans.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr ""
+
 #: main.stradd
 msgid "Deseja adicionar planilhas ao projeto?"
 msgstr ""
@@ -791,6 +901,7 @@ msgid "Euclidiana quadrada"
 msgstr ""
 
 #: nmds.strconfig
+msgctxt "nmds.strconfig"
 msgid "Configuração Inicial: "
 msgstr ""
 
@@ -807,6 +918,7 @@ msgid "DIMENSÃO "
 msgstr ""
 
 #: nmds.striter
+msgctxt "nmds.striter"
 msgid "Número de Iterações: "
 msgstr ""
 
@@ -1722,7 +1834,8 @@ msgstr ""
 msgid "Número de segmentos:"
 msgstr ""
 
-#: tdcadlg.labelrescalingn.caption
+#: tdcadlg.labelrescaling.caption
+msgctxt "tdcadlg.labelrescaling.caption"
 msgid "Número de eixos:"
 msgstr ""
 
@@ -1786,6 +1899,43 @@ msgstr ""
 msgid "Ou"
 msgstr ""
 
+#: tkmeansdlg.cancelbutton.caption
+msgctxt "tkmeansdlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr ""
+
+#: tkmeansdlg.caption
+msgctxt "tkmeansdlg.caption"
+msgid "Opções"
+msgstr ""
+
+#: tkmeansdlg.labelclusters.caption
+msgid "Número de agrupamentos:"
+msgstr ""
+
+#: tkmeansdlg.labelcoef.caption
+msgctxt "tkmeansdlg.labelcoef.caption"
+msgid "Coeficiente:"
+msgstr ""
+
+#: tkmeansdlg.labelitermax.caption
+msgid "Número de Iterações:"
+msgstr ""
+
+#: tkmeansdlg.labelnstart.caption
+msgid "Número inicial de partições:"
+msgstr ""
+
+#: tkmeansdlg.labeltransform.caption
+msgctxt "tkmeansdlg.labeltransform.caption"
+msgid "Transformação:"
+msgstr ""
+
+#: tkmeansdlg.okbutton.caption
+msgctxt "tkmeansdlg.okbutton.caption"
+msgid "OK"
+msgstr ""
+
 #: tmainform.addbutton.caption
 msgctxt "tmainform.addbutton.caption"
 msgid "Adicionar..."
@@ -1798,7 +1948,7 @@ msgstr ""
 
 #: tmainform.analysisclusteritem.caption
 msgctxt "tmainform.analysisclusteritem.caption"
-msgid "Agrupamento..."
+msgid "Agrupamento"
 msgstr ""
 
 #: tmainform.analysisclusteritem.hint
@@ -1862,12 +2012,42 @@ msgstr ""
 
 #: tmainform.clusterbutton.caption
 msgctxt "tmainform.clusterbutton.caption"
-msgid "Agrupamento..."
+msgid "Agrupamento"
 msgstr ""
 
 #: tmainform.clusterbutton.hint
 msgctxt "tmainform.clusterbutton.hint"
 msgid "Análise de agrupamentos"
+msgstr ""
+
+#: tmainform.clusterkmeansitem.caption
+msgctxt "tmainform.clusterkmeansitem.caption"
+msgid "K-Médias..."
+msgstr ""
+
+#: tmainform.clusterkmeansitem.hint
+msgctxt "tmainform.clusterkmeansitem.hint"
+msgid "Agrupamento pelo método de k-médias"
+msgstr ""
+
+#: tmainform.clustersahnitem.caption
+msgctxt "tmainform.clustersahnitem.caption"
+msgid "Análise de Agrupamentos..."
+msgstr ""
+
+#: tmainform.clustersahnitem.hint
+msgctxt "tmainform.clustersahnitem.hint"
+msgid "Agrupamento por métodos sequenciais, aglomerativos e hierárquicos (SAHN)"
+msgstr ""
+
+#: tmainform.clustertwspitem.caption
+msgctxt "tmainform.clustertwspitem.caption"
+msgid "Análise de Espécies Indicadoras..."
+msgstr ""
+
+#: tmainform.clustertwspitem.hint
+msgctxt "tmainform.clustertwspitem.hint"
+msgid "Agrupamento divisivo pelo método de análise de espécies indicadoras (TWINSPAN)"
 msgstr ""
 
 #: tmainform.d1.caption
@@ -1880,6 +2060,16 @@ msgstr ""
 
 #: tmainform.d3.caption
 msgid "D3"
+msgstr ""
+
+#: tmainform.dcaitem.caption
+msgctxt "tmainform.dcaitem.caption"
+msgid "Análise de Correspondências Corrigida..."
+msgstr ""
+
+#: tmainform.dcaitem.hint
+msgctxt "tmainform.dcaitem.hint"
+msgid "Análise de correspondências corrigida (DECORANA)"
 msgstr ""
 
 #: tmainform.diversitybutton.caption
@@ -2022,6 +2212,16 @@ msgstr ""
 msgid "Ajuda"
 msgstr ""
 
+#: tmainform.kmitem.caption
+msgctxt "tmainform.kmitem.caption"
+msgid "K-Médias..."
+msgstr ""
+
+#: tmainform.kmitem.hint
+msgctxt "tmainform.kmitem.hint"
+msgid "Agrupamento pelo método de k-médias"
+msgstr ""
+
 #: tmainform.labelsbutton.caption
 msgctxt "tmainform.labelsbutton.caption"
 msgid "&Etiquetas..."
@@ -2100,6 +2300,10 @@ msgctxt "tmainform.ordinationbutton.caption"
 msgid "Ordenação"
 msgstr ""
 
+#: tmainform.ordinationbutton.hint
+msgid "Técnicas de ordenação"
+msgstr ""
+
 #: tmainform.ordinationcaitem.caption
 msgctxt "tmainform.ordinationcaitem.caption"
 msgid "Análise de Correspondências..."
@@ -2119,10 +2323,12 @@ msgid "Análise de correspondências canônica (CCA)"
 msgstr ""
 
 #: tmainform.ordinationdcaitem.caption
+msgctxt "tmainform.ordinationdcaitem.caption"
 msgid "Análise de Correspondências Corrigida..."
 msgstr ""
 
 #: tmainform.ordinationdcaitem.hint
+msgctxt "tmainform.ordinationdcaitem.hint"
 msgid "Análise de correspondências corrigida (DECORANA)"
 msgstr ""
 
@@ -2261,6 +2467,16 @@ msgctxt "tmainform.reportstatisticsitem.hint"
 msgid "Relatório estatístico"
 msgstr ""
 
+#: tmainform.sahnitem.caption
+msgctxt "tmainform.sahnitem.caption"
+msgid "Análise de Agrupamentos..."
+msgstr ""
+
+#: tmainform.sahnitem.hint
+msgctxt "tmainform.sahnitem.hint"
+msgid "Agrupamento por métodos sequenciais, aglomerativos e hierárquicos (SAHN)"
+msgstr ""
+
 #: tmainform.searchfilteritem.caption
 msgctxt "tmainform.searchfilteritem.caption"
 msgid "&Filtrar..."
@@ -2325,6 +2541,16 @@ msgstr ""
 
 #: tmainform.toolbar.caption
 msgid "ToolBar"
+msgstr ""
+
+#: tmainform.twspitem.caption
+msgctxt "tmainform.twspitem.caption"
+msgid "Análise de Espécies Indicadoras..."
+msgstr ""
+
+#: tmainform.twspitem.hint
+msgctxt "tmainform.twspitem.hint"
+msgid "Agrupamento divisivo pelo método de análise de espécies indicadoras (TWINSPAN)"
 msgstr ""
 
 #: tmainform.windowcascadeitem.caption
@@ -2537,5 +2763,54 @@ msgstr ""
 #: trdadlg.okbutton.caption
 msgctxt "trdadlg.okbutton.caption"
 msgid "OK"
+msgstr ""
+
+#: ttwspdlg.cancelbutton.caption
+msgctxt "ttwspdlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr ""
+
+#: ttwspdlg.caption
+msgctxt "ttwspdlg.caption"
+msgid "Opções"
+msgstr ""
+
+#: ttwspdlg.labelmaxlevelofdivs.caption
+msgid "Número máximo de níveis de divisão (0 - 15):"
+msgstr ""
+
+#: ttwspdlg.labelmingroupsize.caption
+msgid "Tamanho mínimo de  grupo por divisão (2 -10000):"
+msgstr ""
+
+#: ttwspdlg.labelncutlevels.caption
+msgid "Número de níveis de corte:"
+msgstr ""
+
+#: ttwspdlg.okbutton.caption
+msgctxt "ttwspdlg.okbutton.caption"
+msgid "OK"
+msgstr ""
+
+#: ttwspdlg.pseudospeciesradiogroup.caption
+msgid "Pseudoespécies"
+msgstr ""
+
+#: ttwspdlg.pseudospeciesstringgrid.columns[0].title.caption
+msgid "Nível de Corte"
+msgstr ""
+
+#: twinsp.strsamples
+msgctxt "twinsp.strsamples"
+msgid "Amostras"
+msgstr ""
+
+#: twinsp.strspecies
+msgctxt "twinsp.strspecies"
+msgid "Espécies"
+msgstr ""
+
+#: twinsp.strtwsp
+msgid "ANÁLISE DE ESPÉCIES INDICADORAS"
 msgstr ""
 

@@ -1,4 +1,4 @@
-unit nmds;
+unit kmeans;
 
 {$mode objfpc}{$H+}
 
@@ -9,29 +9,33 @@ uses
 
 type
 
-  { TNMDSDlg }
+  { TKMeansDlg }
 
-  TNMDSDlg = class(TForm)
+  TKMeansDlg = class(TForm)
+    ComboBoxCoef: TComboBox;
+    ComboBoxTransform: TComboBox;
+    LabelCoef: TLabel;
+    LabelTransform: TLabel;
     OKButton: TButton;
     CancelButton: TButton;
-    ComboBoxTransform: TComboBox;
-    ComboBoxCoef: TComboBox;
-    ComboBoxConfig: TComboBox;
-    LabelTransform: TLabel;
-    LabelCoef: TLabel;
-    LabelIter: TLabel;
-    LabelConfig: TLabel;
-    SpinEditIter: TSpinEdit;
+    LabelClusters: TLabel;
+    LabelIterMax: TLabel;
+    LabelNStart: TLabel;
+    SpinEditClusters: TSpinEdit;
+    SpinEditIterMax: TSpinEdit;
+    SpinEditNStart: TSpinEdit;
     procedure FormCreate(Sender: TObject);
   private
 
   public
-    procedure CreateNMDS(fname: string; transf, coef, iter, config: integer);
-    procedure NMDS(fname: string; transf, coef, iter, config: integer; n, m: integer);
+    procedure CreateKMeans(fname: string;
+      transf, coef, centers, iter_max, nstart: integer);
+    procedure KMeans(fname: string; transf, coef, centers, iter_max, nstart: integer;
+      n, m: integer);
   end;
 
 var
-  NMDSDlg: TNMDSDlg;
+  KMeansDlg: TKMeansDlg;
 
 implementation
 
@@ -40,9 +44,11 @@ implementation
 uses report, useful;
 
 resourcestring
-  strNMDS = 'ESCALONAMENTO MULTIDIMENSIONAL NÃO-MÉTRICO';
-  strDim = 'DIMENSÃO ';
-  strStress = 'Stress = ';
+  strKMeans = 'K-MÉDIAS';
+  strCompactness = 'Compactness = ';
+  strSamples = 'Amostras';
+  strSpecies = 'Espécies';
+  strDistance = 'DISTÂNCIA';
   strTransform = 'Transformação: ';
   strTransformNone = 'Sem Transformação';
   strTransformCommonLog = 'Logaritmo comum (base 10)';
@@ -58,45 +64,12 @@ resourcestring
   strCoefSqrEuclidean = 'Euclidiana quadrada';
   strCoefMorisita = 'Morisita-Horn';
   strConfig = 'Configuração Inicial: ';
-  strConfigPCO = 'Coordenadas Principais';
-  strConfigRandom = 'Aleatória';
+  strClusters = 'Número de Agrupamentos: ';
   strIter = 'Número de Iterações: ';
-  strSamples = 'Amostras';
-  strSpecies = 'Espécies';
+  strNStart = 'Número Inicial de Partições: ';
 
-{ TNMDSDlg }
-
-procedure TNMDSDlg.FormCreate(Sender: TObject);
-begin
-  with ComboBoxTransform.Items do
-  begin
-    Add(strTransformNone);
-    Add(strTransformCommonLog);
-    Add(strTransformNaturalLog);
-    Add(strTransformSqrt);
-    Add(strTransformArcsin);
-  end;
-  ComboBoxTransform.ItemIndex := 0;
-  with ComboBoxCoef.Items do
-  begin
-    Add(strCoefBray);
-    Add(strCoefCanberra);
-    Add(strCoefManhattan);
-    Add(strCoefEuclidean);
-    Add(strCoefAvgEuclidean);
-    Add(strCoefSqrEuclidean);
-    Add(strCoefMorisita);
-  end;
-  ComboBoxCoef.ItemIndex := 0;
-  with ComboBoxConfig.Items do
-  begin
-    Add(strConfigPCO);
-    Add(strConfigRandom);
-  end;
-  ComboBoxConfig.ItemIndex := 0;
-end;
-
-procedure TNMDSDlg.CreateNMDS(fname: string; transf, coef, iter, config: integer);
+procedure TKMeansDlg.CreateKMeans(fname: string;
+  transf, coef, centers, iter_max, nstart: integer);
 var
   stransf, scoef, figf: string;
   outfile: TextFile;
@@ -119,14 +92,12 @@ begin
     6: scoef := 'horn';
   end;
 
-  AssignFile(outfile, 'nmds.R');
+  AssignFile(outfile, 'kmeans.R');
   Rewrite(outfile);
   WriteLn(outfile, 'options(warn=-1)');
   WriteLn(outfile, 'options(digits=4)');
   WriteLn(outfile, 'suppressPackageStartupMessages(library(vegan))');
-  WriteLn(outfile, 'suppressPackageStartupMessages(library(MASS))');
   WriteLn(outfile, 'library(vegan, quietly=TRUE)');
-  WriteLn(outfile, 'library(MASS, quietly=TRUE)');
   WriteLn(outfile, 'df.data <- read.csv("rdata.csv", row.names=1)');
   WriteLn(outfile, 'df.data <- t(df.data)');
   if Length(stransf) > 0 then
@@ -140,41 +111,36 @@ begin
     WriteLn(outfile, 'df.dist <- dist(df.data, diag=TRUE)^2')
   else if coef = 6 then
     WriteLn(outfile, 'df.dist <- designdist(df.data, "1-J/sqrt(A*B)")');
-  WriteLn(outfile, 'sink("nmds.txt")');
-  if config = 0 then
-    WriteLn(outfile, 'nmds <- isoMDS(df.dist, k=2, maxit=' + IntToStr(iter) +
-      ', trace=TRUE, tol=1e-7)')
-  else if config = 1 then
-    WriteLn(outfile,
-      'nmds <- isoMDS(df.dist, initMDS(df.dist), k=2, maxit=' +
-      IntToStr(iter) + ', trace=TRUE, tol=1e-7)');
-  WriteLn(outfile, 'cat("\nstress =", nmds$stress)');
+  WriteLn(outfile, 'cl <- kmeans(df.dist, centers=', centers,
+    ', iter.max=', iter_max, ', nstart=', nstart, ')');
+  WriteLn(outfile, 'sink("kmeans.txt")');
+  WriteLn(outfile, 'print(cl)');
   WriteLn(outfile, 'sink()');
   WriteLn(outfile, 'ppi <- 100');
   figf := GetFileNameWithoutExt(fname) + '.png';
   WriteLn(outfile, 'png("' + figf + '", width=6*ppi, height=6*ppi, res=ppi)');
   WriteLn(outfile, 'par(mar=c(4,4,4,4))');
-  WriteLn(outfile, 'x <- nmds$points[,1]');
-  WriteLn(outfile, 'y <- nmds$points[,2]');
-  WriteLn(outfile, 'plot(x, y, xlab=iconv("' + strDim +
-    '1", from=''UTF-8'', to=''latin1''), ylab=iconv("' + strDim +
-    '2", from=''UTF-8'', to=''latin1''), main=paste("' + strStress +
-    '", round(nmds$stress, 7), sep=" "), pch=19, col="blue")');
-  WriteLn(outfile, 'text(x, y, labels=rownames(nmds$points), pos=3, cex=0.7)');
+  WriteLn(outfile, 'x <- cl$centers[1,]');
+  WriteLn(outfile, 'y <- cl$centers[2,]');
+  WriteLn(outfile, 'plot(x, y, xlab=iconv("' + strDistance +
+    '", from=''UTF-8'', to=''latin1''), ylab=iconv("' + strDistance +
+    '", from=''UTF-8'', to=''latin1''), main=paste("' + strCompactness +
+    '", round(cl$betweenss/cl$totss*100.0, digits=1), "%", sep=" "), pch=19, col="blue")');
+  WriteLn(outfile, 'text(x, y, labels=rownames(df.data), cex=0.5, pos=3)');
   WriteLn(outfile, 'invisible(dev.off())');
   WriteLn(outfile, 'options(warn=0)');
   CloseFile(outfile);
 end;
 
-procedure TNMDSDlg.NMDS(fname: string; transf, coef, iter, config: integer;
-  n, m: integer);
+procedure TKMeansDlg.KMeans(fname: string;
+  transf, coef, centers, iter_max, nstart: integer; n, m: integer);
 var
   line, figf: string;
   infile, outfile: TextFile;
 begin
   AssignFile(outfile, fname);
   Rewrite(outfile);
-  Header(outfile, strNMDS);
+  Header(outfile, strKMeans);
   WriteLn(outfile, '<br>');
   WriteLn(outfile, IntToStr(n) + ' ' + LowerCase(strSamples) + ' x ' +
     IntToStr(m) + ' ' + LowerCase(strSpecies) + '<br><br>');
@@ -202,18 +168,18 @@ begin
     WriteLn(outfile, strCoef + strCoefMorisita + '<br><br>');
 
   WriteLn(outfile, strConfig + '<br>');
-  if config = 0 then
-    WriteLn(outfile, '&nbsp;&nbsp;&nbsp;' + strConfigPCO + '<br>')
-  else if config = 1 then
-    WriteLn(outfile, '&nbsp;&nbsp;&nbsp;' + strConfigRandom + '<br>');
-  Write(outfile, '&nbsp;&nbsp;&nbsp;' + strIter + IntToStr(iter) + '<br><br>');
+  WriteLn(outfile, '&nbsp;&nbsp;&nbsp;' + strClusters + IntToStr(centers) + '<br>');
+  WriteLn(outfile, '&nbsp;&nbsp;&nbsp;' + strIter + IntToStr(iter_max) + '<br>');
+  WriteLn(outfile, '&nbsp;&nbsp;&nbsp;' + strNStart + IntToStr(nstart) + '<br><br>');
 
   WriteLn(outfile, '<pre>');
-  AssignFile(infile, 'nmds.txt');
+  AssignFile(infile, 'kmeans.txt');
   Reset(infile);
   while not EOF(infile) do
   begin
     ReadLn(infile, line);
+    if line.StartsWith('Available') then
+      break;
     WriteLn(outfile, line);
   end;
   CloseFile(infile);
@@ -225,8 +191,34 @@ begin
   WriteLn(outfile, '</body>');
   WriteLn(outfile, '</html>');
   CloseFile(outfile);
-  if FileExists('nmds.txt') then
-    DeleteFile('nmds.txt');
+  if FileExists('kmeans.txt') then
+    DeleteFile('kmeans.txt');
+end;
+
+{ TKMeansDlg }
+
+procedure TKMeansDlg.FormCreate(Sender: TObject);
+begin
+  with ComboBoxTransform.Items do
+  begin
+    Add(strTransformNone);
+    Add(strTransformCommonLog);
+    Add(strTransformNaturalLog);
+    Add(strTransformSqrt);
+    Add(strTransformArcsin);
+  end;
+  ComboBoxTransform.ItemIndex := 0;
+  with ComboBoxCoef.Items do
+  begin
+    Add(strCoefBray);
+    Add(strCoefCanberra);
+    Add(strCoefManhattan);
+    Add(strCoefEuclidean);
+    Add(strCoefAvgEuclidean);
+    Add(strCoefSqrEuclidean);
+    Add(strCoefMorisita);
+  end;
+  ComboBoxCoef.ItemIndex := 0;
 end;
 
 end.

@@ -1,0 +1,114 @@
+object KMeansDlg: TKMeansDlg
+  Left = 256
+  Height = 231
+  Top = 145
+  Width = 289
+  BorderStyle = bsDialog
+  Caption = 'Opções'
+  ClientHeight = 231
+  ClientWidth = 289
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.0.12.0'
+  object LabelClusters: TLabel
+    Left = 16
+    Height = 15
+    Top = 91
+    Width = 143
+    Caption = 'Número de agrupamentos:'
+    ParentColor = False
+  end
+  object SpinEditClusters: TSpinEdit
+    Left = 225
+    Height = 23
+    Top = 87
+    Width = 50
+    TabOrder = 2
+    Value = 1
+  end
+  object LabelIterMax: TLabel
+    Left = 16
+    Height = 15
+    Top = 124
+    Width = 113
+    Caption = 'Número de Iterações:'
+    ParentColor = False
+  end
+  object LabelNStart: TLabel
+    Left = 16
+    Height = 15
+    Top = 157
+    Width = 148
+    Caption = 'Número inicial de partições:'
+    ParentColor = False
+  end
+  object SpinEditIterMax: TSpinEdit
+    Left = 225
+    Height = 23
+    Top = 120
+    Width = 50
+    TabOrder = 3
+    Value = 10
+  end
+  object SpinEditNStart: TSpinEdit
+    Left = 225
+    Height = 23
+    Top = 153
+    Width = 50
+    TabOrder = 4
+    Value = 1
+  end
+  object OKButton: TButton
+    Left = 107
+    Height = 25
+    Top = 191
+    Width = 75
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 5
+  end
+  object CancelButton: TButton
+    Left = 200
+    Height = 25
+    Top = 191
+    Width = 75
+    Cancel = True
+    Caption = 'Cancelar'
+    ModalResult = 2
+    TabOrder = 6
+  end
+  object LabelTransform: TLabel
+    Left = 16
+    Height = 15
+    Top = 21
+    Width = 82
+    Caption = 'Transformação:'
+    ParentColor = False
+  end
+  object ComboBoxTransform: TComboBox
+    Left = 115
+    Height = 23
+    Top = 17
+    Width = 160
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object LabelCoef: TLabel
+    Left = 16
+    Height = 15
+    Top = 55
+    Width = 63
+    Caption = 'Coeficiente:'
+    ParentColor = False
+  end
+  object ComboBoxCoef: TComboBox
+    Left = 115
+    Height = 23
+    Top = 51
+    Width = 160
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 1
+  end
+end

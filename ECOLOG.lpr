@@ -19,6 +19,7 @@ uses {$IFDEF UNIX} {$IFDEF UseCThreads}
   nmds,
   cca,
   ca,
+  dca,
   export,
   pco,
   pca,
@@ -30,7 +31,7 @@ uses {$IFDEF UNIX} {$IFDEF UseCThreads}
   diversity,
  {$IFDEF WINDOWS}ShpAPI129,
  {$ENDIF} progress,
-  eval;
+  eval, twinsp, kmeans;
 
 {$R *.res}
 
@@ -60,5 +61,8 @@ begin
   SplashScreen.Hide;
   SplashScreen.Free;
   Application.CreateForm(TProgressDlg, ProgressDlg);
+  Application.CreateForm(TDCADlg, DCADlg);
+  Application.CreateForm(TTWSPDlg, TWSPDlg);
+  Application.CreateForm(TKMeansDlg, KMeansDlg);
   Application.Run;
 end.

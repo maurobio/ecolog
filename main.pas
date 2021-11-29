@@ -52,6 +52,9 @@
 {     Versão 6.0.2 "Begonia", 22/11/2021                                       }
 {       -- Inclusão da Análise de Correspondências Corrigida (DECORANA).       }
 {       -- Inclusãão das saídas do R nos relatórios analíticos do sistema.     }
+{     Versão 6.0.3 "Chrysantemum", 30/11/2021                                  }
+{       -- Inclusão da Análise de Espécies Indicadoras (TWINSPAN)              }
+{       -- Inclusão da Análise de Agrupamentos por K-Médias                    }
 {==============================================================================}
 unit main;
 
@@ -89,8 +92,16 @@ type
     LanguageMenuEnglishItem: TMenuItem;
     LanguageMenuPortugueseItem: TMenuItem;
     LanguageMenuSpanishItem: TMenuItem;
+    ClusterSAHNItem: TMenuItem;
+    ClusterTWSPItem: TMenuItem;
+    ClusterKMeansItem: TMenuItem;
+    DCAItem: TMenuItem;
+    SAHNItem: TMenuItem;
+    TWSPItem: TMenuItem;
+    KMItem: TMenuItem;
     OrdinationDCAItem: TMenuItem;
     N7: TMenuItem;
+    ClusteringMenu: TPopupMenu;
     SearchFilterResetItem: TMenuItem;
     SearchMenu: TMenuItem;
     SearchSortItem: TMenuItem;
@@ -158,8 +169,10 @@ type
     ReportCatalogItem: TMenuItem;
     OpenDialog: TOpenDialog;
     StatusBar: TStatusBar;
-    procedure AnalysisClusterItemClick(Sender: TObject);
     procedure AnalysisDiversityItemClick(Sender: TObject);
+    procedure ClusterKMeansItemClick(Sender: TObject);
+    procedure ClusterSAHNItemClick(Sender: TObject);
+    procedure ClusterTWSPItemClick(Sender: TObject);
     procedure FileAddItemClick(Sender: TObject);
     procedure FileChangeItemClick(Sender: TObject);
     procedure FileCloseItemClick(Sender: TObject);
@@ -232,6 +245,8 @@ uses
   filter,
   diversity,
   cluster,
+  twinsp,
+  kmeans,
   pca,
   pco,
   nmds,
@@ -494,6 +509,22 @@ begin
   WindowTileVerticalItem.Enabled := ChildCount > 0;
   WindowCloseItem.Enabled := ChildCount > 0;
   N7.Visible := ChildCount > 0;
+  ReloadButton.Enabled := ChildCount > 0;
+  AddButton.Enabled := ChildCount > 0;
+  ReloadButton.Enabled := ChildCount > 0;
+  RemoveButton.Enabled := ChildCount > 0;
+  SortButton.Enabled := ChildCount > 0;
+  FindButton.Enabled := ChildCount > 0;
+  FilterButton.Enabled := ChildCount > 0;
+  CatalogButton.Enabled := ChildCount > 0;
+  LabelsButton.Enabled := ChildCount > 0;
+  ChecklistButton.Enabled := ChildCount > 0;
+  StatisticsButton.Enabled := ChildCount > 0;
+  NamesButton.Enabled := ChildCount > 0;
+  GeocodeButton.Enabled := ChildCount > 0;
+  DiversityButton.Enabled := ChildCount > 0;
+  ClusterButton.Enabled := ChildCount > 0;
+  OrdinationButton.Enabled := ChildCount > 0;
 end;
 
 procedure TMainForm.UpdateTitleBar(Filename: string);
@@ -1090,7 +1121,97 @@ begin
   end;
 end;
 
-procedure TMainForm.AnalysisClusterItemClick(Sender: TObject);
+procedure TMainForm.AnalysisDiversityItemClick(Sender: TObject);
+var
+  n, m: integer;
+  s: ansistring;
+begin
+  if not LocateR then
+    Exit;
+  SaveDialog.Title := strSaveFile;
+  SaveDialog.DefaultExt := '.htm';
+  SaveDialog.Filter := strHtmlFilter;
+  SaveDialog.Filename := '';
+  if SaveDialog.Execute then
+  begin
+    MainForm.MultiDoc.SetActiveChild(0);
+    GridToArray('rdata.csv', ',', n, m);
+    CreateDivers(SaveDialog.Filename);
+    Screen.Cursor := crHourGlass;
+    if RunCommand(RPath, ['--vanilla', 'diversity.R'], s, [poNoConsole]) then
+    begin
+      Divers(SaveDialog.Filename, n, m);
+      CreateMDIChild(ExtractFileName(SaveDialog.Filename));
+      with MultiDoc.ActiveObject as TMDIChild do
+      begin
+        DataGrid.Visible := False;
+        HtmlViewer.Visible := True;
+        HtmlViewer.LoadFromFile(SaveDialog.Filename);
+      end;
+      UpdateTitleBar(ProjectFile);
+    end
+    else
+    begin
+      Screen.Cursor := crDefault;
+      MessageDlg(strError, Format(strNotExecute, ['R']), mtError, [mbOK], 0);
+    end;
+    Screen.Cursor := crDefault;
+  end;
+end;
+
+procedure TMainForm.ClusterKMeansItemClick(Sender: TObject);
+var
+  n, m: integer;
+  s: ansistring;
+begin
+  if not LocateR then
+    Exit;
+  SaveDialog.Title := strSaveFile;
+  SaveDialog.DefaultExt := '.htm';
+  SaveDialog.Filter := strHtmlFilter;
+  SaveDialog.Filename := '';
+  if SaveDialog.Execute then
+  begin
+    MainForm.MultiDoc.SetActiveChild(0);
+    with KMeansDlg do
+    begin
+      if ShowModal = mrOk then
+      begin
+        GridToArray('rdata.csv', ',', n, m);
+        CreateKMeans(SaveDialog.Filename, ComboBoxTransform.ItemIndex,
+          ComboBoxCoef.ItemIndex,
+          SpinEditClusters.Value,
+          SpinEditIterMax.Value,
+          SpinEditNStart.Value);
+        Screen.Cursor := crHourGlass;
+        if RunCommand(RPath, ['--vanilla', 'kmeans.R'], s, [poNoConsole]) then
+        begin
+          KMeans(SaveDialog.Filename, ComboBoxTransform.ItemIndex,
+            ComboBoxCoef.ItemIndex,
+            SpinEditClusters.Value,
+            SpinEditIterMax.Value,
+            SpinEditNStart.Value, n, m);
+          CreateMDIChild(ExtractFileName(SaveDialog.Filename));
+          with MultiDoc.ActiveObject as TMDIChild do
+          begin
+            DataGrid.Visible := False;
+            HtmlViewer.Visible := True;
+            HtmlViewer.LoadFromFile(SaveDialog.Filename);
+          end;
+          UpdateTitleBar(ProjectFile);
+        end
+        else
+        begin
+          Screen.Cursor := crDefault;
+          MessageDlg(strError, Format(strNotExecute, ['R']), mtError, [mbOK], 0);
+        end;
+        Screen.Cursor := crDefault;
+      end;
+    end;
+  end;
+end;
+
+procedure TMainForm.ClusterSAHNItemClick(Sender: TObject);
 var
   n, m: integer;
   s: ansistring;
@@ -1138,7 +1259,7 @@ begin
   end;
 end;
 
-procedure TMainForm.AnalysisDiversityItemClick(Sender: TObject);
+procedure TMainForm.ClusterTWSPItemClick(Sender: TObject);
 var
   n, m: integer;
   s: ansistring;
@@ -1152,27 +1273,34 @@ begin
   if SaveDialog.Execute then
   begin
     MainForm.MultiDoc.SetActiveChild(0);
-    GridToArray('rdata.csv', ',', n, m);
-    CreateDivers(SaveDialog.Filename);
-    Screen.Cursor := crHourGlass;
-    if RunCommand(RPath, ['--vanilla', 'diversity.R'], s, [poNoConsole]) then
+    with TWSPDlg do
     begin
-      Divers(SaveDialog.Filename, n, m);
-      CreateMDIChild(ExtractFileName(SaveDialog.Filename));
-      with MultiDoc.ActiveObject as TMDIChild do
+      if ShowModal = mrOk then
       begin
-        DataGrid.Visible := False;
-        HtmlViewer.Visible := True;
-        HtmlViewer.LoadFromFile(SaveDialog.Filename);
+        GridToArray('rdata.csv', ',', n, m);
+        Screen.Cursor := crHourGlass;
+        if RunCommand(RPath, ['--vanilla', 'twsp.R'], s, [poNoConsole]) then
+        begin
+          TWSP(SaveDialog.Filename, CT,
+            SpinEditMinimumGroupSize.Value,
+            SpinEditMaximumLevelDivision.Value, n, m);
+          CreateMDIChild(ExtractFileName(SaveDialog.Filename));
+          with MultiDoc.ActiveObject as TMDIChild do
+          begin
+            DataGrid.Visible := False;
+            HtmlViewer.Visible := True;
+            HtmlViewer.LoadFromFile(SaveDialog.Filename);
+          end;
+          UpdateTitleBar(ProjectFile);
+        end
+        else
+        begin
+          Screen.Cursor := crDefault;
+          MessageDlg(strError, Format(strNotExecute, ['R']), mtError, [mbOK], 0);
+        end;
+        Screen.Cursor := crDefault;
       end;
-      UpdateTitleBar(ProjectFile);
-    end
-    else
-    begin
-      Screen.Cursor := crDefault;
-      MessageDlg(strError, Format(strNotExecute, ['R']), mtError, [mbOK], 0);
     end;
-    Screen.Cursor := crDefault;
   end;
 end;
 

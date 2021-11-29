@@ -1592,15 +1592,18 @@ object MainForm: TMainForm
       Left = 361
       Hint = 'Análise de agrupamentos'
       Top = 2
-      Caption = 'Agrupamento...'
+      Caption = 'Agrupamento'
+      DropdownMenu = ClusteringMenu
       ImageIndex = 8
       MenuItem = AnalysisClusterItem
       ParentShowHint = False
       ShowCaption = False
       ShowHint = True
+      Style = tbsButtonDrop
     end
     object OrdinationButton: TToolButton
-      Left = 384
+      Left = 394
+      Hint = 'Técnicas de ordenação'
       Top = 2
       Caption = 'Ordenação'
       DropdownMenu = OrdinationMenu
@@ -1767,10 +1770,24 @@ object MainForm: TMainForm
         OnClick = AnalysisDiversityItemClick
       end
       object AnalysisClusterItem: TMenuItem
-        Caption = 'Agrupamento...'
+        Caption = 'Agrupamento'
         Hint = 'Análise de agrupamentos'
         ImageIndex = 8
-        OnClick = AnalysisClusterItemClick
+        object ClusterSAHNItem: TMenuItem
+          Caption = 'Análise de Agrupamentos...'
+          Hint = 'Agrupamento por métodos sequenciais, aglomerativos e hierárquicos (SAHN)'
+          OnClick = ClusterSAHNItemClick
+        end
+        object ClusterTWSPItem: TMenuItem
+          Caption = 'Análise de Espécies Indicadoras...'
+          Hint = 'Agrupamento divisivo pelo método de análise de espécies indicadoras (TWINSPAN)'
+          OnClick = ClusterTWSPItemClick
+        end
+        object ClusterKMeansItem: TMenuItem
+          Caption = 'K-Médias...'
+          Hint = 'Agrupamento pelo método de k-médias'
+          OnClick = ClusterKMeansItemClick
+        end
       end
       object AnalysisOrdinationItem: TMenuItem
         Caption = 'Ordenação'
@@ -1891,16 +1908,16 @@ object MainForm: TMainForm
   end
   object OpenDialog: TOpenDialog
     Options = [ofFileMustExist, ofEnableSizing, ofViewDetail]
-    Left = 528
+    Left = 560
     Top = 96
   end
   object SaveDialog: TSaveDialog
     Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
-    Left = 560
+    Left = 592
     Top = 96
   end
   object ImageList: TImageList
-    Left = 592
+    Left = 624
     Top = 96
     Bitmap = {
       4C692B0000001000000010000000000000000000000000000000000000000000
@@ -3287,21 +3304,51 @@ object MainForm: TMainForm
     Top = 96
     object PCAItem: TMenuItem
       Caption = 'Análise de Componentes Principais...'
+      OnClick = OrdinationPCAItemClick
     end
     object PCOItem: TMenuItem
       Caption = 'Análise de Coordenadas Principais...'
+      OnClick = OrdinationPCOItemClick
     end
     object NMDSItem: TMenuItem
       Caption = 'Escalonamento Multidimensional Não-Métrico...'
+      OnClick = OrdinationNMDSItemClick
     end
     object CAItem: TMenuItem
       Caption = 'Análise de Correspondências...'
+      OnClick = OrdinationCAItemClick
+    end
+    object DCAItem: TMenuItem
+      Caption = 'Análise de Correspondências Corrigida...'
+      Hint = 'Análise de correspondências corrigida (DECORANA)'
+      OnClick = OrdinationDCAItemClick
     end
     object RAItem: TMenuItem
       Caption = 'Análise de Redundâncias...'
+      OnClick = OrdinationRDAItemClick
     end
     object CCAItem: TMenuItem
       Caption = 'Análise de Correspondências Canônica...'
+      OnClick = OrdinationCCAItemClick
+    end
+  end
+  object ClusteringMenu: TPopupMenu
+    Left = 528
+    Top = 96
+    object SAHNItem: TMenuItem
+      Caption = 'Análise de Agrupamentos...'
+      Hint = 'Agrupamento por métodos sequenciais, aglomerativos e hierárquicos (SAHN)'
+      OnClick = ClusterSAHNItemClick
+    end
+    object TWSPItem: TMenuItem
+      Caption = 'Análise de Espécies Indicadoras...'
+      Hint = 'Agrupamento divisivo pelo método de análise de espécies indicadoras (TWINSPAN)'
+      OnClick = ClusterTWSPItemClick
+    end
+    object KMItem: TMenuItem
+      Caption = 'K-Médias...'
+      Hint = 'Agrupamento pelo método de k-médias'
+      OnClick = ClusterKMeansItemClick
     end
   end
 end

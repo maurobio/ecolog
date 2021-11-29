@@ -1,0 +1,152 @@
+object TWSPDlg: TTWSPDlg
+  Left = 292
+  Height = 385
+  Top = 152
+  Width = 373
+  HelpContext = 2162
+  BorderStyle = bsDialog
+  Caption = 'Opções'
+  ClientHeight = 385
+  ClientWidth = 373
+  Color = clBtnFace
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  ShowHint = True
+  LCLVersion = '2.0.12.0'
+  object LabelMinGroupSize: TLabel
+    Left = 19
+    Height = 15
+    Top = 18
+    Width = 268
+    Caption = 'Tamanho mínimo de  grupo por divisão (2 -10000):'
+    ParentColor = False
+    WordWrap = True
+  end
+  object LabelMaxLevelOfDivs: TLabel
+    Left = 19
+    Height = 15
+    Top = 51
+    Width = 238
+    Caption = 'Número máximo de níveis de divisão (0 - 15):'
+    ParentColor = False
+    WordWrap = True
+  end
+  object PseudospeciesStringGrid: TStringGrid
+    Left = 19
+    Height = 123
+    Top = 205
+    Width = 334
+    HelpContext = 2162
+    Color = clSilver
+    ColCount = 2
+    Columns = <    
+      item
+        Title.Caption = 'Nível de Corte'
+        Width = 125
+      end>
+    DefaultColWidth = 125
+    DefaultRowHeight = 20
+    Enabled = False
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goDrawFocusSelected, goRowSizing, goEditing, goThumbTracking]
+    ParentFont = False
+    RowCount = 6
+    ScrollBars = ssVertical
+    TabOrder = 4
+    Cells = (
+      2
+      0
+      0
+      'Pseudoespécie'
+      1
+      0
+      'Nível de Corte'
+    )
+  end
+  object PseudoSpeciesRadioGroup: TRadioGroup
+    Left = 18
+    Height = 87
+    Top = 79
+    Width = 287
+    HelpContext = 2162
+    AutoFill = True
+    Caption = 'Pseudoespécies'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 67
+    ClientWidth = 283
+    ItemIndex = 0
+    Items.Strings = (
+      'Padrão - 5  pseudoespécies (níveis 0  2  5  10  20)'
+      'Presença/Ausência -  1 pseudoespécie (nível 0)'
+      'Outro - (até 9)'
+    )
+    OnSelectionChanged = PseudoSpeciesRadioGroupSelectionChanged
+    TabOrder = 2
+  end
+  object OKButton: TButton
+    Left = 190
+    Height = 25
+    Top = 344
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    OnClick = OKButtonClick
+    TabOrder = 5
+  end
+  object CancelButton: TButton
+    Left = 278
+    Height = 25
+    Top = 344
+    Width = 75
+    Cancel = True
+    Caption = 'Cancelar'
+    ModalResult = 2
+    TabOrder = 6
+  end
+  object SpinEditMinimumGroupSize: TSpinEdit
+    Left = 304
+    Height = 23
+    Top = 14
+    Width = 49
+    MaxValue = 10000
+    MinValue = 2
+    TabOrder = 0
+    Value = 5
+  end
+  object SpinEditMaximumLevelDivision: TSpinEdit
+    Left = 304
+    Height = 23
+    Top = 47
+    Width = 49
+    MaxValue = 15
+    TabOrder = 1
+    Value = 6
+  end
+  object LabelNCutLevels: TLabel
+    Left = 19
+    Height = 15
+    Top = 173
+    Width = 142
+    Caption = 'Número de níveis de corte:'
+    Enabled = False
+    ParentColor = False
+  end
+  object SpinEditNCutLevels: TSpinEdit
+    Left = 183
+    Height = 23
+    Top = 169
+    Width = 49
+    Enabled = False
+    MaxValue = 9
+    MinValue = 1
+    OnChange = SpinEditNCutLevelsChange
+    TabOrder = 3
+    Value = 5
+  end
+end
