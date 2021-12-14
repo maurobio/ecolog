@@ -31,7 +31,7 @@ uses {$IFDEF UNIX} {$IFDEF UseCThreads}
   diversity,
  {$IFDEF WINDOWS}ShpAPI129,
  {$ENDIF} progress,
-  eval, twinsp, kmeans;
+  eval, twinsp, kmeans, anosim, simper, bioenv, group;
 
 {$R *.res}
 
@@ -64,5 +64,9 @@ begin
   Application.CreateForm(TDCADlg, DCADlg);
   Application.CreateForm(TTWSPDlg, TWSPDlg);
   Application.CreateForm(TKMeansDlg, KMeansDlg);
+  Application.CreateForm(TANOSIMDlg, ANOSIMDlg);
+  Application.CreateForm(TSIMPERDlg, SIMPERDlg);
+  Application.CreateForm(TBIOENVDlg, BIOENVDlg);
+  Application.CreateForm(TGroupDlg, GroupDlg);
   Application.Run;
 end.

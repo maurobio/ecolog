@@ -39,6 +39,7 @@
 {     JSON Tools (github.com/sysrpl/JsonTools)                                 }
 {     MultiDoc 0.3+ (wiki.lazarus.freepascal.org/MultiDoc)                     }
 {     NaturalSort (wiki.freepascal.org/NaturalSort)                            }
+{     ZMSQL 0.1.20+ (wiki.freepascal.org/ZMSQL)                                }
 {                                                                              }
 {   Histórico de Revisões / Revision History:                                  }
 {     Versão 6.0.1 "Amaranthus", 14/11/2021                                    }
@@ -51,10 +52,14 @@
 {          de agrupamentos e métodos de ordenação).                            }
 {     Versão 6.0.2 "Begonia", 22/11/2021                                       }
 {       -- Inclusão da Análise de Correspondências Corrigida (DECORANA).       }
-{       -- Inclusãão das saídas do R nos relatórios analíticos do sistema.     }
+{       -- Inclusão das saídas do R nos relatórios analíticos do sistema.      }
 {     Versão 6.0.3 "Chrysantemum", 30/11/2021                                  }
 {       -- Inclusão da Análise de Espécies Indicadoras (TWINSPAN)              }
 {       -- Inclusão da Análise de Agrupamentos por K-Médias                    }
+{     Versão 6.0.4 "Dahlia", 14/12/2021                                        }
+{       -- Inclusão da Análise de Similaridade (ANOSIM)                        }
+{       -- Inclusão da Porcentagem de Similaridade (SIMPER)                    }
+{       -- Inclusão da Combinação de Variáveis (BIOENV)                        }
 {==============================================================================}
 unit main;
 
@@ -96,7 +101,12 @@ type
     ClusterTWSPItem: TMenuItem;
     ClusterKMeansItem: TMenuItem;
     DCAItem: TMenuItem;
+    AnalysisTestsItem: TMenuItem;
+    TestANOSIMItem: TMenuItem;
+    TestSIMPERItem: TMenuItem;
+    TestBIOENVItem: TMenuItem;
     SAHNItem: TMenuItem;
+    TestsButton: TToolButton;
     TWSPItem: TMenuItem;
     KMItem: TMenuItem;
     OrdinationDCAItem: TMenuItem;
@@ -202,6 +212,9 @@ type
     procedure OrdinationRDAItemClick(Sender: TObject);
     procedure SearchFilterResetItemClick(Sender: TObject);
     procedure SearchSortItemClick(Sender: TObject);
+    procedure TestANOSIMItemClick(Sender: TObject);
+    procedure TestBIOENVItemClick(Sender: TObject);
+    procedure TestSIMPERItemClick(Sender: TObject);
     procedure WindowCascadeItemClick(Sender: TObject);
     procedure FileNewItemClick(Sender: TObject);
     procedure WindowCloseItemClick(Sender: TObject);
@@ -247,6 +260,9 @@ uses
   cluster,
   twinsp,
   kmeans,
+  anosim,
+  simper,
+  bioenv,
   pca,
   pco,
   nmds,
@@ -502,6 +518,7 @@ begin
   AnalysisDiversityItem.Enabled := ChildCount > 0;
   AnalysisClusterItem.Enabled := ChildCount > 0;
   AnalysisOrdinationItem.Enabled := ChildCount > 0;
+  AnalysisTestsItem.Enabled := ChildCount > 0;
   WindowPreviousItem.Enabled := ChildCount > 0;
   WindowNextItem.Enabled := ChildCount > 0;
   WindowCascadeItem.Enabled := ChildCount > 0;
@@ -525,6 +542,7 @@ begin
   DiversityButton.Enabled := ChildCount > 0;
   ClusterButton.Enabled := ChildCount > 0;
   OrdinationButton.Enabled := ChildCount > 0;
+  TestsButton.Enabled := ChildCount > 0;
 end;
 
 procedure TMainForm.UpdateTitleBar(Filename: string);
@@ -1118,6 +1136,213 @@ begin
   begin
     Selected := Dataset1.Fields[DataGrid.SelectedIndex].FieldName;
     Dataset1.SortOnFields(Selected);
+  end;
+end;
+
+procedure TMainForm.TestANOSIMItemClick(Sender: TObject);
+var
+  n, m: integer;
+  s: ansistring;
+  col: cardinal;
+  VarList: TStringList;
+begin
+  if not LocateR then
+    Exit;
+  SaveDialog.Title := strSaveFile;
+  SaveDialog.DefaultExt := '.htm';
+  SaveDialog.Filter := strHtmlFilter;
+  SaveDialog.Filename := '';
+  if SaveDialog.Execute then
+  begin
+    MainForm.MultiDoc.SetActiveChild(0);
+    VarList := TStringList.Create;
+    with MainForm.MultiDoc.ActiveObject as TMDIChild do
+      for col := 0 to Dataset1.FieldCount - 1 do
+        VarList.Add(Dataset1.Fields[col].FieldName);
+    with ANOSIMDlg do
+    begin
+      ComboBoxGroup.Items.Clear;
+      ComboBoxGroup.Items.AddStrings(VarList);
+      if ShowModal = mrOk then
+      begin
+        GridToArray('rdata.csv', ',', n, m);
+        CreateANOSIM(SaveDialog.FileName, Factors, ComboBoxTransform.ItemIndex,
+          ComboBoxCoef.ItemIndex, SpinEditNPerm.Value);
+        Screen.Cursor := crHourGlass;
+        if RunCommand(RPath, ['--vanilla', 'anosim.R'], s, [poNoConsole]) then
+        begin
+          ANOSIM(SaveDialog.Filename, Factors, ComboBoxTransform.ItemIndex,
+            ComboBoxCoef.ItemIndex,
+            SpinEditNPerm.Value, n, m);
+          CreateMDIChild(ExtractFileName(SaveDialog.Filename));
+          with MultiDoc.ActiveObject as TMDIChild do
+          begin
+            DataGrid.Visible := False;
+            HtmlViewer.Visible := True;
+            HtmlViewer.LoadFromFile(SaveDialog.Filename);
+          end;
+          UpdateTitleBar(ProjectFile);
+        end
+        else
+        begin
+          Screen.Cursor := crDefault;
+          MessageDlg(strError, Format(strNotExecute, ['R']), mtError, [mbOK], 0);
+        end;
+        Screen.Cursor := crDefault;
+      end;
+      VarList.Free;
+    end;
+  end;
+end;
+
+procedure TMainForm.TestBIOENVItemClick(Sender: TObject);
+var
+  n, m, i, nvars: integer;
+  s: ansistring;
+  DatasetName2, selected, SqlStr: string;
+  SAMPLE: string;
+  VarList: TStringList;
+  f: TField;
+begin
+  if Length(Metadata.Find('dataset2').AsString) = 0 then
+  begin
+    MessageDlg(strWarning, strVariablesNotFound, mtWarning, [mbOK], 0);
+    Exit;
+  end;
+  if not LocateR then
+    Exit;
+  SaveDialog.Title := strSaveFile;
+  SaveDialog.DefaultExt := '.htm';
+  SaveDialog.Filter := strHtmlFilter;
+  SaveDialog.Filename := '';
+  if SaveDialog.Execute then
+  begin
+    VarList := TStringList.Create;
+    MainForm.MultiDoc.SetActiveChild(1);
+    with BIOENVDlg do
+    begin
+      with MainForm.MultiDoc.ActiveObject as TMDIChild do
+        NParms := Dataset2.FieldCount - 1;
+      if ShowModal = mrOk then
+      begin
+        with MainForm.MultiDoc.ActiveObject as TMDIChild do
+        begin
+          if not Dataset2.Active then
+          begin
+            DatasetName2 := Metadata.Find('dataset2').AsString;
+            Dataset2.FileName := DatasetName2;
+            Dataset2.AutoFieldDefs := True;
+            Dataset2.Open;
+          end;
+          for i := 1 to Dataset2.FieldCount do
+            VarList.Add(Dataset2.Fields[i - 1].FieldName);
+          VarList.Delete(0);
+          nvars := VarList.Count;
+          selected := CheckListDialog(strVariables, '', VarList, True);
+          selected := DelChars(selected, '''');
+          VarList.Free;
+          if selected = '' then
+            Exit;
+          CSVExporter2.FileName := 'rdata2.csv';
+          CSVExporter2.Execute;
+          QueryConnection1.DatabasePath := GetCurrentDir;
+          QueryConnection1.Connect;
+          QueryDataSet1.TableName := 'rdata2';
+          QueryDataset1.LoadFromTable;
+          SAMPLE := Dataset2.Fields[0].FieldName;
+          SqlStr := 'SELECT ' + SAMPLE + ', ';
+          for f in Dataset2.Fields do
+            if f is TFloatField or f is TIntegerField then
+              SqlStr += 'AVG(' + f.FieldName + '), ';
+          Delete(SqlStr, Length(SqlStr) - 1, 1);
+          SqlStr += 'FROM rdata2 GROUP BY ' + SAMPLE + ' ORDER BY ' + SAMPLE;
+          QueryDataset1.FieldDelimiter := fdComma;
+          QueryDataset1.SQL.Text := SqlStr;
+          QueryDataset1.QueryExecute;
+          QueryDataset1.SaveToTable;
+        end;
+        GridToArray('rdata1.csv', ',', n, m);
+        CreateBIOENV(SaveDialog.Filename, VarList.Count, ComboBoxTransform.ItemIndex,
+          ComboBoxCoef.ItemIndex, SpinEditMaxPar.Value, ComboBoxMethod.ItemIndex,
+          ComboBoxMetric.ItemIndex, '');
+        Screen.Cursor := crHourGlass;
+        if RunCommand(RPath, ['--vanilla', 'bioenv.R'], s, [poNoConsole]) then
+        begin
+          BIOENV(SaveDialog.Filename, ComboBoxTransform.ItemIndex,
+            ComboBoxCoef.ItemIndex, SpinEditMaxPar.Value, ComboBoxMethod.ItemIndex,
+            ComboBoxMetric.ItemIndex, n, m);
+          CreateMDIChild(ExtractFileName(SaveDialog.Filename));
+          with MultiDoc.ActiveObject as TMDIChild do
+          begin
+            DataGrid.Visible := False;
+            HtmlViewer.Visible := True;
+            HtmlViewer.LoadFromFile(SaveDialog.Filename);
+          end;
+          UpdateTitleBar(ProjectFile);
+        end
+        else
+        begin
+          Screen.Cursor := crDefault;
+          MessageDlg(strError, Format(strNotExecute, ['R']), mtError, [mbOK], 0);
+        end;
+        Screen.Cursor := crDefault;
+      end;
+    end;
+  end;
+end;
+
+procedure TMainForm.TestSIMPERItemClick(Sender: TObject);
+var
+  n, m: integer;
+  s: ansistring;
+  col: cardinal;
+  VarList: TStringList;
+begin
+  if not LocateR then
+    Exit;
+  SaveDialog.Title := strSaveFile;
+  SaveDialog.DefaultExt := '.htm';
+  SaveDialog.Filter := strHtmlFilter;
+  SaveDialog.Filename := '';
+  if SaveDialog.Execute then
+  begin
+    MainForm.MultiDoc.SetActiveChild(0);
+    VarList := TStringList.Create;
+    with MainForm.MultiDoc.ActiveObject as TMDIChild do
+      for col := 0 to Dataset1.FieldCount - 1 do
+        VarList.Add(Dataset1.Fields[col].FieldName);
+    with SIMPERDlg do
+    begin
+      ComboBoxGroup.Items.Clear;
+      ComboBoxGroup.Items.AddStrings(VarList);
+      if ShowModal = mrOk then
+      begin
+        GridToArray('rdata.csv', ',', n, m);
+        CreateSIMPER(SaveDialog.FileName, Factors, ComboBoxTransform.ItemIndex,
+          SpinEditNPerm.Value);
+        Screen.Cursor := crHourGlass;
+        if RunCommand(RPath, ['--vanilla', 'simper.R'], s, [poNoConsole]) then
+        begin
+          SIMPER(SaveDialog.Filename, Factors, ComboBoxTransform.ItemIndex,
+            SpinEditNPerm.Value, n, m);
+          CreateMDIChild(ExtractFileName(SaveDialog.Filename));
+          with MultiDoc.ActiveObject as TMDIChild do
+          begin
+            DataGrid.Visible := False;
+            HtmlViewer.Visible := True;
+            HtmlViewer.LoadFromFile(SaveDialog.Filename);
+          end;
+          UpdateTitleBar(ProjectFile);
+        end
+        else
+        begin
+          Screen.Cursor := crDefault;
+          MessageDlg(strError, Format(strNotExecute, ['R']), mtError, [mbOK], 0);
+        end;
+        Screen.Cursor := crDefault;
+      end;
+      VarList.Free;
+    end;
   end;
 end;
 

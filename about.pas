@@ -10,7 +10,7 @@ uses
     LCLIntf;
 
 const
-  VERSION = 'Chrysantemum';
+  VERSION = 'Dahlia';
 
 type
 

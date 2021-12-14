@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="38">
+    <Units Count="43">
       <Unit0>
         <Filename Value="ECOLOG.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -20,8 +20,8 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="520"/>
-        <CursorPos X="4" Y="527"/>
+        <TopLine Value="513"/>
+        <CursorPos X="16" Y="521"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -33,8 +33,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <EditorIndex Value="22"/>
-        <TopLine Value="30"/>
-        <CursorPos X="55" Y="32"/>
+        <TopLine Value="17"/>
+        <CursorPos X="25" Y="25"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -45,8 +45,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="24"/>
-        <TopLine Value="86"/>
-        <CursorPos X="3" Y="88"/>
+        <TopLine Value="74"/>
+        <CursorPos X="65" Y="223"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -58,7 +58,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="19"/>
         <TopLine Value="7"/>
-        <CursorPos X="26" Y="13"/>
+        <CursorPos X="20" Y="13"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit4>
@@ -80,7 +80,6 @@
         <ComponentName Value="NMDSDlg"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="10"/>
         <TopLine Value="201"/>
         <CursorPos X="20" Y="209"/>
@@ -94,7 +93,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="11"/>
-        <TopLine Value="17"/>
+        <TopLine Value="16"/>
         <CursorPos X="5" Y="96"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
@@ -118,8 +117,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="13"/>
-        <TopLine Value="816"/>
-        <CursorPos X="2" Y="823"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit9>
@@ -142,7 +139,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="17"/>
-        <TopLine Value="39"/>
+        <TopLine Value="126"/>
         <CursorPos X="44" Y="46"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
@@ -176,8 +173,7 @@
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <EditorIndex Value="7"/>
-        <TopLine Value="1365"/>
-        <CursorPos X="5" Y="1368"/>
+        <TopLine Value="28"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
       </Unit14>
@@ -206,7 +202,7 @@
         <EditorIndex Value="14"/>
         <TopLine Value="25"/>
         <CursorPos X="24" Y="396"/>
-        <UsageCount Value="130"/>
+        <UsageCount Value="139"/>
         <Loaded Value="True"/>
       </Unit17>
       <Unit18>
@@ -216,15 +212,16 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="8"/>
+        <TopLine Value="7"/>
         <CursorPos X="7" Y="7"/>
-        <UsageCount Value="81"/>
+        <UsageCount Value="90"/>
         <Loaded Value="True"/>
       </Unit18>
       <Unit19>
         <Filename Value="eval.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="25"/>
-        <UsageCount Value="44"/>
+        <EditorIndex Value="29"/>
+        <UsageCount Value="53"/>
         <Loaded Value="True"/>
       </Unit19>
       <Unit20>
@@ -236,49 +233,122 @@
         <EditorIndex Value="3"/>
         <TopLine Value="70"/>
         <CursorPos X="36" Y="76"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit20>
       <Unit21>
+        <Filename Value="kmeans.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="KMeansDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="163"/>
+        <CursorPos X="43" Y="173"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="twinsp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TWSPDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="181"/>
+        <CursorPos X="37" Y="190"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="anosim.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ANOSIMDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="25"/>
+        <TopLine Value="78"/>
+        <CursorPos X="107" Y="82"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="simper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SIMPERDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="27"/>
+        <TopLine Value="71"/>
+        <CursorPos X="3" Y="74"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="bioenv.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BIOENVDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="28"/>
+        <TopLine Value="73"/>
+        <CursorPos Y="118"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="group.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="GroupDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="26"/>
+        <TopLine Value="32"/>
+        <CursorPos X="22" Y="42"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit26>
+      <Unit27>
         <Filename Value="..\Projetos\FreeDELTA\Diana\Dianaw1.pas"/>
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-      </Unit21>
-      <Unit22>
+      </Unit27>
+      <Unit28>
         <Filename Value="..\..\Projetos\FreeDELTA\Diana\Dianaw1.pas"/>
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-      </Unit22>
-      <Unit23>
+      </Unit28>
+      <Unit29>
         <Filename Value="..\..\..\..\Downloads\filter.pas"/>
         <HasResources Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="58" Y="10"/>
         <UsageCount Value="1"/>
-      </Unit23>
-      <Unit24>
+      </Unit29>
+      <Unit30>
         <Filename Value="C:\lazarus\user\JsonTools\jsontools.pas"/>
         <UnitName Value="JsonTools"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="478"/>
         <CursorPos Y="487"/>
         <UsageCount Value="5"/>
-      </Unit24>
-      <Unit25>
+      </Unit30>
+      <Unit31>
         <Filename Value="..\..\..\..\Downloads\query\filter.pas"/>
         <ComponentName Value="FilterDlg"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-      </Unit25>
-      <Unit26>
+      </Unit31>
+      <Unit32>
         <Filename Value="splash.pas"/>
         <ComponentName Value="SplashForm"/>
         <HasResources Value="True"/>
@@ -288,14 +358,14 @@
         <CursorPos X="20" Y="3"/>
         <UsageCount Value="100"/>
         <Loaded Value="True"/>
-      </Unit26>
-      <Unit27>
+      </Unit32>
+      <Unit33>
         <Filename Value="..\..\..\FreeDELTA\Delcode\about.lfm"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit27>
-      <Unit28>
+      </Unit33>
+      <Unit34>
         <Filename Value="..\..\..\FreeDELTA\Delcode\about.pas"/>
         <ComponentName Value="AboutBox"/>
         <HasResources Value="True"/>
@@ -303,8 +373,8 @@
         <UnitName Value="About"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="1"/>
-      </Unit28>
-      <Unit29>
+      </Unit34>
+      <Unit35>
         <Filename Value="dna.pas"/>
         <UnitName Value="DNA"/>
         <EditorIndex Value="9"/>
@@ -312,197 +382,180 @@
         <CursorPos X="64" Y="158"/>
         <UsageCount Value="100"/>
         <Loaded Value="True"/>
-      </Unit29>
-      <Unit30>
+      </Unit35>
+      <Unit36>
         <Filename Value="dialog.pas"/>
         <EditorIndex Value="4"/>
         <TopLine Value="103"/>
         <UsageCount Value="100"/>
         <Loaded Value="True"/>
-      </Unit30>
-      <Unit31>
+      </Unit36>
+      <Unit37>
         <Filename Value="C:\lazarus\user\FPSpreadsheetDataset\source\fpsdataset.pas"/>
         <UnitName Value="fpsDataset"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="868"/>
         <CursorPos Y="877"/>
         <UsageCount Value="10"/>
-      </Unit31>
-      <Unit32>
+      </Unit37>
+      <Unit38>
         <Filename Value="C:\lazarus\user\zmsql\source\zmquerydataset.pas"/>
         <UnitName Value="ZMQueryDataSet"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1295"/>
         <CursorPos Y="1308"/>
         <UsageCount Value="8"/>
-      </Unit32>
-      <Unit33>
+      </Unit38>
+      <Unit39>
         <Filename Value="C:\lazarus\user\FuzzyWuzzy\FuzzyWuzzy.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="55"/>
         <CursorPos X="3" Y="64"/>
         <UsageCount Value="8"/>
-      </Unit33>
-      <Unit34>
+      </Unit39>
+      <Unit40>
         <Filename Value="..\..\..\..\Downloads\translation\localizedforms.pas"/>
         <UnitName Value="LocalizedForms"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="130"/>
         <CursorPos X="12" Y="148"/>
         <UsageCount Value="8"/>
-      </Unit34>
-      <Unit35>
+      </Unit40>
+      <Unit41>
         <Filename Value="C:\lazarus\user\multiframe\MultiFrame.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="452"/>
         <CursorPos Y="461"/>
         <UsageCount Value="9"/>
-      </Unit35>
-      <Unit36>
-        <Filename Value="kmeans.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="KMeansDlg"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="163"/>
-        <CursorPos X="43" Y="173"/>
-        <UsageCount Value="24"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit36>
-      <Unit37>
-        <Filename Value="twinsp.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="TWSPDlg"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="145"/>
-        <CursorPos X="30" Y="191"/>
-        <UsageCount Value="24"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit37>
+      </Unit41>
+      <Unit42>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3936"/>
+        <CursorPos Y="3945"/>
+        <UsageCount Value="10"/>
+      </Unit42>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="main.pas"/>
-        <Caret Line="1191" Column="5" TopLine="1189"/>
+        <Caret Line="2044" Column="15" TopLine="2030"/>
       </Position1>
       <Position2>
-        <Filename Value="main.pas"/>
-        <Caret Line="1103" Column="32" TopLine="1097"/>
+        <Filename Value="bioenv.pas"/>
+        <Caret Line="118" Column="6" TopLine="113"/>
       </Position2>
       <Position3>
-        <Filename Value="main.pas"/>
-        <Caret TopLine="97"/>
+        <Filename Value="bioenv.pas"/>
+        <Caret Line="183" Column="36" TopLine="183"/>
       </Position3>
       <Position4>
         <Filename Value="main.pas"/>
-        <Caret Line="1103" Column="29" TopLine="1103"/>
+        <Caret Line="1209" Column="10" TopLine="1206"/>
       </Position4>
       <Position5>
         <Filename Value="main.pas"/>
-        <Caret Line="1109" Column="3" TopLine="1104"/>
+        <Caret Line="1218" Column="19" TopLine="1208"/>
       </Position5>
       <Position6>
         <Filename Value="main.pas"/>
-        <Caret Line="1197" Column="5" TopLine="1153"/>
+        <Caret Line="1273" Column="21" TopLine="1259"/>
       </Position6>
       <Position7>
         <Filename Value="main.pas"/>
+        <Caret Line="1327" Column="21" TopLine="1313"/>
       </Position7>
       <Position8>
         <Filename Value="main.pas"/>
-        <Caret Line="169" Column="39" TopLine="155"/>
+        <Caret Line="1368" Column="17" TopLine="1354"/>
       </Position8>
       <Position9>
         <Filename Value="main.pas"/>
-        <Caret Line="1109" Column="3" TopLine="1114"/>
+        <Caret Line="1418" Column="21" TopLine="1404"/>
       </Position9>
       <Position10>
         <Filename Value="main.pas"/>
-        <Caret Line="1197" Column="7" TopLine="1181"/>
+        <Caret Line="1466" Column="21" TopLine="1452"/>
       </Position10>
       <Position11>
         <Filename Value="main.pas"/>
+        <Caret Line="1511" Column="21" TopLine="1497"/>
       </Position11>
       <Position12>
         <Filename Value="main.pas"/>
-        <Caret Line="169" Column="39" TopLine="155"/>
+        <Caret Line="1560" Column="19" TopLine="1546"/>
       </Position12>
       <Position13>
         <Filename Value="main.pas"/>
-        <Caret Line="1105" TopLine="1092"/>
+        <Caret Line="1567" Column="19" TopLine="1553"/>
       </Position13>
       <Position14>
         <Filename Value="main.pas"/>
-        <Caret Line="1213" Column="11" TopLine="1213"/>
+        <Caret Line="1577" Column="19" TopLine="1563"/>
       </Position14>
       <Position15>
         <Filename Value="main.pas"/>
-        <Caret Line="1205" TopLine="1196"/>
+        <Caret Line="1584" Column="19" TopLine="1570"/>
       </Position15>
       <Position16>
         <Filename Value="main.pas"/>
-        <Caret Line="1206" Column="11" TopLine="1199"/>
+        <Caret Line="1632" Column="13" TopLine="1617"/>
       </Position16>
       <Position17>
         <Filename Value="main.pas"/>
-        <Caret Line="1211" Column="10" TopLine="1203"/>
+        <Caret Line="1639" Column="13" TopLine="1625"/>
       </Position17>
       <Position18>
         <Filename Value="main.pas"/>
-        <Caret Line="246" Column="10" TopLine="243"/>
+        <Caret Line="1648" Column="15" TopLine="1634"/>
       </Position18>
       <Position19>
         <Filename Value="main.pas"/>
-        <Caret Line="245" Column="7" TopLine="236"/>
+        <Caret Line="1655" Column="15" TopLine="1641"/>
       </Position19>
       <Position20>
         <Filename Value="main.pas"/>
-        <Caret Line="1174" Column="41" TopLine="1180"/>
+        <Caret Line="1790" Column="21" TopLine="1776"/>
       </Position20>
       <Position21>
         <Filename Value="main.pas"/>
-        <Caret Line="1164" Column="19" TopLine="1156"/>
+        <Caret Line="1855" Column="15" TopLine="1841"/>
       </Position21>
       <Position22>
         <Filename Value="main.pas"/>
-        <Caret Line="1146" Column="19" TopLine="1140"/>
+        <Caret Line="1893" Column="15" TopLine="1879"/>
       </Position22>
       <Position23>
         <Filename Value="main.pas"/>
-        <Caret Line="57" Column="84" TopLine="227"/>
+        <Caret Line="1936" Column="15" TopLine="1922"/>
       </Position23>
       <Position24>
         <Filename Value="main.pas"/>
-        <Caret Line="221" Column="25" TopLine="213"/>
+        <Caret Line="2004" Column="15" TopLine="1990"/>
       </Position24>
       <Position25>
-        <Filename Value="kmeans.pas"/>
-        <Caret Line="122" Column="6" TopLine="114"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="2047" Column="15" TopLine="2033"/>
       </Position25>
       <Position26>
-        <Filename Value="kmeans.pas"/>
-        <Caret Line="66" Column="42" TopLine="53"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="2096" Column="34" TopLine="2082"/>
       </Position26>
       <Position27>
-        <Filename Value="kmeans.pas"/>
-        <Caret Line="168" Column="20" TopLine="159"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="1187" Column="24" TopLine="1181"/>
       </Position27>
       <Position28>
-        <Filename Value="kmeans.pas"/>
-        <Caret Line="67" Column="18" TopLine="55"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="2107" Column="49" TopLine="2101"/>
       </Position28>
       <Position29>
-        <Filename Value="kmeans.pas"/>
-        <Caret Line="171" Column="3" TopLine="162"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="1219" Column="7" TopLine="1211"/>
       </Position29>
       <Position30>
-        <Filename Value="kmeans.pas"/>
-        <Caret Line="69" Column="48" TopLine="61"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="521" Column="16" TopLine="509"/>
       </Position30>
     </JumpHistory>
     <RunParams>

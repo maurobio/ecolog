@@ -2,7 +2,7 @@
 # Mauro J. Cavalcanti <maurobio@gmail.com>, 2021.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-29 11:47-0300\n"
+"PO-Revision-Date: 2021-12-14 15:02-0300\n"
 "Last-Translator: Mauro J. Cavalcanti <maurobio@gmail.com>\n"
 "Language-Team: Ecoinformatics Studio\n"
 "Language: es\n"
@@ -37,6 +37,228 @@ msgstr "Plataforma:"
 msgctxt "about.strwebsite"
 msgid "Página do ECOLOG na Internet"
 msgstr "Página del ECOLOG en Internet"
+
+#: anosim.stranosim
+msgid "ANÁLISE DE SIMILARIDADE"
+msgstr "ANÁLISIS DE SIMILITUDES"
+
+#: anosim.strcoef
+msgctxt "anosim.strcoef"
+msgid "Coeficiente: "
+msgstr "Coeficiente:"
+
+#: anosim.strcoefavgeuclidean
+msgctxt "anosim.strcoefavgeuclidean"
+msgid "Euclidiana normalizada"
+msgstr "Euclidiano normalizado"
+
+#: anosim.strcoefbray
+msgctxt "anosim.strcoefbray"
+msgid "Bray-Curtis"
+msgstr "Bray-Curtis"
+
+#: anosim.strcoefcanberra
+msgctxt "anosim.strcoefcanberra"
+msgid "Canberra"
+msgstr "Canberra"
+
+#: anosim.strcoefeuclidean
+msgctxt "anosim.strcoefeuclidean"
+msgid "Euclidiana"
+msgstr "Euclidiana"
+
+#: anosim.strcoefmanhattan
+msgctxt "anosim.strcoefmanhattan"
+msgid "Manhattan"
+msgstr "Manhattan"
+
+#: anosim.strcoefmorisita
+msgctxt "anosim.strcoefmorisita"
+msgid "Morisita-Horn"
+msgstr "Morisita-Horn"
+
+#: anosim.strcoefsqreuclidean
+msgctxt "anosim.strcoefsqreuclidean"
+msgid "Euclidiana quadrada"
+msgstr "Euclidiano cuadrado"
+
+#: anosim.strgroup
+msgctxt "anosim.strgroup"
+msgid "GRUPOS: "
+msgstr "GRUPOS: "
+
+#: anosim.strnperm
+msgctxt "anosim.strnperm"
+msgid "Número de Permutações: "
+msgstr "Número de Permutaciones;"
+
+#: anosim.strsamples
+msgctxt "anosim.strsamples"
+msgid "Amostras"
+msgstr "Muestras"
+
+#: anosim.strspecies
+msgctxt "anosim.strspecies"
+msgid "Espécies"
+msgstr "Especies"
+
+#: anosim.strtransform
+msgctxt "anosim.strtransform"
+msgid "Transformação: "
+msgstr "Transformación:"
+
+#: anosim.strtransformarcsin
+msgctxt "anosim.strtransformarcsin"
+msgid "Arcosseno"
+msgstr "Arcsen"
+
+#: anosim.strtransformcommonlog
+msgctxt "anosim.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr "Logaritmo común (base 10)"
+
+#: anosim.strtransformnaturallog
+msgctxt "anosim.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr "Logaritmo natural (base e)"
+
+#: anosim.strtransformnone
+msgctxt "anosim.strtransformnone"
+msgid "Sem Transformação"
+msgstr "Sin Transformación"
+
+#: anosim.strtransformsqrt
+msgctxt "anosim.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr "Raíz cuadrada"
+
+#: bioenv.strbioenv
+msgctxt "bioenv.strbioenv"
+msgid "COMBINAÇÃO DE VARIÁVEIS"
+msgstr "COMBINACIÓN DE VARIABLES"
+
+#: bioenv.strcoef
+msgctxt "bioenv.strcoef"
+msgid "Coeficiente: "
+msgstr "Coeficiente:"
+
+#: bioenv.strcoefavgeuclidean
+msgctxt "bioenv.strcoefavgeuclidean"
+msgid "Euclidiana normalizada"
+msgstr "Euclidiano normalizado"
+
+#: bioenv.strcoefbray
+msgctxt "bioenv.strcoefbray"
+msgid "Bray-Curtis"
+msgstr "Bray-Curtis"
+
+#: bioenv.strcoefcanberra
+msgctxt "bioenv.strcoefcanberra"
+msgid "Canberra"
+msgstr "Canberra"
+
+#: bioenv.strcoefeuclidean
+msgctxt "bioenv.strcoefeuclidean"
+msgid "Euclidiana"
+msgstr "Euclidiana"
+
+#: bioenv.strcoefmanhattan
+msgctxt "bioenv.strcoefmanhattan"
+msgid "Manhattan"
+msgstr "Manhattan"
+
+#: bioenv.strcoefmorisita
+msgctxt "bioenv.strcoefmorisita"
+msgid "Morisita-Horn"
+msgstr "Morisita-Horn"
+
+#: bioenv.strcoefsqreuclidean
+msgctxt "bioenv.strcoefsqreuclidean"
+msgid "Euclidiana quadrada"
+msgstr "Euclidiano cuadrado"
+
+#: bioenv.strmaxpar
+msgid "Número Máximo de Parâmetros: "
+msgstr "Número Máximo de Parámetros:"
+
+#: bioenv.strmethod
+msgctxt "bioenv.strmethod"
+msgid "Método: "
+msgstr "Método: "
+
+#: bioenv.strmethodkendall
+msgid "Kendall"
+msgstr "Kendall"
+
+#: bioenv.strmethodpearson
+msgid "Pearson"
+msgstr "Pearson"
+
+#: bioenv.strmethodspearman
+msgid "Spearman"
+msgstr "Spearman"
+
+#: bioenv.strmetric
+msgid "Métrica: "
+msgstr "Métrico:"
+
+#: bioenv.strmetriceuclidean
+msgctxt "bioenv.strmetriceuclidean"
+msgid "Euclidiana"
+msgstr "Euclidiana"
+
+#: bioenv.strmetricgower
+msgid "Gower"
+msgstr "Gower"
+
+#: bioenv.strmetricmahalanobis
+msgid "Mahalanobis"
+msgstr "Mahalanobis"
+
+#: bioenv.strmetricmanhattan
+msgctxt "bioenv.strmetricmanhattan"
+msgid "Manhattan"
+msgstr "Manhattan"
+
+#: bioenv.strsamples
+msgctxt "bioenv.strsamples"
+msgid "Amostras"
+msgstr "Muestras"
+
+#: bioenv.strspecies
+msgctxt "bioenv.strspecies"
+msgid "Espécies"
+msgstr "Especies"
+
+#: bioenv.strtransform
+msgctxt "bioenv.strtransform"
+msgid "Transformação: "
+msgstr "Transformación:"
+
+#: bioenv.strtransformarcsin
+msgctxt "bioenv.strtransformarcsin"
+msgid "Arcosseno"
+msgstr "Arcsen"
+
+#: bioenv.strtransformcommonlog
+msgctxt "bioenv.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr "Logaritmo común (base 10)"
+
+#: bioenv.strtransformnaturallog
+msgctxt "bioenv.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr "Logaritmo natural (base e)"
+
+#: bioenv.strtransformnone
+msgctxt "bioenv.strtransformnone"
+msgid "Sem Transformação"
+msgstr "Sin Transformación"
+
+#: bioenv.strtransformsqrt
+msgctxt "bioenv.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr "Raíz cuadrada"
 
 #: ca.straxis
 msgctxt "ca.straxis"
@@ -251,6 +473,7 @@ msgid "Mediana (WPGMC)"
 msgstr "Mediana (WPGMC)"
 
 #: cluster.strmethod
+msgctxt "cluster.strmethod"
 msgid "Método: "
 msgstr "Método: "
 
@@ -417,6 +640,19 @@ msgstr "Menor o Igual"
 #: filter.strlike
 msgid "Contendo"
 msgstr "Contiene"
+
+#: group.strgroup
+msgid "Grupo"
+msgstr "Grupo"
+
+#: group.strnogroups
+msgid "Número insuficiente de grupos"
+msgstr "Número insuficiente de grupos"
+
+#: group.strwarning
+msgctxt "group.strwarning"
+msgid "Aviso"
+msgstr "Aviso"
 
 #: info.strplot
 msgid "Parcela"
@@ -866,6 +1102,7 @@ msgid "Planilha de Variáveis"
 msgstr "Hoja de Variables"
 
 #: main.strwarning
+msgctxt "main.strwarning"
 msgid "Aviso"
 msgstr "Aviso"
 
@@ -1712,6 +1949,60 @@ msgstr "Estadística de VARIABLES AMBIENTALES"
 msgid "FREQUÊNCIA RELATIVA (%)"
 msgstr "FRECUENCIA RELATIVA (%)"
 
+#: simper.strgroup
+msgctxt "simper.strgroup"
+msgid "GRUPOS: "
+msgstr "GRUPOS: "
+
+#: simper.strnperm
+msgctxt "simper.strnperm"
+msgid "Número de Permutações: "
+msgstr "Número de Permutaciones;"
+
+#: simper.strsamples
+msgctxt "simper.strsamples"
+msgid "Amostras"
+msgstr "Muestras"
+
+#: simper.strsimper
+msgid "PORCENTAGEM DE SIMILARIDADE"
+msgstr "PORCENTAJE DE SIMILITUD"
+
+#: simper.strspecies
+msgctxt "simper.strspecies"
+msgid "Espécies"
+msgstr "Especies"
+
+#: simper.strtransform
+msgctxt "simper.strtransform"
+msgid "Transformação: "
+msgstr "Transformación:"
+
+#: simper.strtransformarcsin
+msgctxt "simper.strtransformarcsin"
+msgid "Arcosseno"
+msgstr "Arcsen"
+
+#: simper.strtransformcommonlog
+msgctxt "simper.strtransformcommonlog"
+msgid "Logaritmo comum (base 10)"
+msgstr "Logaritmo común (base 10)"
+
+#: simper.strtransformnaturallog
+msgctxt "simper.strtransformnaturallog"
+msgid "Logaritmo natural (base e)"
+msgstr "Logaritmo natural (base e)"
+
+#: simper.strtransformnone
+msgctxt "simper.strtransformnone"
+msgid "Sem Transformação"
+msgstr "Sin Transformación"
+
+#: simper.strtransformsqrt
+msgctxt "simper.strtransformsqrt"
+msgid "Raiz quadrada"
+msgstr "Raíz cuadrada"
+
 #: taboutbox.caption
 msgctxt "taboutbox.caption"
 msgid "Sobre ECOLOG"
@@ -1766,6 +2057,79 @@ msgstr "v 0.0.0"
 msgctxt "taboutbox.website.caption"
 msgid "Página do ECOLOG na Internet"
 msgstr "Página del ECOLOG en Internet"
+
+#: tanosimdlg.cancelbutton.caption
+msgctxt "tanosimdlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: tanosimdlg.caption
+msgctxt "tanosimdlg.caption"
+msgid "Opções"
+msgstr "Opciones"
+
+#: tanosimdlg.labelcoef.caption
+msgctxt "tanosimdlg.labelcoef.caption"
+msgid "Coeficiente:"
+msgstr "Coeficiente:"
+
+#: tanosimdlg.labelgroup.caption
+msgctxt "tanosimdlg.labelgroup.caption"
+msgid "Grupos:"
+msgstr "Grupos:"
+
+#: tanosimdlg.labelnperm.caption
+msgctxt "tanosimdlg.labelnperm.caption"
+msgid "Número de Permutações:"
+msgstr "Número de Permutaciones;"
+
+#: tanosimdlg.labeltransform.caption
+msgctxt "tanosimdlg.labeltransform.caption"
+msgid "Transformação:"
+msgstr "Transformación:"
+
+#: tanosimdlg.okbutton.caption
+msgctxt "tanosimdlg.okbutton.caption"
+msgid "OK"
+msgstr "OK"
+
+#: tbioenvdlg.cancelbutton.caption
+msgctxt "tbioenvdlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: tbioenvdlg.caption
+msgctxt "tbioenvdlg.caption"
+msgid "Opções"
+msgstr "Opciones"
+
+#: tbioenvdlg.labelcoef.caption
+msgctxt "tbioenvdlg.labelcoef.caption"
+msgid "Coeficiente:"
+msgstr "Coeficiente:"
+
+#: tbioenvdlg.labelmaxpar.caption
+msgid "Número Máximo de Parâmetros:"
+msgstr "Número Máximo de Parámetros:"
+
+#: tbioenvdlg.labelmethod.caption
+msgctxt "tbioenvdlg.labelmethod.caption"
+msgid "Método:"
+msgstr "Método:"
+
+#: tbioenvdlg.labelmetric.caption
+msgid "Métrica:"
+msgstr "Métrico:"
+
+#: tbioenvdlg.labeltransform.caption
+msgctxt "tbioenvdlg.labeltransform.caption"
+msgid "Transformação:"
+msgstr "Transformación:"
+
+#: tbioenvdlg.okbutton.caption
+msgctxt "tbioenvdlg.okbutton.caption"
+msgid "OK"
+msgstr "OK"
 
 #: tccadlg.cancelbutton.caption
 msgctxt "tccadlg.cancelbutton.caption"
@@ -1912,6 +2276,20 @@ msgstr "Y"
 msgid "Ou"
 msgstr "O"
 
+#: tgroupdlg.cancelbutton.caption
+msgctxt "tgroupdlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: tgroupdlg.caption
+msgid "Grupos"
+msgstr "Grupos"
+
+#: tgroupdlg.okbutton.caption
+msgctxt "tgroupdlg.okbutton.caption"
+msgid "OK"
+msgstr "OK"
+
 #: tkmeansdlg.cancelbutton.caption
 msgctxt "tkmeansdlg.cancelbutton.caption"
 msgid "Cancelar"
@@ -1987,6 +2365,11 @@ msgstr "&Análisis"
 msgctxt "tmainform.analysisordinationitem.caption"
 msgid "Ordenação"
 msgstr "Ordenación"
+
+#: tmainform.analysistestsitem.caption
+msgctxt "tmainform.analysistestsitem.caption"
+msgid "Testes"
+msgstr "Pruebas"
 
 #: tmainform.caitem.caption
 msgctxt "tmainform.caitem.caption"
@@ -2313,10 +2696,6 @@ msgctxt "tmainform.ordinationbutton.caption"
 msgid "Ordenação"
 msgstr "Ordenación"
 
-#: tmainform.ordinationbutton.hint
-msgid "Técnicas de ordenação"
-msgstr "Técnicas de ordenación"
-
 #: tmainform.ordinationcaitem.caption
 msgctxt "tmainform.ordinationcaitem.caption"
 msgid "Análise de Correspondências..."
@@ -2552,6 +2931,35 @@ msgctxt "tmainform.statisticsbutton.hint"
 msgid "Relatório estatístico"
 msgstr "Informe estadístico"
 
+#: tmainform.testanosimitem.caption
+msgid "Análise de Similaridade..."
+msgstr "Análisis de Similitudes..."
+
+#: tmainform.testanosimitem.hint
+msgid "Análise de similaridade (ANOSIM)"
+msgstr "Análisis de similitudes (ANOSIM)"
+
+#: tmainform.testbioenvitem.caption
+msgid "Combinação de Variáveis..."
+msgstr "Combinación de Variables..."
+
+#: tmainform.testbioenvitem.hint
+msgid "Combinação de variáveis (BIOENV)"
+msgstr "Combinación de variables (BIOENV)"
+
+#: tmainform.testsbutton.caption
+msgctxt "tmainform.testsbutton.caption"
+msgid "Testes"
+msgstr "Pruebas"
+
+#: tmainform.testsimperitem.caption
+msgid "Porcentagem de Similaridade..."
+msgstr "Porcentaje de Similitud..."
+
+#: tmainform.testsimperitem.hint
+msgid "Porcentagem de similaridade (SIMPER)"
+msgstr "Porcentaje de similitud (SIMPER)"
+
 #: tmainform.toolbar.caption
 msgid "ToolBar"
 msgstr "ToolBar"
@@ -2775,6 +3183,36 @@ msgstr "Transformación:"
 
 #: trdadlg.okbutton.caption
 msgctxt "trdadlg.okbutton.caption"
+msgid "OK"
+msgstr "OK"
+
+#: tsimperdlg.cancelbutton.caption
+msgctxt "tsimperdlg.cancelbutton.caption"
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: tsimperdlg.caption
+msgctxt "tsimperdlg.caption"
+msgid "Opções"
+msgstr "Opciones"
+
+#: tsimperdlg.labelgroup.caption
+msgctxt "tsimperdlg.labelgroup.caption"
+msgid "Grupos:"
+msgstr "Grupos:"
+
+#: tsimperdlg.labelnperm.caption
+msgctxt "tsimperdlg.labelnperm.caption"
+msgid "Número de Permutações:"
+msgstr "Número de Permutaciones;"
+
+#: tsimperdlg.labeltransform.caption
+msgctxt "tsimperdlg.labeltransform.caption"
+msgid "Transformação:"
+msgstr "Transformación:"
+
+#: tsimperdlg.okbutton.caption
+msgctxt "tsimperdlg.okbutton.caption"
 msgid "OK"
 msgstr "OK"
 
