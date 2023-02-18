@@ -1,0 +1,11 @@
+{"version":1,"strings":[
+{"hash":216264355,"name":"tdcadlg.caption","sourcebytes":[79,112,195,167,195,181,101,115],"value":"Op\u00E7\u00F5es"},
+{"hash":174820650,"name":"tdcadlg.labelrescaling.caption","sourcebytes":[78,195,186,109,101,114,111,32,100,101,32,101,105,120,111,115,58],"value":"N\u00FAmero de eixos:"},
+{"hash":151971386,"name":"tdcadlg.labelnsegs.caption","sourcebytes":[78,195,186,109,101,114,111,32,100,101,32,115,101,103,109,101,110,116,111,115,58],"value":"N\u00FAmero de segmentos:"},
+{"hash":247384777,"name":"tdcadlg.checkboxdetrended.caption","sourcebytes":[65,110,195,161,108,105,115,101,32,67,111,114,114,105,103,105,100,97,32,40,68,67,65,41],"value":"An\u00E1lise Corrigida (DCA)"},
+{"hash":215362144,"name":"tdcadlg.checkboxdownweight.caption","sourcebytes":[82,101,100,117,122,105,114,32,112,101,115,111,32,100,101,32,101,115,112,195,169,99,105,101,115,32,114,97,114,97,115,32],"value":"Reduzir peso de esp\u00E9cies raras "},
+{"hash":150621519,"name":"tdcadlg.checkboxrescaling.caption","sourcebytes":[82,101,115,99,97,108,111,110,97,109,101,110,116,111],"value":"Rescalonamento"},
+{"hash":1339,"name":"tdcadlg.okbutton.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":139052562,"name":"tdcadlg.cancelbutton.caption","sourcebytes":[67,97,110,99,101,108,97,114],"value":"Cancelar"},
+{"hash":211386890,"name":"tdcadlg.labelscale.caption","sourcebytes":[69,115,99,97,108,97,58],"value":"Escala:"}
+]}

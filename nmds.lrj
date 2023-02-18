@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":216264355,"name":"tnmdsdlg.caption","sourcebytes":[79,112,195,167,195,181,101,115],"value":"Op\u00E7\u00F5es"},
+{"hash":140052890,"name":"tnmdsdlg.labeltransform.caption","sourcebytes":[84,114,97,110,115,102,111,114,109,97,195,167,195,163,111,58],"value":"Transforma\u00E7\u00E3o:"},
+{"hash":224388730,"name":"tnmdsdlg.labelcoef.caption","sourcebytes":[67,111,101,102,105,99,105,101,110,116,101,58],"value":"Coeficiente:"},
+{"hash":14532618,"name":"tnmdsdlg.labeliter.caption","sourcebytes":[78,195,186,109,101,114,111,32,100,101,32,73,110,116,101,114,97,195,167,195,181,101,115,58],"value":"N\u00FAmero de Intera\u00E7\u00F5es:"},
+{"hash":142150170,"name":"tnmdsdlg.labelconfig.caption","sourcebytes":[67,111,110,102,105,103,117,114,97,195,167,195,163,111,32,73,110,105,99,105,97,108,58],"value":"Configura\u00E7\u00E3o Inicial:"},
+{"hash":1339,"name":"tnmdsdlg.okbutton.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":139052562,"name":"tnmdsdlg.cancelbutton.caption","sourcebytes":[67,97,110,99,101,108,97,114],"value":"Cancelar"}
+]}

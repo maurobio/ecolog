@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":122419839,"name":"tclusterdlg.caption","sourcebytes":[77,195,169,116,111,100,111,115,32,100,101,32,65,103,114,117,112,97,109,101,110,116,111],"value":"M\u00E9todos de Agrupamento"},
+{"hash":235626682,"name":"tclusterdlg.labelmethod.caption","sourcebytes":[77,195,169,116,111,100,111,58],"value":"M\u00E9todo:"},
+{"hash":1339,"name":"tclusterdlg.okbutton.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":139052562,"name":"tclusterdlg.cancelbutton.caption","sourcebytes":[67,97,110,99,101,108,97,114],"value":"Cancelar"},
+{"hash":140052890,"name":"tclusterdlg.labeltransform.caption","sourcebytes":[84,114,97,110,115,102,111,114,109,97,195,167,195,163,111,58],"value":"Transforma\u00E7\u00E3o:"},
+{"hash":224388730,"name":"tclusterdlg.labelcoef.caption","sourcebytes":[67,111,101,102,105,99,105,101,110,116,101,58],"value":"Coeficiente:"}
+]}

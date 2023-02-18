@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":216264355,"name":"tccadlg.caption","sourcebytes":[79,112,195,167,195,181,101,115],"value":"Op\u00E7\u00F5es"},
+{"hash":140052890,"name":"tccadlg.labeltransform.caption","sourcebytes":[84,114,97,110,115,102,111,114,109,97,195,167,195,163,111,58],"value":"Transforma\u00E7\u00E3o:"},
+{"hash":1339,"name":"tccadlg.okbutton.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":139052562,"name":"tccadlg.cancelbutton.caption","sourcebytes":[67,97,110,99,101,108,97,114],"value":"Cancelar"},
+{"hash":211386890,"name":"tccadlg.checkboxscale.caption","sourcebytes":[69,115,99,97,108,97,58],"value":"Escala:"}
+]}

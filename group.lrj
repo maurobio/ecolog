@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":82429795,"name":"tgroupdlg.caption","sourcebytes":[71,114,117,112,111,115],"value":"Grupos"},
+{"hash":1339,"name":"tgroupdlg.okbutton.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":139052562,"name":"tgroupdlg.cancelbutton.caption","sourcebytes":[67,97,110,99,101,108,97,114],"value":"Cancelar"}
+]}

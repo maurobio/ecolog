@@ -1,0 +1,14 @@
+{"version":1,"strings":[
+{"hash":253783919,"name":"tfilterdlg.caption","sourcebytes":[68,101,102,105,110,105,114,32,70,105,108,116,114,111],"value":"Definir Filtro"},
+{"hash":159675946,"name":"tfilterdlg.label1.caption","sourcebytes":[67,97,109,112,111,115,58],"value":"Campos:"},
+{"hash":97007194,"name":"tfilterdlg.label2.caption","sourcebytes":[86,97,108,111,114,58],"value":"Valor:"},
+{"hash":210239546,"name":"tfilterdlg.label3.caption","sourcebytes":[79,112,101,114,97,100,111,114,58],"value":"Operador:"},
+{"hash":265714207,"name":"tfilterdlg.excludebtn.hint","sourcebytes":[69,120,99,108,117,105,114,32,99,111,110,100,105,195,167,195,163,111],"value":"Excluir condi\u00E7\u00E3o"},
+{"hash":2128399,"name":"tfilterdlg.includebtn.hint","sourcebytes":[73,110,99,108,117,105,114,32,99,111,110,100,105,195,167,195,163,111],"value":"Incluir condi\u00E7\u00E3o"},
+{"hash":75089994,"name":"tfilterdlg.label5.caption","sourcebytes":[76,105,115,116,97,32,100,101,32,67,111,110,100,105,195,167,195,181,101,115,58],"value":"Lista de Condi\u00E7\u00F5es:"},
+{"hash":110063491,"name":"tfilterdlg.clearbtn.hint","sourcebytes":[76,105,109,112,97,114,32,108,105,115,116,97,32,100,101,32,99,111,110,100,105,195,167,195,181,101,115],"value":"Limpar lista de condi\u00E7\u00F5es"},
+{"hash":1339,"name":"tfilterdlg.okbtn.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":139052562,"name":"tfilterdlg.cancelbtn.caption","sourcebytes":[67,97,110,99,101,108,97,114],"value":"Cancelar"},
+{"hash":69,"name":"tfilterdlg.rband.caption","sourcebytes":[69],"value":"E"},
+{"hash":1381,"name":"tfilterdlg.rbor.caption","sourcebytes":[79,117],"value":"Ou"}
+]}

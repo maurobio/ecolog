@@ -1,0 +1,10 @@
+{"version":1,"strings":[
+{"hash":216264355,"name":"ttwspdlg.caption","sourcebytes":[79,112,195,167,195,181,101,115],"value":"Op\u00E7\u00F5es"},
+{"hash":159852186,"name":"ttwspdlg.labelmingroupsize.caption","sourcebytes":[84,97,109,97,110,104,111,32,109,195,173,110,105,109,111,32,100,101,32,32,103,114,117,112,111,32,112,111,114,32,100,105,118,105,115,195,163,111,32,40,50,32,45,49,48,48,48,48,41,58],"value":"Tamanho m\u00EDnimo de  grupo por divis\u00E3o (2 -10000):"},
+{"hash":75786826,"name":"ttwspdlg.labelmaxlevelofdivs.caption","sourcebytes":[78,195,186,109,101,114,111,32,109,195,161,120,105,109,111,32,100,101,32,110,195,173,118,101,105,115,32,100,101,32,100,105,118,105,115,195,163,111,32,40,48,32,45,32,49,53,41,58],"value":"N\u00FAmero m\u00E1ximo de n\u00EDveis de divis\u00E3o (0 - 15):"},
+{"hash":58971621,"name":"ttwspdlg.pseudospeciesstringgrid.columns[0].title.caption","sourcebytes":[78,195,173,118,101,108,32,100,101,32,67,111,114,116,101],"value":"N\u00EDvel de Corte"},
+{"hash":6591731,"name":"ttwspdlg.pseudospeciesradiogroup.caption","sourcebytes":[80,115,101,117,100,111,101,115,112,195,169,99,105,101,115],"value":"Pseudoesp\u00E9cies"},
+{"hash":1339,"name":"ttwspdlg.okbutton.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":139052562,"name":"ttwspdlg.cancelbutton.caption","sourcebytes":[67,97,110,99,101,108,97,114],"value":"Cancelar"},
+{"hash":104303994,"name":"ttwspdlg.labelncutlevels.caption","sourcebytes":[78,195,186,109,101,114,111,32,100,101,32,110,195,173,118,101,105,115,32,100,101,32,99,111,114,116,101,58],"value":"N\u00FAmero de n\u00EDveis de corte:"}
+]}

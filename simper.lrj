@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":216264355,"name":"tsimperdlg.caption","sourcebytes":[79,112,195,167,195,181,101,115],"value":"Op\u00E7\u00F5es"},
+{"hash":140052890,"name":"tsimperdlg.labeltransform.caption","sourcebytes":[84,114,97,110,115,102,111,114,109,97,195,167,195,163,111,58],"value":"Transforma\u00E7\u00E3o:"},
+{"hash":245134890,"name":"tsimperdlg.labelgroup.caption","sourcebytes":[71,114,117,112,111,115,58],"value":"Grupos:"},
+{"hash":185679674,"name":"tsimperdlg.labelnperm.caption","sourcebytes":[78,195,186,109,101,114,111,32,100,101,32,80,101,114,109,117,116,97,195,167,195,181,101,115,58],"value":"N\u00FAmero de Permuta\u00E7\u00F5es:"},
+{"hash":1339,"name":"tsimperdlg.okbutton.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":139052562,"name":"tsimperdlg.cancelbutton.caption","sourcebytes":[67,97,110,99,101,108,97,114],"value":"Cancelar"}
+]}
